@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/259",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/259/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/259/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/259/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/259",
+    "id": 342147931,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyMTE4NjEy",
+    "number": 259,
+    "title": "gen-certurl: Read SCT files from directory specified with -sctDir",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-18T01:58:28Z",
+    "updated_at": "2018-07-18T03:55:52Z",
+    "closed_at": "2018-07-18T03:55:52Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/259",
+      "html_url": "https://github.com/WICG/webpackage/pull/259",
+      "diff_url": "https://github.com/WICG/webpackage/pull/259.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/259.patch"
+    },
+    "body": "Instead of reading a serialized SignedCertificateTimestampList from a\r\nfile, read all `*.sct` files in a directory given by the `-sctDir` flag\r\nand serialize them into SignedCertificateTimestampList.\r\n\r\nThis matches the way how [nginx-ct](https://github.com/grahamedgecombe/nginx-ct) and Apache's [mod_ssl_ct](https://httpd.apache.org/docs/trunk/mod/mod_ssl_ct.html) module work,\r\nand allows users to use existing SCT generation tools."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/258",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/258/labels{/name}",
@@ -34,17 +88,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-07-17T05:37:03Z",
-    "updated_at": "2018-07-17T05:37:03Z",
-    "closed_at": null,
+    "updated_at": "2018-07-18T03:55:29Z",
+    "closed_at": "2018-07-18T03:55:29Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/258",
@@ -88,7 +142,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -97,8 +151,8 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2018-07-16T22:48:29Z",
-    "updated_at": "2018-07-17T02:20:59Z",
-    "closed_at": null,
+    "updated_at": "2018-07-18T03:55:42Z",
+    "closed_at": "2018-07-18T03:55:42Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/257",
@@ -1634,7 +1688,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/230.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/229",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1682,10 +1739,7 @@
     "closed_at": "2018-06-25T01:47:11Z",
     "author_association": "COLLABORATOR",
     "body": "Came up in https://crrev.com/c/1103430/5/net/cert/asn1_util.cc#241:\r\n\r\n@sleevi:\r\n> Gotcha. $.02 (but not critical) is we should rename this to id-ce-canSignHttpExchangesDraft (or id-ce-draftCanSignHttpExchanges), it was the 'test' bit that caught me by surprise.\r\n\r\n@jyasskin What do you think?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/228",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3327,7 +3381,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/200.patch"
     },
     "body": "Follows spec change after #180."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/199",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3381,10 +3438,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/199.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/198",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4998,7 +5052,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/170.patch"
     },
     "body": "I realized this should probably also go in before I publish the implementation draft.\r\n\r\nSpec: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nImpl draft: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/169",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5046,10 +5103,7 @@
     "closed_at": "2018-04-09T18:19:20Z",
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-trust\r\n\r\n> 6.4 Validate that main-certificate has an sct property (Section 3.3) containing valid SCTs from trusted logs. ([RFC6962])\r\n\r\nDoes this mean that SCTs have to be included as a map item of the cert-chain CBOR? Or SCTs can be provided as an X.509v3 extension of `main-certificate` or as an OCSP extension of the `ocsp` property?\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/168",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6776,7 +6830,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/140.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/139",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6830,10 +6887,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/139.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)\r\n\r\nThis shows the state we expect to synchronize on for May."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/138",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8390,7 +8444,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/110.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/envelope-format/draft-yasskin-http-origin-signed-responses.html#application-http-exchange)\r\n\r\nThis format wraps an HTTP exchange, which allows an HTTP/1 connection to\r\ntransfer cross-origin signed exchanges, and which may have other uses.\r\n\r\n@kinu @yoavweiss Does this look reasonable?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/109",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8444,10 +8501,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/109.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/want-signature/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/want-signature/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n[RFC3230](https://tools.ietf.org/html/rfc3230#section-4.3.1) uses `Want-Digest` for a similar purpose, but `Accept-*` seems more common.\r\n\r\n@cramforce, does this look sensible? Have I over- or under-complicated it?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/108",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9965,7 +10019,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/80.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/draft-webpackage-use-cases/draft-yasskin-webpackage-use-cases.html\r\n\r\n@mnot, you seemed to have some use cases for signing individual request/response/body triples, but I don't remember what they were. Could you list a couple so I can add them to this document?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/79",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10013,10 +10070,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "I kind of wonder why the ZIM format seems not to have been studied properly? Even if the format is not so rigorously documented and still lacks a few tools around it, this is probably the most used web content offline distribution file format.\r\n\r\nGeneral purpose web sites:\r\n* http://www.openzim.org/\r\n* http://www.kiwix.org/\r\n\r\nFor developers:\r\n* https://github.com/openzim/\r\n* https://github.com/kiwix/"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/78",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11624,7 +11678,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/50.patch"
     },
     "body": "This uses the tool from #49."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/49",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11678,10 +11735,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/49.patch"
     },
     "body": "This doesn't yet support signed manifests, and it's not tested as thoroughly as\r\nI'd like, but it can generate packages for the first couple examples.\r\n\r\nIt assumes that #46 is accepted."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/48",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13151,7 +13205,10 @@
     "closed_at": "2017-03-30T18:07:48Z",
     "author_association": "COLLABORATOR",
     "body": "For self extracting executables, the common implementation is to produce a file which is a concatenated binary executable head, and an archive tail.\r\n\r\nNode and Electron are looking at reusing webpackage possibly as things progress and need a way:\r\n\r\n* Have a signature for the concatenated binary+archive\r\n* Have a length pointer to let the runtime jump to the start of the archive\r\n\r\nSelf extracting zip files, ASAR from electron, and NODA are examples of this from the past. These all work by having a directory at end of file, but for all use cases I know a pointer to start of archive on the tail would be sufficient. Doing so would most likely just be a series of magic bytes and kength that exists at the end of the file. It could be optional but must be easy to add to an existing webpackage.\r\n\r\nFor a signature of the entire binary + archive this is important so people don't perform a secondary concatenation and load a different archive than expected, it most likely can just be a well known header that optionally exists on the package headers."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/19",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13205,10 +13262,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/19.patch"
     },
     "body": "This script can be updated alongside the explainer to give a concrete\r\nanswer to many format-related questions, and to uncover and resolve\r\nambiguities in the proposed spec.\r\n\r\nMany parts of the spec are unimplemented as yet."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/18",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
