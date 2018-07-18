@@ -325,6 +325,7 @@ ul.toc li {
 <link href="#rfc.section.6.4" rel="Chapter" title="6.4 Signing oracles are permanent">
 <link href="#rfc.section.6.5" rel="Chapter" title="6.5 Unsigned headers">
 <link href="#rfc.section.6.6" rel="Chapter" title="6.6 application/signed-exchange">
+<link href="#rfc.section.6.7" rel="Chapter" title="6.7 Key re-use with TLS">
 <link href="#rfc.section.7" rel="Chapter" title="7 Privacy considerations">
 <link href="#rfc.section.8" rel="Chapter" title="8 IANA considerations">
 <link href="#rfc.section.8.1" rel="Chapter" title="8.1 Signature Header Field Registration">
@@ -512,6 +513,8 @@ ul.toc li {
 <li>6.5.   <a href="#rfc.section.6.5">Unsigned headers</a>
 </li>
 <li>6.6.   <a href="#rfc.section.6.6">application/signed-exchange</a>
+</li>
+<li>6.7.   <a href="#rfc.section.6.7">Key re-use with TLS</a>
 </li>
 </ul><li>7.   <a href="#rfc.section.7">Privacy considerations</a>
 </li>
@@ -1123,13 +1126,14 @@ Accept-Signature: -ecdsa/secp256r1, ecdsa/secp384r1
 <p id="rfc.section.4.2.p.3">Leaf certificates without this extension need to be revoked if the private key is exposed to an unauthorized entity, but they generally don&#8217;t need to be revoked if a signing oracle is exposed and then removed.</p>
 <p id="rfc.section.4.2.p.4">CA certificates, by contrast, need to be revoked if an unauthorized entity is able to make even one unauthorized signature.</p>
 <p id="rfc.section.4.2.p.5">Certificates with this extension MUST be revoked if an unauthorized entity is able to make even one unauthorized signature.</p>
-<p id="rfc.section.4.2.p.6">Conforming CAs MUST mark this extension as critical, and clients MUST NOT accept certificates with this extension in TLS connections (Section 4.4.2.2 of <a href="#I-D.ietf-tls-tls13" class="xref">[I-D.ietf-tls-tls13]</a>).  This simplifies security analysis of this protocol and avoids encouraging server operators to put exchange-signing keys on servers exposed directly to the internet.</p>
-<p id="rfc.section.4.2.p.7">RFC EDITOR PLEASE DELETE THE REST OF THE PARAGRAPHS IN THIS SECTION</p>
+<p id="rfc.section.4.2.p.6">Conforming CAs MUST NOT mark this extension as critical.</p>
+<p id="rfc.section.4.2.p.7">Clients MUST NOT accept certificates with this extension in TLS connections (Section 4.4.2.2 of <a href="#I-D.ietf-tls-tls13" class="xref">[I-D.ietf-tls-tls13]</a>).</p>
+<p id="rfc.section.4.2.p.8">RFC EDITOR PLEASE DELETE THE REST OF THE PARAGRAPHS IN THIS SECTION</p>
 <pre>
    id-ce-google OBJECT IDENTIFIER ::= { 1 3 6 1 4 1 11129 }
    id-ce-canSignHttpExchangesDraft OBJECT IDENTIFIER ::= { id-ce-google 2 1 22 }
 </pre>
-<p id="rfc.section.4.2.p.8">Implementations of drafts of this specification MAY recognize the <samp>id-ce-canSignHttpExchangesDraft</samp> OID as identifying the CanSignHttpExchanges extension. This OID might or might not be used as the final OID for the extension, so certificates including it might need to be reissued once the final RFC is published.</p>
+<p id="rfc.section.4.2.p.9">Implementations of drafts of this specification MAY recognize the <samp>id-ce-canSignHttpExchangesDraft</samp> OID as identifying the CanSignHttpExchanges extension. This OID might or might not be used as the final OID for the extension, so certificates including it might need to be reissued once the final RFC is published.</p>
 <h1 id="rfc.section.5">
 <a href="#rfc.section.5">5.</a> <a href="#transfer" id="transfer">Transferring a signed exchange</a>
 </h1>
@@ -1286,6 +1290,15 @@ following array&gt;sig1; sig=*...; integrity="mi"; ...[
 <a href="#rfc.section.6.6">6.6.</a> <a href="#security-application-signed-exchange" id="security-application-signed-exchange">application/signed-exchange</a>
 </h1>
 <p id="rfc.section.6.6.p.1">Clients MUST NOT trust an effective request URI claimed by an <samp>application/signed-exchange</samp> resource (<a href="#application-signed-exchange" class="xref">Section 5.3</a>) without either ensuring the resource was transferred from a server that was authoritative (Section 9.1 of <a href="#RFC7230" class="xref">[RFC7230]</a>) for that URI&#8217;s origin, or calling the algorithm in <a href="#co-trust-app-signed-exchange" class="xref">Section 5.3.1</a> and getting &#8220;valid&#8221; back.</p>
+<h1 id="rfc.section.6.7">
+<a href="#rfc.section.6.7">6.7.</a> <a href="#seccons-key-re-use" id="seccons-key-re-use">Key re-use with TLS</a>
+</h1>
+<p id="rfc.section.6.7.p.1">In general, key re-use across multiple protocols is a bad idea.</p>
+<p id="rfc.section.6.7.p.2">Using an exchange-signing key in a TLS (or other directly-internet-facing) server increases the risk that an attacker can steal the private key, which will allow them to mint packages (similar to <a href="#seccons-signing-oracles" class="xref">Section 6.4</a>) until their theft is discovered.</p>
+<p id="rfc.section.6.7.p.3">Using a TLS key in a CanSignHttpExchanges certificate makes it less likely that the server operator will discover key theft, due to the considerations in <a href="#seccons-off-path" class="xref">Section 6.2</a>.</p>
+<p id="rfc.section.6.7.p.4">This specification uses the CanSignHttpExchanges X.509 extension (<a href="#cross-origin-cert-req" class="xref">Section 4.2</a>) to discourage re-use of TLS keys to sign exchanges or vice-versa.</p>
+<p id="rfc.section.6.7.p.5">We require that clients reject certificates with the CanSignHttpExchanges extension when making TLS connections to minimize the chance that servers will re-use keys like this. Ideally, we would make the extension critical so that even clients that don&#8217;t understand it would reject such TLS connections, but this proved impossible because certificate-validating libraries ship on significantly different schedules from the clients that use them.</p>
+<p id="rfc.section.6.7.p.6">Even once all clients reject these certificates in TLS connections, this will still just discourage and not prevent key re-use, since a server operator can unwisely request two different certificates with the same private key.</p>
 <h1 id="rfc.section.7">
 <a href="#rfc.section.7">7.</a> <a href="#privacy-considerations" id="privacy-considerations">Privacy considerations</a>
 </h1>
