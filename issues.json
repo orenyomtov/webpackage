@@ -1,6 +1,168 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/263",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/263/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/263/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/263/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/263",
+    "id": 342597377,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDU4NzE3",
+    "number": 263,
+    "title": "signedexchange: Remove EncodeRequestWithHeaders",
+    "user": {
+      "login": "hajimehoshi",
+      "id": 16950,
+      "node_id": "MDQ6VXNlcjE2OTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16950?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hajimehoshi",
+      "html_url": "https://github.com/hajimehoshi",
+      "followers_url": "https://api.github.com/users/hajimehoshi/followers",
+      "following_url": "https://api.github.com/users/hajimehoshi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hajimehoshi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hajimehoshi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hajimehoshi/subscriptions",
+      "organizations_url": "https://api.github.com/users/hajimehoshi/orgs",
+      "repos_url": "https://api.github.com/users/hajimehoshi/repos",
+      "events_url": "https://api.github.com/users/hajimehoshi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hajimehoshi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-19T06:39:30Z",
+    "updated_at": "2018-07-19T06:39:30Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/263",
+      "html_url": "https://github.com/WICG/webpackage/pull/263",
+      "diff_url": "https://github.com/WICG/webpackage/pull/263.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/263.patch"
+    },
+    "body": "That function is not used anywhere."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/262",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/262/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/262/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/262/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/262",
+    "id": 342585641,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDUwMDQ4",
+    "number": 262,
+    "title": "dump-signedexchange: dump signature header value too",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-19T05:39:57Z",
+    "updated_at": "2018-07-19T06:39:07Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/262",
+      "html_url": "https://github.com/WICG/webpackage/pull/262",
+      "diff_url": "https://github.com/WICG/webpackage/pull/262.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/262.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/261",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/261/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/261/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/261/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/261",
+    "id": 342525730,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDA2Njc4",
+    "number": 261,
+    "title": "Increase the header size limit to 512kB.",
+    "user": {
+      "login": "jyasskin",
+      "id": 83420,
+      "node_id": "MDQ6VXNlcjgzNDIw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/83420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jyasskin",
+      "html_url": "https://github.com/jyasskin",
+      "followers_url": "https://api.github.com/users/jyasskin/followers",
+      "following_url": "https://api.github.com/users/jyasskin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jyasskin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jyasskin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jyasskin/subscriptions",
+      "organizations_url": "https://api.github.com/users/jyasskin/orgs",
+      "repos_url": "https://api.github.com/users/jyasskin/repos",
+      "events_url": "https://api.github.com/users/jyasskin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jyasskin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-18T23:25:43Z",
+    "updated_at": "2018-07-18T23:25:43Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/261",
+      "html_url": "https://github.com/WICG/webpackage/pull/261",
+      "diff_url": "https://github.com/WICG/webpackage/pull/261.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/261.patch"
+    },
+    "body": "This is twice Chromium's limit for the request or response headers,\r\nsince both are included in the signed exchange headers block."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/260",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/260/labels{/name}",
@@ -34,7 +196,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -43,8 +205,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-18T09:28:21Z",
-    "updated_at": "2018-07-18T09:36:49Z",
-    "closed_at": null,
+    "updated_at": "2018-07-18T22:45:06Z",
+    "closed_at": "2018-07-18T22:45:06Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/260",
@@ -1526,7 +1688,10 @@
     "closed_at": "2018-07-02T22:41:03Z",
     "author_association": "CONTRIBUTOR",
     "body": "## I expect\r\n\r\n- mi-sha256 signatures to be base64 encoded\r\n\r\n## instead\r\n\r\n- in examples, they are hexdigest"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/233",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1688,10 +1853,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/231.patch"
     },
     "body": "Per @sleevi's suggestion.\r\n\r\nFixes #229.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/rename-test-oid/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/rename-test-oid/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/230",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3148,7 +3310,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/204.patch"
     },
     "body": "Also change the content of the extension to an ASN.1 NULL.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/test-oid/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/test-oid/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n@sleevi Is this right? Would you approve when the OID is actually allocated?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/203",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3381,10 +3546,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-dispatch-bundled-exchanges.html currently doesn't specify how a client decides which bundled request to use in any particular context. We need to define that.\r\n\r\nhttps://docs.google.com/document/d/1JdJkdY7cK2rD9JXbK75sSn069c0rhF9UnLQACBZ1OtY/edit# starts exploring the space but doesn't come to a conclusion yet."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/200",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4896,7 +5058,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/174.patch"
     },
     "body": "Fixes #165 \r\n\r\nOriginal author: @irori\r\n\r\nThis PR fixes gen-certurl to follow the latest specification.\r\n\r\nThis PR also adds internal/testhelper package for testing to show readable strings of CBOR binary."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/173",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5052,10 +5217,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/171.patch"
     },
     "body": "Thanks @irori.\r\n\r\n@davidben @sleevi, is this the right thing to do? Or should I match [RFC6962](https://tools.ietf.org/html/rfc6962#section-3.3) by requiring clients to look in all three places?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/170",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6628,7 +6790,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/144.patch"
     },
     "body": "This fixes the bug that colons were not usable in request/response headers.\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/143",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6830,10 +6995,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Our strictness in enforcing being within the 7-day signature validity period interacts badly with skewed clocks. Do we want to encourage signers to pre-date the signature's timestamp by X hours, or require clients to trust signatures that start being valid in X hours, or something else?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/140",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8288,7 +8450,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "As a developer, it would be useful to be able to read what resources are in my own bundle.\r\n\r\nUse case example: I am writing a offline capable Zine webapp. I typically have a directory for each issue, and a number of html files in each directory corresponding to pages in my Zine. There is also a \"zine browser\" main interface that let's me pick which zine I want to read, or skip to pages, and the main interface knows what I was last reading. To let people share my zine, I create a webpackage of the client software, and a number of zine issues.\r\n\r\nDilemma: how does my main interface know what zines are available in the bundle?\r\n\r\nIdeally, as a developer, I could have the main-client reader able to ask- what resources do I already know about? Any zines in a webpackage ought to be able to present themselves to my main client, let it know: hey, there's content here.\r\n\r\nThis issue gets more pointed if users start collecting multiple webpackages, like if I release a new webpackage with new zines. Before- considering the case of only a single webpackage of main-client+zines- it would perhaps not be pleasant but it could be possible to build an index file into my webpackage that enumerates all the content. However when there are multiple webpackages available, it becomes outright impossible to work with this situation. The main-client will not have a way to figure out what is in other bundles.\r\n\r\nAn implementation of #107 would resolve this use case. If webpackage content were available via the page's Cache APIs then we could use `Cache.keys()` to discover the content.\r\n\r\nThere is a related problem in HTTP/2 PUSH, with not being able to detect content: whatwg/fetch#65. As a page, there's no way to detect resources that HTTP/2 PUSH has sent: once again the developer needs to create an out-of-band mechanism to ever be able to access the resource.\r\n\r\nI would like to see listing of at least same-origin content added to the use-cases. I hope this example of a Zine illustrates the need and how this capability would help. Thanks."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/113",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8444,10 +8609,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/111.patch"
     },
     "body": "@sleevi, how's this look?\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/sleevi-comments/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/sleevi-comments/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/110",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9857,7 +10019,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/84.patch"
     },
     "body": "See the thread starting at https://lists.w3.org/Archives/Public/ietf-http-wg/2017JulSep/0385.html.\r\n\r\nPreview at https://jyasskin.github.io/webpackage/signed-responses-update/draft-yasskin-http-origin-signed-responses.html"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/83",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10019,10 +10184,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/81.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/draft-yasskin-origin-signed-responses/draft-yasskin-http-origin-signed-responses.html\r\n\r\nThis doesn't yet have a design, just some use cases and constraints on the design. I also haven't yet worked out how this would fit into a bundling proposal. It's possible that it doesn't.\r\n\r\n@nyaxt @KenjiBaheux @mnot @mikewest"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/80",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11522,7 +11684,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/54.patch"
     },
     "body": "This lets me write tests without adding a new file for each test."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/53",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11678,10 +11843,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/51.patch"
     },
     "body": "Is there a more official link to the Chrome MHTML work than http://www.techgainer.com/enable-single-file-mhtml-support-chrome/?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/50",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13049,7 +13211,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/24.patch"
     },
     "body": "Will update as discussion on https://github.com/dimich-g/webpackage/issues/20 evolves."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/23",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13211,10 +13376,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/21.patch"
     },
     "body": "Just explicit bound checking."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/20",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
