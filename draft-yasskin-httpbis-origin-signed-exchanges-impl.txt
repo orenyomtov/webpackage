@@ -1206,7 +1206,7 @@ Internet-DraSigned HTTP Exchanges Implementation Checkpoints   July 2018
        larger than 16kB, parsing MUST fail.
 
    3.  3 bytes storing a big-endian integer "headerLength".  If this is
-       larger than 16kB, parsing MUST fail.
+       larger than 512kB, parsing MUST fail.
 
    4.  "sigLength" bytes holding the "Signature" header field's value
        (Section 3.1).

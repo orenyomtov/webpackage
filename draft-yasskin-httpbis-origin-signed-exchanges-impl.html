@@ -969,7 +969,7 @@ Signed-Headers = sh-list
 <ol>
 <li>The ASCII characters &#8220;sxg1-b1&#8221; followed by a 0 byte, to serve as a file signature. This is redundant with the MIME type, and recipients that receive both MUST check that they match and stop parsing if they don&#8217;t.  <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct file signature.</li>
 <li>3 bytes storing a big-endian integer <samp>sigLength</samp>. If this is larger than 16kB, parsing MUST fail.</li>
-<li>3 bytes storing a big-endian integer <samp>headerLength</samp>. If this is larger than 16kB, parsing MUST fail.</li>
+<li>3 bytes storing a big-endian integer <samp>headerLength</samp>. If this is larger than 512kB, parsing MUST fail.</li>
 <li>
 <samp>sigLength</samp> bytes holding the <samp>Signature</samp> header field&#8217;s value (<a href="#signature-header" class="xref">Section 3.1</a>).</li>
 <li>
