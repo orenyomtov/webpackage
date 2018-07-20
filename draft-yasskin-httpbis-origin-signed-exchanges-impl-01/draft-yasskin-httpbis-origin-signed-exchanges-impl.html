@@ -985,7 +985,7 @@ Signed-Headers = sh-list
 </h1>
 <p id="rfc.section.5.3.2.p.1">An example <samp>application/signed-exchange</samp> file representing a possible signed exchange with <a href="https://example.com/">https://example.com/</a> follows, with lengths represented by descriptions in <samp>&lt;&gt;</samp>s, CBOR represented in the extended diagnostic format defined in Appendix G of <a href="#I-D.ietf-cbor-cddl" class="xref">[I-D.ietf-cbor-cddl]</a>, and most of the <samp>Signature</samp> header field and payload elided with a &#8230;:</p>
 <pre>
-sxg1\0&lt;3-byte length of the following header
+sxg1-b1\0&lt;3-byte length of the following header
 value&gt;&lt;3-byte length of the encoding of the
 following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
   {
@@ -1201,7 +1201,8 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <li>Signed exchanges cannot be transmitted using HTTP/2 Push.</li>
 <li>Removed non-normative sections.</li>
 <li>The mi-sha256 encoding must have records &lt;= 16kB.</li>
-<li>The signature and HTTP headers must each be &lt;=16kB long.</li>
+<li>The signature must be &lt;=16kB long.</li>
+<li>The HTTP request and response headers together must be &lt;=512kB.</li>
 <li>Versions in file signatures and context strings are &#8220;b1&#8221;.</li>
 <li>Only 1 signature is supported.</li>
 <li>Removed support for ed25519 signatures.</li>
