@@ -1254,7 +1254,7 @@ Internet-DraSigned HTTP Exchanges Implementation Checkpoints   July 2018
    [I-D.ietf-cbor-cddl], and most of the "Signature" header field and
    payload elided with a ...:
 
-   sxg1\0<3-byte length of the following header
+   sxg1-b1\0<3-byte length of the following header
    value><3-byte length of the encoding of the
    following array>sig1; sig=*...; integrity="mi-draft2"; ...[
      {
@@ -1570,7 +1570,9 @@ Yasskin & Ueno          Expires January 21, 2019               [Page 28]
 Internet-DraSigned HTTP Exchanges Implementation Checkpoints   July 2018
 
 
-   o  The signature and HTTP headers must each be <=16kB long.
+   o  The signature must be <=16kB long.
+
+   o  The HTTP request and response headers together must be <=512kB.
 
    o  Versions in file signatures and context strings are "b1".
 
@@ -1613,8 +1615,6 @@ Internet-DraSigned HTTP Exchanges Implementation Checkpoints   July 2018
    o  The Accept-Signature header isn't used.
 
    o  Require absolute URLs.
-
-
 
 
 
