@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/267",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/267/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/267/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/267/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/267",
+    "id": 343037511,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNzk0Nzcz",
+    "number": 267,
+    "title": "Add instructions to create a signed exchange with a trusted certificate",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-20T09:31:09Z",
+    "updated_at": "2018-07-20T17:00:15Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/267",
+      "html_url": "https://github.com/WICG/webpackage/pull/267",
+      "diff_url": "https://github.com/WICG/webpackage/pull/267.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/267.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/266",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/266/labels{/name}",
@@ -43,7 +97,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-20T04:58:15Z",
-    "updated_at": "2018-07-20T05:43:46Z",
+    "updated_at": "2018-07-20T06:05:52Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -313,7 +367,7 @@
     "milestone": null,
     "comments": 1,
     "created_at": "2018-07-18T23:25:43Z",
-    "updated_at": "2018-07-19T15:35:52Z",
+    "updated_at": "2018-07-20T16:57:00Z",
     "closed_at": "2018-07-19T15:35:52Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1652,7 +1706,10 @@
     "closed_at": "2018-07-18T15:49:04Z",
     "author_association": "COLLABORATOR",
     "body": "This came up in https://crrev.com/c/1111485.\r\n\r\nhttps://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-cert-req\r\n\r\n> Conforming CAs MUST mark this extension as critical, and clients MUST NOT accept certificates with this extension in TLS connections (Section 4.4.2.2 of [I-D.ietf-tls-tls13]). \r\n\r\nIn Chrome, certificate path building and verification is performed using underlying operating systems' API. So, if the CanSignHttpExchanges extension is marked as critical, the OS API will reject the cert, until the OS supports CanSignHttpExchanges extension.\r\n\r\nCan we revisit the critical-ness of this extension? What's the security implication of not marking it as critical?\r\n\r\ncc: @sleevi @jyasskin "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/237",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1700,10 +1757,7 @@
     "closed_at": "2018-07-04T12:46:48Z",
     "author_association": "CONTRIBUTOR",
     "body": "What do you think about using a JWS inside a signature headers instead of redefining a Subset of jws claims?\r\n\r\nWhich is the Right Place for Such a discussion?\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/236",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3262,7 +3316,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/208.patch"
     },
     "body": "This PR introduces dump-exchange tool to pretty-print an signedexchange file."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/207",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3316,10 +3373,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/207.patch"
     },
     "body": "Add/update following links:\r\n* Bundled exchanges draft html\r\n* Loading sketch explainer\r\n* An additional link to chromium's testing repo that could be helpful for people who want to try out signed exchange tools"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/206",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4984,7 +5038,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/178.patch"
     },
     "body": "Thanks to @twifkak for noticing the violation of\r\n[draft-ietf-httpbis-header-structure-04 Section 4.8](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-04#section-4.8).\r\n\r\nNote that this will affect the next implementation draft but doesn't affect the [current one](https://tools.ietf.org/html/draft-yasskin-httpbis-origin-signed-exchanges-impl-00)."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/177",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5032,10 +5089,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Question related to the \"bundling\" spec draft: https://github.com/WICG/webpackage/pull/98\r\n\r\nAre there plans to include an internal referencing mechanism similar to [MHTML](https://tools.ietf.org/html/rfc2557)'s use of [`Content-ID`](https://tools.ietf.org/html/rfc2557#section-9.5) or the TAG's previous [Packaging on the Web](https://www.w3.org/TR/web-packaging/)'s use of [fragment identifiers](https://www.w3.org/TR/2015/WD-web-packaging-20150115/#fragment-identifiers)?\r\n\r\nFor instance, book (et al) publishers are coming from EPUB where \"everything\" is built using internal references and internal-only resources. Additionally, there may be other use cases where \"internal only\" package contents might be needed and beneficial.\r\n\r\nIf that seems out of scope for this sort of bundling, though, no worries. Just wanted to check. 😃 \r\n\r\nWe'll be exploring that need in the Publishing WG via https://github.com/w3c/pwpub/issues/24\r\n\r\nThanks!\r\n🎩 "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/176",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6742,7 +6796,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/148.patch"
     },
     "body": "This format:\r\n* Doesn't require a streaming CBOR parser parse it from a network stream.\r\n* Doesn't allow request payloads or response trailers, which don't fit into\r\n  the signature model.\r\n* Allows checking the signature before parsing the exchange headers.\r\n\r\nThis is similar to, but not exactly the same as the format @davidben proposed for #139: it pulls out the `Signature` header into bytestring before the other headers so that the second map can be literally the bytes in the signed string. This isn't extensible if we ever want to add new non-signed values, so I added a format version number into the format's magic number.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/no-streaming/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/no-streaming/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nFixes #135."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/147",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6790,10 +6847,7 @@
     "closed_at": "2018-04-06T17:34:09Z",
     "author_association": "COLLABORATOR",
     "body": "H/T @twifkak for noticing that these are underspecified and underthought."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/146",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8414,7 +8468,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/118.patch"
     },
     "body": "A quick update to the README that fixes #115. This doesn't update the explainer, which is still aimed at the pre-layered format."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/117",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8462,10 +8519,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "People with expensive data plans may run out of data early in a month, and not come back online until the next month. The 7-day validity limit in https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#signature-validity is good or even too long while online, but not enough while offline. We need to figure out if we can give clients permission to use expired signatures under certain circumstances, and if so, how to specify that."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/116",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9971,7 +10025,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/88.patch"
     },
     "body": "There's a preview at https://jyasskin.github.io/webpackage/design-signatures/draft-yasskin-http-origin-signed-responses.html#proposal\r\n\r\nWhat's clearly broken about this? Is the complexity of allowing either plain responses or encapsulated request headers worth it?\r\n\r\nI updated the validity algorithm to handle raw public keys and to return exactly which headers are trustworthy, but I did it quickly, so there could be mistakes there."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/87",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10025,10 +10082,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/87.patch"
     },
     "body": "How's this, @agl, @sleevi?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/86",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11636,7 +11690,10 @@
     "closed_at": "2017-06-17T04:31:32Z",
     "author_association": "COLLABORATOR",
     "body": "Options:\r\n1. [TLS 1.3 SignatureScheme](https://tlswg.github.io/tls13-spec/#rfc.section.4.2.3) codes.\r\n2. <strike>[JWS algorithm names](https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms).</strike> (I have advice to avoid these.)\r\n3. RFC5280's [AlgorithmIdentifier](https://tools.ietf.org/html/rfc5280#section-4.1.1.2) used in certificates.\r\n4. Define a mapping from the certificate's public key to a signature algorithm. This is easy for ECDSA and EdDSA keys, but would need work for RSA keys. Straw man: <=3072 bits gets rsa_pss_sha256, and >=3073 gets rsa_pss_sha384.\r\n\r\nIn some cases, like TLS' [ecdsa_secp256r1_sha256](https://tlswg.github.io/tls13-spec/#rfc.section.4.2.3) vs JWS' [ES256](https://tools.ietf.org/html/rfc7518#section-3.4), even though the algorithm is the same, the signature appears in different formats.\r\n\r\nAny of these options is sufficient to let us sign with any TLS certificate, but TLS doesn't yet have identifiers for post-quantum signature schemes that counter-signatures might want to use.\r\n\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/57",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11684,10 +11741,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Having some minimal documentation for webpack would be helpful for those of us not fluent in Golang. "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/56",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13163,7 +13217,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/28.patch"
     },
     "body": "I'm not sure I've got the right fix for each of these; feel free to say anything should be different."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/27",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13217,10 +13274,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/27.patch"
     },
     "body": "fixes https://github.com/dimich-g/webpackage/issues/16"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/26",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
