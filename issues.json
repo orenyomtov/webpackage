@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/266",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/266/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/266/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/266/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/266",
+    "id": 342973645,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNzQ2ODE4",
+    "number": 266,
+    "title": "gen-certurl: Show warnings on possibly invalid input",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-20T04:58:15Z",
+    "updated_at": "2018-07-20T05:43:46Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/266",
+      "html_url": "https://github.com/WICG/webpackage/pull/266",
+      "diff_url": "https://github.com/WICG/webpackage/pull/266.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/266.patch"
+    },
+    "body": "Prints warning message when:\r\n- OCSP data cannot be parsed as a DER-encoded OCSP response\r\n- Cert and OCSP do not have embedded SCT, and `-sctDir` is not specified\r\n\r\nDidn't make them error since these are OK if generated cert-chain is used for testing, with the `--ignore-certificate-errors-spki-list` Chromium flag."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/265",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/265/labels{/name}",
@@ -34,7 +88,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -43,8 +97,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-19T07:28:48Z",
-    "updated_at": "2018-07-19T15:36:47Z",
-    "closed_at": null,
+    "updated_at": "2018-07-19T16:27:06Z",
+    "closed_at": "2018-07-19T16:27:03Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/265",
@@ -64,7 +118,7 @@
     "id": 342604167,
     "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDYzNzcx",
     "number": 264,
-    "title": "signedexchange: Rename WriteExchangeFile to Write",
+    "title": "signedexchange: Rename some functions",
     "user": {
       "login": "hajimehoshi",
       "id": 16950,
@@ -97,7 +151,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-19T07:07:26Z",
-    "updated_at": "2018-07-19T15:37:39Z",
+    "updated_at": "2018-07-20T05:50:46Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -151,7 +205,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-19T06:39:30Z",
-    "updated_at": "2018-07-19T15:36:17Z",
+    "updated_at": "2018-07-19T16:24:29Z",
     "closed_at": "2018-07-19T15:36:17Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1646,7 +1700,10 @@
     "closed_at": "2018-07-04T12:46:48Z",
     "author_association": "CONTRIBUTOR",
     "body": "What do you think about using a JWS inside a signature headers instead of redefining a Subset of jws claims?\r\n\r\nWhich is the Right Place for Such a discussion?\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/236",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1694,10 +1751,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "@slightlyoff mentioned that we might want to have [third-party security reviewers](https://tools.ietf.org/html/draft-yasskin-webpackage-use-cases-01#section-2.2.3) check more or less stringently depending on which permissions an app uses. To do that, they'll need to be able to sign over the permissions they've checked for."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/235",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3262,7 +3316,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/207.patch"
     },
     "body": "Add/update following links:\r\n* Bundled exchanges draft html\r\n* Loading sketch explainer\r\n* An additional link to chromium's testing repo that could be helpful for people who want to try out signed exchange tools"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/206",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3310,10 +3367,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "1, navigate to https://example.com/a.sxg\r\n2, a.sxg is signed by https://example.net so browser display it as https://example.net\r\n3, clicking the link on https://example.net\r\n\r\nin request of 3, which origin should on referrer header example.com (actual) or example.net (display) ?\r\n(spec seems not mention this: https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/205",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4978,7 +5032,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Question related to the \"bundling\" spec draft: https://github.com/WICG/webpackage/pull/98\r\n\r\nAre there plans to include an internal referencing mechanism similar to [MHTML](https://tools.ietf.org/html/rfc2557)'s use of [`Content-ID`](https://tools.ietf.org/html/rfc2557#section-9.5) or the TAG's previous [Packaging on the Web](https://www.w3.org/TR/web-packaging/)'s use of [fragment identifiers](https://www.w3.org/TR/2015/WD-web-packaging-20150115/#fragment-identifiers)?\r\n\r\nFor instance, book (et al) publishers are coming from EPUB where \"everything\" is built using internal references and internal-only resources. Additionally, there may be other use cases where \"internal only\" package contents might be needed and beneficial.\r\n\r\nIf that seems out of scope for this sort of bundling, though, no worries. Just wanted to check. 😃 \r\n\r\nWe'll be exploring that need in the Publishing WG via https://github.com/w3c/pwpub/issues/24\r\n\r\nThanks!\r\n🎩 "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/176",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5026,10 +5083,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Various things in the ecosystem use symlinks, the behavior of symlinks in node and how HTTP redirects is not compatible per https://github.com/nodejs/modules/issues/62 . Could repurpose the `Location` header over `file:` but https://fetch.spec.whatwg.org/#scheme-fetch could be changed in a forwards incompatible way if we do that."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/175",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6736,7 +6790,10 @@
     "closed_at": "2018-04-06T17:34:09Z",
     "author_association": "COLLABORATOR",
     "body": "H/T @twifkak for noticing that these are underspecified and underthought."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/146",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6790,10 +6847,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/146.patch"
     },
     "body": "PTAL"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/145",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8408,7 +8462,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "People with expensive data plans may run out of data early in a month, and not come back online until the next month. The 7-day validity limit in https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#signature-validity is good or even too long while online, but not enough while offline. We need to figure out if we can give clients permission to use expired signatures under certain circumstances, and if so, how to specify that."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/116",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8462,10 +8519,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/116.patch"
     },
     "body": "That draft splits the rsa_pss signature algorithm names to depend on the key's OID. I suspect all RSA keys in the wild use the rsaEncryption OID, so banning that (to avoid Bleichenbacher attacks) would be equivalent to banning RSA keys, but if not, maybe we could allow the RSASSA-PSS ones.\r\n\r\n@sleevi @davidben"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/115",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9971,7 +10025,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/87.patch"
     },
     "body": "How's this, @agl, @sleevi?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/86",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10019,10 +10076,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Hello web packaging fans - \r\n\r\nWe're just cleaning up issues in possibly obsolete repos under [our organization](github.com/w3ctag/) (W3CTAG). One of these documents was the original packaging on the web which has since been obsoleted by your work. However there are many open issues on our document and before we summarily closed them we wanted to alert you to these issues in case you wanted to bring any of them over into your issues list. Can you please have a look through [these issues](https://github.com/w3ctag/packaging-on-the-web/issues) and leave a note on each issue to let us know that it's OK to close it? If you do take one of them on as an issue, please leave a note including a link to your new issue.\r\n\r\nThanks,\r\nDan Appelquist\r\nCo-Chair, W3CTAG"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/85",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11630,7 +11684,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Having some minimal documentation for webpack would be helpful for those of us not fluent in Golang. "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/56",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11684,10 +11741,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/56.patch"
     },
     "body": "I'll try to get some experienced Go programmers to review this and suggest other ways to improve readability, as requested in https://github.com/dimich-g/webpackage/pull/53#pullrequestreview-38510830."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/55",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13163,7 +13217,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/27.patch"
     },
     "body": "fixes https://github.com/dimich-g/webpackage/issues/16"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/26",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13211,10 +13268,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "For some use cases like Source Maps packages may wish to not include the full asset within themselves but have another package containing debugging symbols. Currently fragment URLs are proposed for removal, however I don't see a clear way to have a situation like:\r\n\r\n```\r\nminified.webpackage\r\n\\- index.min.js\r\n```\r\n\r\n```\r\nsource-maps.webpackage\r\n\\- index.min.js.map\r\n```\r\n\r\nAnd have `index.min.js` able to point to `index.min.js.map`."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/25",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
