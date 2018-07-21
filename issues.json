@@ -1,6 +1,108 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/269",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/269/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/269/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/269/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/269",
+    "id": 343260530,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyOTY2MzQw",
+    "number": 269,
+    "title": "Fix the magic number of a signed-exchange example in -impl.",
+    "user": {
+      "login": "jyasskin",
+      "id": 83420,
+      "node_id": "MDQ6VXNlcjgzNDIw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/83420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jyasskin",
+      "html_url": "https://github.com/jyasskin",
+      "followers_url": "https://api.github.com/users/jyasskin/followers",
+      "following_url": "https://api.github.com/users/jyasskin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jyasskin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jyasskin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jyasskin/subscriptions",
+      "organizations_url": "https://api.github.com/users/jyasskin/orgs",
+      "repos_url": "https://api.github.com/users/jyasskin/repos",
+      "events_url": "https://api.github.com/users/jyasskin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jyasskin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-20T22:03:48Z",
+    "updated_at": "2018-07-20T22:12:07Z",
+    "closed_at": "2018-07-20T22:11:45Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/269",
+      "html_url": "https://github.com/WICG/webpackage/pull/269",
+      "diff_url": "https://github.com/WICG/webpackage/pull/269.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/269.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/268",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/268/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/268/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/268/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/268",
+    "id": 343251468,
+    "node_id": "MDU6SXNzdWUzNDMyNTE0Njg=",
+    "number": 268,
+    "title": "Broken import with golang.org/x/net/http2 package ",
+    "user": {
+      "login": "EverlastingBugstopper",
+      "id": 9408157,
+      "node_id": "MDQ6VXNlcjk0MDgxNTc=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9408157?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/EverlastingBugstopper",
+      "html_url": "https://github.com/EverlastingBugstopper",
+      "followers_url": "https://api.github.com/users/EverlastingBugstopper/followers",
+      "following_url": "https://api.github.com/users/EverlastingBugstopper/following{/other_user}",
+      "gists_url": "https://api.github.com/users/EverlastingBugstopper/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/EverlastingBugstopper/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/EverlastingBugstopper/subscriptions",
+      "organizations_url": "https://api.github.com/users/EverlastingBugstopper/orgs",
+      "repos_url": "https://api.github.com/users/EverlastingBugstopper/repos",
+      "events_url": "https://api.github.com/users/EverlastingBugstopper/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/EverlastingBugstopper/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-20T21:23:02Z",
+    "updated_at": "2018-07-20T22:07:19Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "body": "It seems as if the `golang.org/x/net/http2` package moved its `lex` package elsewhere. Same issue, different repo logged here: https://github.com/ponzu-cms/ponzu/issues/245\r\n\r\n`$ go get -v github.com/WICG/webpackage/...`\r\n\r\n```github.com/WICG/webpackage (download)\r\nwarning: ignoring symlink /Users/averyharnish/go/src/github.com/WICG/webpackage/examples/pki\r\nFetching https://golang.org/x/net/lex/httplex?go-get=1\r\nParsing meta tags from https://golang.org/x/net/lex/httplex?go-get=1 (status code 200)\r\nget \"golang.org/x/net/lex/httplex\": found meta tag get.metaImport{Prefix:\"golang.org/x/net\", VCS:\"git\", RepoRoot:\"https://go.googlesource.com/net\"} at https://golang.org/x/net/lex/httplex?go-get=1\r\nget \"golang.org/x/net/lex/httplex\": verifying non-authoritative meta tag\r\nFetching https://golang.org/x/net?go-get=1\r\nParsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)\r\ngolang.org/x/net (download)\r\npackage github.com/WICG/webpackage/go/bundle/cmd/gen-bundle\r\n\timports golang.org/x/net/lex/httplex: cannot find package \"golang.org/x/net/lex/httplex\" in any of:\r\n\t/usr/local/go/src/golang.org/x/net/lex/httplex (from $GOROOT)\r\n\t/Users/averyharnish/go/src/golang.org/x/net/lex/httplex (from $GOPATH)"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/267",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/267/labels{/name}",
@@ -43,7 +145,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-20T09:31:09Z",
-    "updated_at": "2018-07-20T17:00:15Z",
+    "updated_at": "2018-07-20T22:13:24Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -97,7 +199,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-20T04:58:15Z",
-    "updated_at": "2018-07-20T06:05:52Z",
+    "updated_at": "2018-07-20T22:21:18Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -196,7 +298,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -205,8 +307,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-19T07:07:26Z",
-    "updated_at": "2018-07-20T05:50:46Z",
-    "closed_at": null,
+    "updated_at": "2018-07-21T04:11:45Z",
+    "closed_at": "2018-07-21T04:11:42Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/264",
@@ -1604,7 +1706,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/240.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/239",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1706,10 +1811,7 @@
     "closed_at": "2018-07-18T15:49:04Z",
     "author_association": "COLLABORATOR",
     "body": "This came up in https://crrev.com/c/1111485.\r\n\r\nhttps://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-cert-req\r\n\r\n> Conforming CAs MUST mark this extension as critical, and clients MUST NOT accept certificates with this extension in TLS connections (Section 4.4.2.2 of [I-D.ietf-tls-tls13]). \r\n\r\nIn Chrome, certificate path building and verification is performed using underlying operating systems' API. So, if the CanSignHttpExchanges extension is marked as critical, the OS API will reject the cert, until the OS supports CanSignHttpExchanges extension.\r\n\r\nCan we revisit the critical-ness of this extension? What's the security implication of not marking it as critical?\r\n\r\ncc: @sleevi @jyasskin "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/237",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3208,7 +3310,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/210.patch"
     },
     "body": "WebBundling format doesn't require the payload to be MI encoded. This PR splits the encoding of the payload, so that it is possible to create an exchange without MI encoding."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/209",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3316,10 +3421,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/208.patch"
     },
     "body": "This PR introduces dump-exchange tool to pretty-print an signedexchange file."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/207",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4930,7 +5032,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/180.patch"
     },
     "body": "Per davidben's advice, it's safer to make all similar signature formats\r\nthe same.\r\n\r\nSeparate from #179 since it sounds like you're advising this even if that doesn't go in.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/179",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5038,10 +5143,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/178.patch"
     },
     "body": "Thanks to @twifkak for noticing the violation of\r\n[draft-ietf-httpbis-header-structure-04 Section 4.8](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-04#section-4.8).\r\n\r\nNote that this will affect the next implementation draft but doesn't affect the [current one](https://tools.ietf.org/html/draft-yasskin-httpbis-origin-signed-exchanges-impl-00)."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/177",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6694,7 +6796,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/150.patch"
     },
     "body": "Found by @irori"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/149",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6796,10 +6901,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/148.patch"
     },
     "body": "This format:\r\n* Doesn't require a streaming CBOR parser parse it from a network stream.\r\n* Doesn't allow request payloads or response trailers, which don't fit into\r\n  the signature model.\r\n* Allows checking the signature before parsing the exchange headers.\r\n\r\nThis is similar to, but not exactly the same as the format @davidben proposed for #139: it pulls out the `Signature` header into bytestring before the other headers so that the second map can be literally the bytes in the signed string. This isn't extensible if we ever want to add new non-signed values, so I added a format version number into the format's magic number.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/no-streaming/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/no-streaming/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nFixes #135."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/147",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8360,7 +8462,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/120.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/119",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8468,10 +8573,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/118.patch"
     },
     "body": "A quick update to the README that fixes #115. This doesn't update the explainer, which is still aimed at the pre-layered format."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/117",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9917,7 +10019,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/90.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/demote-push-ergonomics/draft-yasskin-webpackage-use-cases.html#push-replacement\r\n\r\n@slightlyoff @dglazkov: I included this as a goal because y'all keep talking about it, but the PUSH experts like @yoavweiss and @igrigorik think we should just stop talking about it and rely on the other benefits instead, so here's a PR to demote it."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/89",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10025,10 +10130,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/88.patch"
     },
     "body": "There's a preview at https://jyasskin.github.io/webpackage/design-signatures/draft-yasskin-http-origin-signed-responses.html#proposal\r\n\r\nWhat's clearly broken about this? Is the complexity of allowing either plain responses or encapsulated request headers worth it?\r\n\r\nI updated the validity algorithm to handle raw public keys and to return exactly which headers are trustworthy, but I did it quickly, so there could be mistakes there."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/87",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11594,7 +11696,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/60.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/59",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11690,10 +11795,7 @@
     "closed_at": "2017-06-17T04:31:32Z",
     "author_association": "COLLABORATOR",
     "body": "Options:\r\n1. [TLS 1.3 SignatureScheme](https://tlswg.github.io/tls13-spec/#rfc.section.4.2.3) codes.\r\n2. <strike>[JWS algorithm names](https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms).</strike> (I have advice to avoid these.)\r\n3. RFC5280's [AlgorithmIdentifier](https://tools.ietf.org/html/rfc5280#section-4.1.1.2) used in certificates.\r\n4. Define a mapping from the certificate's public key to a signature algorithm. This is easy for ECDSA and EdDSA keys, but would need work for RSA keys. Straw man: <=3072 bits gets rsa_pss_sha256, and >=3073 gets rsa_pss_sha384.\r\n\r\nIn some cases, like TLS' [ecdsa_secp256r1_sha256](https://tlswg.github.io/tls13-spec/#rfc.section.4.2.3) vs JWS' [ES256](https://tools.ietf.org/html/rfc7518#section-3.4), even though the algorithm is the same, the signature appears in different formats.\r\n\r\nAny of these options is sufficient to let us sign with any TLS certificate, but TLS doesn't yet have identifiers for post-quantum signature schemes that counter-signatures might want to use.\r\n\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/57",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13115,7 +13217,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "For subpackage that contains pages and resources downloaded from one domain, but not through pack file offered by that domain, we should not use http://foo.com/something.pack since it does not exist in the server. Probably we should use a generated name."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/29",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13217,10 +13322,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/28.patch"
     },
     "body": "I'm not sure I've got the right fix for each of these; feel free to say anything should be different."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/27",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
