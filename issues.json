@@ -1,6 +1,162 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/272",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/272/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/272/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/272/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/272",
+    "id": 344694465,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0MDI4MDQy",
+    "number": 272,
+    "title": "Update the extensions of default output file",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-26T04:53:10Z",
+    "updated_at": "2018-07-26T07:17:53Z",
+    "closed_at": "2018-07-26T07:17:53Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/272",
+      "html_url": "https://github.com/WICG/webpackage/pull/272",
+      "diff_url": "https://github.com/WICG/webpackage/pull/272.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/272.patch"
+    },
+    "body": "Use `.sxg` and `.wbn` instead of `.htxg` and `.webbundle`."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/271",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/271/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/271/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/271/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/271",
+    "id": 344583574,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAzOTQ0OTYw",
+    "number": 271,
+    "title": "Always embed manifest in the bundle",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-07-25T19:53:04Z",
+    "updated_at": "2018-07-25T21:01:45Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/271",
+      "html_url": "https://github.com/WICG/webpackage/pull/271",
+      "diff_url": "https://github.com/WICG/webpackage/pull/271.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/271.patch"
+    },
+    "body": "Addresses #270\r\n\r\nAfter giving more thought, I couldn't think of a use-case where we want to refer to a external manifest.\r\n\r\nOn the other hand, I also want to make the manifest URL optional, for use-cases where a bundle contains a part of a page resources (for example, common assets across multiple webpages, a ES module tree, etc.)"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/270",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/270/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/270/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/270/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/270",
+    "id": 343834793,
+    "node_id": "MDU6SXNzdWUzNDM4MzQ3OTM=",
+    "number": 270,
+    "title": " \"manifest\" section URL should first look if the resource is included in the bundle",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-23T23:49:24Z",
+    "updated_at": "2018-07-23T23:49:24Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html#manifest-section\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/269",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/269/labels{/name}",
@@ -136,7 +292,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -145,8 +301,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-20T09:31:09Z",
-    "updated_at": "2018-07-20T22:13:24Z",
-    "closed_at": null,
+    "updated_at": "2018-07-23T01:40:44Z",
+    "closed_at": "2018-07-23T01:40:41Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/267",
@@ -631,7 +787,7 @@
     "milestone": null,
     "comments": 1,
     "created_at": "2018-07-17T05:37:03Z",
-    "updated_at": "2018-07-18T03:55:29Z",
+    "updated_at": "2018-07-23T16:49:20Z",
     "closed_at": "2018-07-18T03:55:29Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1312,7 +1468,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": {
       "login": "irori",
@@ -1379,8 +1535,8 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2018-07-04T05:05:10Z",
-    "updated_at": "2018-07-09T04:05:51Z",
-    "closed_at": null,
+    "updated_at": "2018-07-23T16:21:01Z",
+    "closed_at": "2018-07-23T16:21:01Z",
     "author_association": "COLLABORATOR",
     "body": "@davidben @irori, would you take a look at self-signed cert generation instructions at https://github.com/WICG/webpackage/tree/master/go/signedexchange#creating-our-first-signed-exchange ?"
   },
@@ -1427,7 +1583,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-07-04T03:25:44Z",
-    "updated_at": "2018-07-04T07:20:36Z",
+    "updated_at": "2018-07-23T16:49:13Z",
     "closed_at": "2018-07-04T07:20:36Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1550,7 +1706,10 @@
     "closed_at": "2018-07-09T05:14:39Z",
     "author_association": "COLLABORATOR",
     "body": "> -sct should be optional (if not, we should fix gen-certurl), so we can omit it.\r\nThe `-sct` command-line flag of the `gen-certurl` tool is not currently optional"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/242",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1706,10 +1865,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/240.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/239",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3140,7 +3296,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/213.patch"
     },
     "body": "To prepare for bundle.Read"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/212",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3310,10 +3469,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/210.patch"
     },
     "body": "WebBundling format doesn't require the payload to be MI encoded. This PR splits the encoding of the payload, so that it is possible to create an exchange without MI encoding."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/209",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4870,7 +5026,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Google App Engine apparently has a small (undocumented) per-header-line size limit [1]. I imagine other such containers might have similar limits. This will be a problem with Signature (esp. if multiple sigs) and Link, unless a signer is allowed split them by newline.\r\n\r\nhttps://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cbor-representation doesn't specify a canonical way to join duplicate response headers; could/should it?\r\n\r\n[1] Was 497, per [stackoverflow](https://stackoverflow.com/questions/15280027/is-there-a-size-limit-for-http-response-headers-on-google-app-engine), but may have increased to 1k or so."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/182",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5032,10 +5191,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/180.patch"
     },
     "body": "Per davidben's advice, it's safer to make all similar signature formats\r\nthe same.\r\n\r\nSeparate from #179 since it sounds like you're advising this even if that doesn't go in.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/179",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6548,7 +6704,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/153.patch"
     },
     "body": "This is just an editorial change rather than a behavior change.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/152",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6796,10 +6955,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/150.patch"
     },
     "body": "Found by @irori"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/149",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8300,7 +8456,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/123.patch"
     },
     "body": "Closes https://github.com/WICG/webpackage/issues/101"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/122",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8462,10 +8621,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/120.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/119",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9857,7 +10013,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/93.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/92",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10019,10 +10178,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/90.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/demote-push-ergonomics/draft-yasskin-webpackage-use-cases.html#push-replacement\r\n\r\n@slightlyoff @dglazkov: I included this as a goal because y'all keep talking about it, but the PUSH experts like @yoavweiss and @igrigorik think we should just stop talking about it and rely on the other benefits instead, so here's a PR to demote it."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/89",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11534,7 +11690,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/63.patch"
     },
     "body": "Headers are decompressed before being hashed."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/62",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11696,10 +11855,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/60.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/59",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13067,7 +13223,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "@bmeck, could you describe the use cases you're interested in for the packaging format, either in this issue or as a PR against the [`README.md`](https://github.com/dimich-g/webpackage/blob/master/README.md)?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/32",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13217,10 +13376,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "For subpackage that contains pages and resources downloaded from one domain, but not through pack file offered by that domain, we should not use http://foo.com/something.pack since it does not exist in the server. Probably we should use a generated name."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/29",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14582,7 +14738,10 @@
     "closed_at": "2017-01-13T19:54:47Z",
     "author_association": "NONE",
     "body": "Very happy to see Packaging reconsidered. The Digital Publishing IG considered this as well. Please see http://w3c.github.io/dpub-pwp-ucr/index.html for our use cases and requirements. We are also looking at Web App Manifest (https://w3c.github.io/manifest/) as a potential mechanism. Our goals are very similar, so it would be helpful to discuss and find common ground. "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/2",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
