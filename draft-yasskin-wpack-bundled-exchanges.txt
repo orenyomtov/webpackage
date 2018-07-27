@@ -4,8 +4,8 @@
 
 Network Working Group                                         J. Yasskin
 Internet-Draft                                                    Google
-Intended status: Standards Track                           July 26, 2018
-Expires: January 27, 2019
+Intended status: Standards Track                           July 27, 2018
+Expires: January 28, 2019
 
 
                          Bundled HTTP Exchanges
@@ -43,7 +43,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 27, 2019.
+   This Internet-Draft will expire on January 28, 2019.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 1]
+Yasskin                 Expires January 28, 2019                [Page 1]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -84,7 +84,7 @@ Table of Contents
        3.2.1.  Parsing the index section . . . . . . . . . . . . . .   8
        3.2.2.  Parsing the manifest section  . . . . . . . . . . . .  10
        3.2.3.  Parsing the critical section  . . . . . . . . . . . .  11
-       3.2.4.  The responses section . . . . . . . . . . . . . . . .  11
+       3.2.4.  The responses section . . . . . . . . . . . . . . . .  12
        3.2.5.  Starting from the end . . . . . . . . . . . . . . . .  12
      3.3.  Load a response from a bundle . . . . . . . . . . . . . .  13
      3.4.  Parsing CBOR items  . . . . . . . . . . . . . . . . . . .  14
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 2]
+Yasskin                 Expires January 28, 2019                [Page 2]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -165,7 +165,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 3]
+Yasskin                 Expires January 28, 2019                [Page 3]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -221,7 +221,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 4]
+Yasskin                 Expires January 28, 2019                [Page 4]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -277,7 +277,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 5]
+Yasskin                 Expires January 28, 2019                [Page 5]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -333,7 +333,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 6]
+Yasskin                 Expires January 28, 2019                [Page 6]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -389,7 +389,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 7]
+Yasskin                 Expires January 28, 2019                [Page 7]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -445,7 +445,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 8]
+Yasskin                 Expires January 28, 2019                [Page 8]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -501,7 +501,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019                [Page 9]
+Yasskin                 Expires January 28, 2019                [Page 9]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -550,20 +550,23 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 3.2.2.  Parsing the manifest section
 
    The "manifest" section records a single URL identifying the manifest
-   of the bundle.  The bundle can contain multiple resources at this
-   URL, and the client is expected to content-negotiate for the best
-   one.  For example, a client might select the one with an "accept"
+   of the bundle.  The URL MUST refer to the one or more response(s)
+   contained in the bundle itself.
 
 
 
 
-Yasskin                 Expires January 27, 2019               [Page 10]
+
+Yasskin                 Expires January 28, 2019               [Page 10]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
-   header of "application/manifest+json" ([appmanifest]) and an "accept-
-   language" header of "es-419".
+   The bundle can contain multiple resources at this URL, and the client
+   is expected to content-negotiate for the best one.  For example, a
+   client might select the one with an "accept" header of "application/
+   manifest+json" ([appmanifest]) and an "accept-language" header of
+   "es-419".
 
    manifest = text
 
@@ -603,20 +606,23 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
    This section does not modify the returned metadata.
 
+
+
+
+
+
+
+
+Yasskin                 Expires January 28, 2019               [Page 11]
+
+Internet-Draft           Bundled HTTP Exchanges                July 2018
+
+
 3.2.4.  The responses section
 
    The responses section does not add any items to the bundle metadata
    map.  Instead, its offset and length are used in processing the index
    section (Section 3.2.1).
-
-
-
-
-
-Yasskin                 Expires January 27, 2019               [Page 11]
-
-Internet-Draft           Bundled HTTP Exchanges                July 2018
-
 
 3.2.5.  Starting from the end
 
@@ -661,18 +667,14 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
           immediately if "currentOffset + N <= bundleLength" and fail
           otherwise.
 
-   5.  Return the result of running Section 3.2 with "stream" as input.
 
 
-
-
-
-
-
-Yasskin                 Expires January 27, 2019               [Page 12]
+Yasskin                 Expires January 28, 2019               [Page 12]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
+
+   5.  Return the result of running Section 3.2 with "stream" as input.
 
 3.3.  Load a response from a bundle
 
@@ -719,16 +721,18 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
         CBOR bytestring header from "stream" (Section 3.4.2).  If
         "payloadLength" is an error, return that error.
 
-   10.  If "stream.currentOffset + payloadLength !=
-        requestMetadata.offset + requestMetadata.length", return an
-        error.
 
 
 
-Yasskin                 Expires January 27, 2019               [Page 13]
+
+Yasskin                 Expires January 28, 2019               [Page 13]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
+
+   10.  If "stream.currentOffset + payloadLength !=
+        requestMetadata.offset + requestMetadata.length", return an
+        error.
 
    11.  Let "body" be a new body ([FETCH]) whose stream is a tee'd copy
         of "stream" starting at the current offset and ending after
@@ -773,18 +777,19 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
    4.  Let "item" be the result of decoding "bytes" as a CBOR item.
 
+
+
+
+
+Yasskin                 Expires January 28, 2019               [Page 14]
+
+Internet-Draft           Bundled HTTP Exchanges                July 2018
+
+
    5.  If a CDDL rule was specified, but "item" does not match it,
        return an error.
 
    6.  Return "item".
-
-
-
-
-Yasskin                 Expires January 27, 2019               [Page 14]
-
-Internet-Draft           Bundled HTTP Exchanges                July 2018
-
 
 3.4.2.  Parsing variable-length data from a bytestring
 
@@ -828,19 +833,18 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
           stream.  If "content" is an error or its first byte is 0,
           return an error.
 
-       26 Let "content" be the result of reading 4 bytes from the
-          stream.  If "content" is an error or its first two bytes are
-          0, return an error.
 
 
 
 
-
-
-Yasskin                 Expires January 27, 2019               [Page 15]
+Yasskin                 Expires January 28, 2019               [Page 15]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
+
+       26 Let "content" be the result of reading 4 bytes from the
+          stream.  If "content" is an error or its first two bytes are
+          0, return an error.
 
        27 Let "content" be the result of reading 8 bytes from the
           stream.  If "content" is an error or its first four bytes are
@@ -886,17 +890,18 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
            2.  Set "pseudos[name]" to "value".
 
+
+
+
+Yasskin                 Expires January 28, 2019               [Page 16]
+
+Internet-Draft           Bundled HTTP Exchanges                July 2018
+
+
            3.  Continue.
 
        3.  If "name" or "value" doesn't satisfy the requirements for a
            header in [FETCH], return an error.
-
-
-
-Yasskin                 Expires January 27, 2019               [Page 16]
-
-Internet-Draft           Bundled HTTP Exchanges                July 2018
-
 
        4.  Assert: "headers" does not contain ([FETCH]) "name", because
            CBOR maps cannot contain duplicate keys and an earlier step
@@ -942,17 +947,16 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
    o  Required parameters: N/A
 
-   o  Optional parameters: N/A
-
-   o  Encoding considerations: binary
 
 
-
-
-Yasskin                 Expires January 27, 2019               [Page 17]
+Yasskin                 Expires January 28, 2019               [Page 17]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
+
+   o  Optional parameters: N/A
+
+   o  Encoding considerations: binary
 
    o  Security considerations: See Section 5 of this document.
 
@@ -1001,11 +1005,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-
-
-
-
-Yasskin                 Expires January 27, 2019               [Page 18]
+Yasskin                 Expires January 28, 2019               [Page 18]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -1061,7 +1061,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019               [Page 19]
+Yasskin                 Expires January 28, 2019               [Page 19]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -1117,7 +1117,7 @@ Internet-Draft           Bundled HTTP Exchanges                July 2018
 
 
 
-Yasskin                 Expires January 27, 2019               [Page 20]
+Yasskin                 Expires January 28, 2019               [Page 20]
 
 Internet-Draft           Bundled HTTP Exchanges                July 2018
 
@@ -1150,6 +1150,8 @@ Appendix A.  Change Log
    o  Order the index in the same order as the responses, and require
       responses to be sequential without gaps.
 
+   o  "manifest" needs to be embedded into the bundle.
+
 Appendix B.  Acknowledgements
 
    Thanks to the Chrome loading team, especially Kinuko Yasuda and
@@ -1171,6 +1173,4 @@ Author's Address
 
 
 
-
-
-Yasskin                 Expires January 27, 2019               [Page 21]
+Yasskin                 Expires January 28, 2019               [Page 21]
