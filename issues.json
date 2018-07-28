@@ -1,6 +1,168 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/275",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/275/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/275/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/275/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/275",
+    "id": 345312549,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0NDk4MDI2",
+    "number": 275,
+    "title": "Fix typo in README",
+    "user": {
+      "login": "EverlastingBugstopper",
+      "id": 9408157,
+      "node_id": "MDQ6VXNlcjk0MDgxNTc=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9408157?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/EverlastingBugstopper",
+      "html_url": "https://github.com/EverlastingBugstopper",
+      "followers_url": "https://api.github.com/users/EverlastingBugstopper/followers",
+      "following_url": "https://api.github.com/users/EverlastingBugstopper/following{/other_user}",
+      "gists_url": "https://api.github.com/users/EverlastingBugstopper/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/EverlastingBugstopper/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/EverlastingBugstopper/subscriptions",
+      "organizations_url": "https://api.github.com/users/EverlastingBugstopper/orgs",
+      "repos_url": "https://api.github.com/users/EverlastingBugstopper/repos",
+      "events_url": "https://api.github.com/users/EverlastingBugstopper/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/EverlastingBugstopper/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-27T17:50:33Z",
+    "updated_at": "2018-07-28T02:51:29Z",
+    "closed_at": "2018-07-28T02:51:22Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/275",
+      "html_url": "https://github.com/WICG/webpackage/pull/275",
+      "diff_url": "https://github.com/WICG/webpackage/pull/275.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/275.patch"
+    },
+    "body": "Fixes #268"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/274",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/274/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/274/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/274/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/274",
+    "id": 345311777,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0NDk3NDI1",
+    "number": 274,
+    "title": "Fix typo in README",
+    "user": {
+      "login": "EverlastingBugstopper",
+      "id": 9408157,
+      "node_id": "MDQ6VXNlcjk0MDgxNTc=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9408157?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/EverlastingBugstopper",
+      "html_url": "https://github.com/EverlastingBugstopper",
+      "followers_url": "https://api.github.com/users/EverlastingBugstopper/followers",
+      "following_url": "https://api.github.com/users/EverlastingBugstopper/following{/other_user}",
+      "gists_url": "https://api.github.com/users/EverlastingBugstopper/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/EverlastingBugstopper/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/EverlastingBugstopper/subscriptions",
+      "organizations_url": "https://api.github.com/users/EverlastingBugstopper/orgs",
+      "repos_url": "https://api.github.com/users/EverlastingBugstopper/repos",
+      "events_url": "https://api.github.com/users/EverlastingBugstopper/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/EverlastingBugstopper/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-27T17:47:57Z",
+    "updated_at": "2018-07-27T17:50:16Z",
+    "closed_at": "2018-07-27T17:50:16Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/274",
+      "html_url": "https://github.com/WICG/webpackage/pull/274",
+      "diff_url": "https://github.com/WICG/webpackage/pull/274.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/274.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/273",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/273/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/273/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/273/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/273",
+    "id": 345100556,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0MzM2NzI5",
+    "number": 273,
+    "title": "gen-bundle: Add options to create a bundle from local directory",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-27T05:59:44Z",
+    "updated_at": "2018-07-27T08:11:27Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/273",
+      "html_url": "https://github.com/WICG/webpackage/pull/273",
+      "diff_url": "https://github.com/WICG/webpackage/pull/273.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/273.patch"
+    },
+    "body": "@nyaxt Do you think this is worth merging?"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/272",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/272/labels{/name}",
@@ -244,18 +406,18 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2018-07-20T21:23:02Z",
-    "updated_at": "2018-07-20T22:07:19Z",
-    "closed_at": null,
-    "author_association": "NONE",
+    "updated_at": "2018-07-28T02:51:22Z",
+    "closed_at": "2018-07-28T02:51:22Z",
+    "author_association": "CONTRIBUTOR",
     "body": "It seems as if the `golang.org/x/net/http2` package moved its `lex` package elsewhere. Same issue, different repo logged here: https://github.com/ponzu-cms/ponzu/issues/245\r\n\r\n`$ go get -v github.com/WICG/webpackage/...`\r\n\r\n```github.com/WICG/webpackage (download)\r\nwarning: ignoring symlink /Users/averyharnish/go/src/github.com/WICG/webpackage/examples/pki\r\nFetching https://golang.org/x/net/lex/httplex?go-get=1\r\nParsing meta tags from https://golang.org/x/net/lex/httplex?go-get=1 (status code 200)\r\nget \"golang.org/x/net/lex/httplex\": found meta tag get.metaImport{Prefix:\"golang.org/x/net\", VCS:\"git\", RepoRoot:\"https://go.googlesource.com/net\"} at https://golang.org/x/net/lex/httplex?go-get=1\r\nget \"golang.org/x/net/lex/httplex\": verifying non-authoritative meta tag\r\nFetching https://golang.org/x/net?go-get=1\r\nParsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)\r\ngolang.org/x/net (download)\r\npackage github.com/WICG/webpackage/go/bundle/cmd/gen-bundle\r\n\timports golang.org/x/net/lex/httplex: cannot find package \"golang.org/x/net/lex/httplex\" in any of:\r\n\t/usr/local/go/src/golang.org/x/net/lex/httplex (from $GOROOT)\r\n\t/Users/averyharnish/go/src/golang.org/x/net/lex/httplex (from $GOPATH)"
   },
   {
@@ -1433,7 +1595,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/246.patch"
     },
     "body": "* Certificate chains have an array item before the first certificate.\r\n* The first certificate's OCSP response was described as optional when\r\n  it's not.\r\n* The first certificate's SCT was *not* described as optional, but it\r\n  can appear in the certificate itself or the OCSP response.\r\n* \"digest/mi-sha256\" doesn't make sense.\r\n* There's no longer a non-signed headers section in SXG files.\r\n* An example had lengths in the wrong order.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/devin-cleanups/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/devin-cleanups/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/245",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1706,10 +1871,7 @@
     "closed_at": "2018-07-09T05:14:39Z",
     "author_association": "COLLABORATOR",
     "body": "> -sct should be optional (if not, we should fix gen-certurl), so we can omit it.\r\nThe `-sct` command-line flag of the `gen-certurl` tool is not currently optional"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/242",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -2529,7 +2691,7 @@
     "created_at": "2018-06-20T16:38:53Z",
     "updated_at": "2018-06-20T16:44:55Z",
     "closed_at": "2018-06-20T16:44:55Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/227",
       "html_url": "https://github.com/WICG/webpackage/pull/227",
@@ -3140,7 +3302,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/216.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/register-headers/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/register-headers/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/215",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3296,10 +3461,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/213.patch"
     },
     "body": "To prepare for bundle.Read"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/212",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4876,7 +5038,10 @@
     "closed_at": "2018-07-09T18:41:36Z",
     "author_association": "COLLABORATOR",
     "body": "Chromium would like to start adding support for next \"implementation checkpoint\".\r\nCan we increment ver num on https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#rfc.section.5.3 ?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/185",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5026,10 +5191,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Google App Engine apparently has a small (undocumented) per-header-line size limit [1]. I imagine other such containers might have similar limits. This will be a problem with Signature (esp. if multiple sigs) and Link, unless a signer is allowed split them by newline.\r\n\r\nhttps://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cbor-representation doesn't specify a canonical way to join duplicate response headers; could/should it?\r\n\r\n[1] Was 497, per [stackoverflow](https://stackoverflow.com/questions/15280027/is-there-a-size-limit-for-http-response-headers-on-google-app-engine), but may have increased to 1k or so."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/182",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6548,7 +6710,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "This came up in https://chromium-review.googlesource.com/c/chromium/src/+/967632.\r\n\r\nWhen a HTTP Exchange is loaded from an application/http-exchange+cbor envelope, what the resource timing fields for that load should represent?\r\n\r\ncc: @jyasskin @kinu\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/155",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6704,10 +6869,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/153.patch"
     },
     "body": "This is just an editorial change rather than a behavior change.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/152",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8293,7 +8455,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/126.patch"
     },
     "body": "The test results was changed at https://github.com/WICG/webpackage/commit/d989c1be0e6e717476f4291cea2edd2adbd867ac and this PR updates the test results."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/125",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8456,10 +8621,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/123.patch"
     },
     "body": "Closes https://github.com/WICG/webpackage/issues/101"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/122",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9851,7 +10013,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/96.patch"
     },
     "body": "I used the pre-hashed variants for those and switched the raw ed25519\r\npublic key to use ed25519ph, with an Open Question for whether that's\r\nthe right choice.\r\n\r\nIlari Liusvaara pointed out that draft-ietf-curdle-pkix is nearly published, so it makes sense to include its public key types in this document now. \r\n\r\n@sleevi, is this the right choice?\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/define-ed25519-certs/draft-yasskin-http-origin-signed-responses.html#signature-validity), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/define-ed25519-certs/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/95",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10013,10 +10178,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/93.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/92",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11528,7 +11690,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/66.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/65",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11690,10 +11855,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/63.patch"
     },
     "body": "Headers are decompressed before being hashed."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/62",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13073,7 +13235,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/36.patch"
     },
     "body": "I haven't updated the Use Cases yet, but here are some thoughts on how we should update the format to deal with #33 (@bmeck), Ryan's security concerns in #31, #29 (@jianli-chromium), and #10, #11, and #12 (@lrosenthal). I've tried to mark all the places that still need work with \"TODO\", but I may have missed some."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/35",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13223,10 +13388,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "@bmeck, could you describe the use cases you're interested in for the packaging format, either in this issue or as a PR against the [`README.md`](https://github.com/dimich-g/webpackage/blob/master/README.md)?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/32",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14582,7 +14744,10 @@
     "closed_at": "2017-03-30T03:05:56Z",
     "author_association": "NONE",
     "body": "One of the reasons that the [packaging on the web](https://w3ctag.github.io/packaging-on-the-web/) spec chose to avoid ZIP in favor of something new & different was due to the (perceived) lack of streaming support.\r\n\r\nHowever, this proposal suffers from the same problem.  You cannot create it entirely in stream, due to (a) the way that offsets are used and (b) the index file needing to list all other files.\r\n\r\nIf streaming is not a requirement for this format - that's fine.  But then, that should also be called out in the spec."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/5",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14738,10 +14903,7 @@
     "closed_at": "2017-01-13T19:54:47Z",
     "author_association": "NONE",
     "body": "Very happy to see Packaging reconsidered. The Digital Publishing IG considered this as well. Please see http://w3c.github.io/dpub-pwp-ucr/index.html for our use cases and requirements. We are also looking at Web App Manifest (https://w3c.github.io/manifest/) as a potential mechanism. Our goals are very similar, so it would be helpful to discuss and find common ground. "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/2",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
