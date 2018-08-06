@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/281",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/281/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/281/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/281/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/281",
+    "id": 348087689,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA2NTIxMjA3",
+    "number": 281,
+    "title": "Integrate b1 signed exchanges with Fetch",
+    "user": {
+      "login": "jyasskin",
+      "id": 83420,
+      "node_id": "MDQ6VXNlcjgzNDIw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/83420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jyasskin",
+      "html_url": "https://github.com/jyasskin",
+      "followers_url": "https://api.github.com/users/jyasskin/followers",
+      "following_url": "https://api.github.com/users/jyasskin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jyasskin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jyasskin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jyasskin/subscriptions",
+      "organizations_url": "https://api.github.com/users/jyasskin/orgs",
+      "repos_url": "https://api.github.com/users/jyasskin/repos",
+      "events_url": "https://api.github.com/users/jyasskin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jyasskin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-06T21:26:25Z",
+    "updated_at": "2018-08-06T21:30:11Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/281",
+      "html_url": "https://github.com/WICG/webpackage/pull/281",
+      "diff_url": "https://github.com/WICG/webpackage/pull/281.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/281.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/280",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/280/labels{/name}",
@@ -1541,7 +1595,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/252.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/251",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1595,10 +1652,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/251.patch"
     },
     "body": "This PR exposes all the members of `Exchange` for consistency."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/250",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3241,7 +3295,10 @@
     "closed_at": "2018-06-21T02:30:43Z",
     "author_association": "CONTRIBUTOR",
     "body": "Current Signed Exchange spec draft [says](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#rfc.section.3.1) `cert-url` and `validity-url` should be [an absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string), but that could potentially allow multiple schemes than http/https (e.g. file and ws), while it doesn't seem to include data: URL.  It looks we'd better clarify what schemes should be allowed there."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/221",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3296,10 +3353,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "By using [data-url](https://fetch.spec.whatwg.org/#data-urls) in cert-url of [Signature Header](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#signature-header), the [certificate chain](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cert-chain-format) can be contained in a Signed HTTP Exchange. It is useful for offline loading.\r\n\r\nBut having the same certificate chain in multiple Signed HTTP Exchanges in a Bundled HTTP Exchange is not efficient. We should have a way to contain one certificate chain per one host name for multiple Signed HTTP Exchanges in a Bundled HTTP Exchange.\r\n\r\nI filed this issue from the discussion in https://crrev.com/c/1102281."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/220",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4926,7 +4980,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/192.patch"
     },
     "body": "Addresses #191 "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/191",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4974,10 +5031,7 @@
     "closed_at": "2018-05-24T23:19:19Z",
     "author_association": "COLLABORATOR",
     "body": "In the current spec draft, the magic string is allowed to be arbitrary length for implementation drafts.\r\n\r\n> Note: RFC EDITOR PLEASE DELETE THIS NOTE; The implementation of the final RFC MUST use this file signature, but implementations of drafts MUST NOT use it and MUST use another implementation-specific string beginning with “sxg1-“ and ending with a 0 byte instead.\r\n\r\nThis makes its streaming parsing non-trivial, since we need to scan for `\"\\0\"` to appear, rather than reading fixed length record.\r\n\r\nTwo proposals:\r\n- Allocate fixed length (8bytes?) for the magic string field, and pad the rest of the bytes `\"\\0\"` \r\n  - Will file a PR for this\r\n- Separate version field?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/190",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6630,7 +6684,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/162.patch"
     },
     "body": "#160 \r\n\r\nPTAL"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/161",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6678,10 +6735,7 @@
     "closed_at": "2018-03-27T20:27:15Z",
     "author_association": "COLLABORATOR",
     "body": "CBOR representation of exchange headers must be canonically-serialized, which means maps must not have multiple entries with the same key.\r\n\r\nHowever, they still can have duplicated HTTP header fields with case differences. For example:\r\n```\r\n[\r\n  {\r\n    ':url': 'https://example.com/'\r\n    ':method': 'GET',\r\n  },\r\n  {\r\n    ':status': '200',\r\n    'Content-Type': ...\r\n    'content-type': ...\r\n  }\r\n]\r\n\r\n```\r\nShould the spec explicitly forbid such duplicated headers? Or specify that header names must be stored in lower-case?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/160",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8407,7 +8461,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/132.patch"
     },
     "body": "@davidben, you'll probably like this one. It refactors the rules for trusting cross-origin exchanges so that they can be shared by Push and the application/http-exchange format. This let me cover all headers from those two transfer methods unconditionally, with only same-origin exchanges able to use `Signed-Headers` to select a subset.\r\n\r\nThere's a bunch of text motion, but sections id'ed `signed-headers` and `significant-headers` are basically unchanged in their new locations, and `authority-chain-validation` became the algorithm in `cross-origin-trust`.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/unify-cross-origin/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/unify-cross-origin/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/131",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8461,10 +8518,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/131.patch"
     },
     "body": "@KenjiBaheux @thinkpanzer, is this clear as an entry-point to the packaging specs? Have I missed anything folks will want to see?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/130",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9965,7 +10019,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Scenario: Developer A includes a package from Developer B (e.g. a specific version of jQuery, or a hypothetical wasm implementation of python3) to serve the purpose of a shared library. This is loaded from a version-specific URL, say packages.jquery.com/v3-2-1, to ensure that A's app is running with the right version of jQuery or python that it was developed for. However, A has to trust the integrity of B and B's server to actually keep the resource static. B or any attacker on B's server has the power to inject malicious code into A's web app. This makes shared libraries impractical for security-critical applications. \r\n\r\nTo solve this problem, A links B's package with both a URL and a hash, which is checked by the client as soon as B's package is loaded (libraries are unlikely to need streaming). So A can have absolute confidence that their app uses the exact same version of the resource that it has been developed for, while keeping the benefits of shared library use.\r\n  "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/101",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10013,10 +10070,7 @@
     "closed_at": "2018-02-13T06:06:33Z",
     "author_association": "NONE",
     "body": "in ES modules, we need to fetch a lot of module files.\r\nincreasing requests cause a performance issue. ([10k 1kB load is 10 times slower than single 10MB load](https://docs.google.com/document/d/1ds9EEkcDGnt-iR8SAN-_7nsOfw7gsMfhZjzZ_QAIyjM/edit))\r\n\r\nh2 will reduce connection handshake/establish, but doesn't reduce request/response itself which browser handles inside.\r\n\r\nbut reducing files via bundling like webpack is less merit of es modules(ex caching etc). \r\n\r\nsame things happens for image. so we sometimes concatting them aka Sprite.\r\n\r\ncurrent spec seems packaging main-resource + sub-resource in 1 file.\r\nso if webpackage support or have candidate to package lot of resources into 1 package(not include main-resoruce) seems solve fetching performance problem.\r\nexpected behavior is fetching single response but unpackaging in browser and handling/caching like separated ESModules/ImageIcons/StyleSheets etc."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/100",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11572,7 +11626,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "[example.com.key](https://github.com/WICG/webpackage/tree/master/go/webpack/testdata/pki/example.com.key) is currently a secp256r1 key, but we should also test creating packages for each of:\r\n* RSA <= 3072 bits\r\n* RSA with 3073-7680 bits (probably 4096)\r\n* secp384r1\r\n* secp521r1\r\n\r\nI'll probably create the keys for `rsa2048.example.com`, `secp521r1.example.com`, etc."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/71",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11658,10 +11715,7 @@
     "closed_at": "2017-08-14T23:58:02Z",
     "author_association": "COLLABORATOR",
     "body": "This supports the [IETF submission](https://mailarchive.ietf.org/arch/msg/dispatch/NQ0deHSsRvt4BL4alk_WYVnhhvo). It has to happen before they close the RFC database from July 3 until the [Prague meeting](http://ietf.org/meeting/99/index.html).\r\n\r\nWe can use https://github.com/cabo/kramdown-rfc2629 to author in markdown, and https://github.com/martinthomson/i-d-template to build with Travis CI."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/70",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13199,7 +13253,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://github.com/dimich-g/webpackage#use-cases has lots of examples that use an old version of the design."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/41",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13247,10 +13304,7 @@
     "closed_at": "2017-05-11T00:02:03Z",
     "author_association": "COLLABORATOR",
     "body": "From @dimich-g's https://github.com/dimich-g/webpackage/pull/36#issuecomment-290316360:\r\n\r\nThe `resource-key` structure (which holds a URL and possibly a set of request headers) is used as the key for the index, manifest, and main content. URLs can be fairly long, so we may want to optimize or compress that redundancy.\r\n\r\nOne idea for avoiding this duplication: Add a section of abbreviations that assigns each resource-key an index, and use those indices as the keys in the other three sections.\r\n\r\n1. We could re-use the index as that section of abbreviations.\r\n2. We probably don't want to re-use the manifest as that section, so that aggregating packages can build their own abbreviations.\r\n3. The abbreviations need to be expanded before hashing or checking signatures.\r\n4. We could shorten the abbreviation section even more by:\r\n   1. Resolving each URL/resource-key relative to the previous one.\r\n   1. Using the array index of the URL as its abbreviation instead of making the section name an abbreviation.\r\n\r\nAnother possibility would be to use a shared brotli dictionary to compress all three sections. The main downside here is that shared brotli dictionaries don't exist yet, and when they do, we may want to use a URL to identify which shared dictionary to use, which we'd again want to compress."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/40",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14720,7 +14774,10 @@
     "closed_at": "2017-06-27T22:40:15Z",
     "author_association": "NONE",
     "body": "There is nothing specified for exactly which bytes are hashed - either for an individual file/resource for the header or the index.  \r\n\r\nDo you include the boundary string?  Do you include any closing line endings?  "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/11",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14768,10 +14825,7 @@
     "closed_at": "2018-01-22T19:29:08Z",
     "author_association": "NONE",
     "body": "However, because the header of the is document is text - most sniffers will consider this a text file and treat it accordingly (eg. screwing up line endings).  If this happens, then all byte offsets will be incorrect and the file will be unable to load.\r\n\r\nConsider finding a way to fool the sniffer or move to a binary format.\r\n\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/10",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
