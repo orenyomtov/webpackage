@@ -4,8 +4,8 @@
 
 Network Working Group                                         J. Yasskin
 Internet-Draft                                                    Google
-Intended status: Standards Track                         August 08, 2018
-Expires: February 9, 2019
+Intended status: Standards Track                         August 14, 2018
+Expires: February 15, 2019
 
 
                          Signed HTTP Exchanges
@@ -48,12 +48,12 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 9, 2019.
+   This Internet-Draft will expire on February 15, 2019.
 
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 1]
+Yasskin                 Expires February 15, 2019               [Page 1]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -81,35 +81,35 @@ Table of Contents
      3.1.  The Signature Header  . . . . . . . . . . . . . . . . . .   6
        3.1.1.  Examples  . . . . . . . . . . . . . . . . . . . . . .   7
        3.1.2.  Open Questions  . . . . . . . . . . . . . . . . . . .   8
-     3.2.  CBOR representation of exchange headers . . . . . . . . .   8
+     3.2.  CBOR representation of exchange headers . . . . . . . . .   9
        3.2.1.  Example . . . . . . . . . . . . . . . . . . . . . . .   9
      3.3.  Loading a certificate chain . . . . . . . . . . . . . . .  10
      3.4.  Canonical CBOR serialization  . . . . . . . . . . . . . .  11
      3.5.  Signature validity  . . . . . . . . . . . . . . . . . . .  12
-       3.5.1.  Open Questions  . . . . . . . . . . . . . . . . . . .  15
-     3.6.  Updating signature validity . . . . . . . . . . . . . . .  15
-       3.6.1.  Examples  . . . . . . . . . . . . . . . . . . . . . .  16
+       3.5.1.  Open Questions  . . . . . . . . . . . . . . . . . . .  16
+     3.6.  Updating signature validity . . . . . . . . . . . . . . .  16
+       3.6.1.  Examples  . . . . . . . . . . . . . . . . . . . . . .  17
      3.7.  The Accept-Signature header . . . . . . . . . . . . . . .  18
        3.7.1.  Integrity identifiers . . . . . . . . . . . . . . . .  19
        3.7.2.  Key type identifiers  . . . . . . . . . . . . . . . .  19
-       3.7.3.  Key value identifiers . . . . . . . . . . . . . . . .  19
+       3.7.3.  Key value identifiers . . . . . . . . . . . . . . . .  20
        3.7.4.  Examples  . . . . . . . . . . . . . . . . . . . . . .  20
-       3.7.5.  Open Questions  . . . . . . . . . . . . . . . . . . .  20
+       3.7.5.  Open Questions  . . . . . . . . . . . . . . . . . . .  21
    4.  Cross-origin trust  . . . . . . . . . . . . . . . . . . . . .  21
      4.1.  Stateful header fields  . . . . . . . . . . . . . . . . .  22
      4.2.  Certificate Requirements  . . . . . . . . . . . . . . . .  23
    5.  Transferring a signed exchange  . . . . . . . . . . . . . . .  24
      5.1.  Same-origin response  . . . . . . . . . . . . . . . . . .  24
-       5.1.1.  Significant headers for a same-origin response  . . .  24
+       5.1.1.  Significant headers for a same-origin response  . . .  25
        5.1.2.  The Signed-Headers Header . . . . . . . . . . . . . .  25
      5.2.  HTTP/2 extension for cross-origin Server Push . . . . . .  26
        5.2.1.  Indicating support for cross-origin Server Push . . .  26
        5.2.2.  NO_TRUSTED_EXCHANGE_SIGNATURE error code  . . . . . .  26
-       5.2.3.  Validating a cross-origin Push  . . . . . . . . . . .  26
+       5.2.3.  Validating a cross-origin Push  . . . . . . . . . . .  27
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 2]
+Yasskin                 Expires February 15, 2019               [Page 2]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -142,9 +142,9 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
      9.2.  Informative References  . . . . . . . . . . . . . . . . .  39
      9.3.  URIs  . . . . . . . . . . . . . . . . . . . . . . . . . .  41
    Appendix A.  Use cases  . . . . . . . . . . . . . . . . . . . . .  41
-     A.1.  PUSHed subresources . . . . . . . . . . . . . . . . . . .  41
+     A.1.  PUSHed subresources . . . . . . . . . . . . . . . . . . .  42
      A.2.  Explicit use of a content distributor for subresources  .  42
-     A.3.  Subresource Integrity . . . . . . . . . . . . . . . . . .  42
+     A.3.  Subresource Integrity . . . . . . . . . . . . . . . . . .  43
      A.4.  Binary Transparency . . . . . . . . . . . . . . . . . . .  43
      A.5.  Static Analysis . . . . . . . . . . . . . . . . . . . . .  43
      A.6.  Offline websites  . . . . . . . . . . . . . . . . . . . .  44
@@ -165,7 +165,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 3]
+Yasskin                 Expires February 15, 2019               [Page 3]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -221,7 +221,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 4]
+Yasskin                 Expires February 15, 2019               [Page 4]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -277,7 +277,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 5]
+Yasskin                 Expires February 15, 2019               [Page 5]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -311,8 +311,12 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       of these parameters and the exchange's headers.
 
    "integrity"  A string (Section 3.7 of
-      [I-D.ietf-httpbis-header-structure]) containing the lowercase name
-      of the response header field that guards the response payload's
+      [I-D.ietf-httpbis-header-structure]) containing a "/"-separated
+      sequence of names starting with the lowercase name of the response
+      header field that guards the response payload's integrity.  The
+      meaning of subsequent names depends on the response header field,
+      but for the "digest" header field, the single following name is
+      the name of the digest algorithm that guards the payload's
       integrity.
 
    "cert-url"  A string (Section 3.7 of
@@ -327,16 +331,16 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       [I-D.ietf-httpbis-header-structure]) holding an Ed25519 public key
       ([RFC8032]).
 
-   "validity-url"  A string (Section 3.7 of
-      [I-D.ietf-httpbis-header-structure]) containing an absolute URL
-      (Section 2) with a scheme of "https".
 
 
-
-Yasskin                 Expires February 9, 2019                [Page 6]
+Yasskin                 Expires February 15, 2019               [Page 6]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
+
+   "validity-url"  A string (Section 3.7 of
+      [I-D.ietf-httpbis-header-structure]) containing an absolute URL
+      (Section 2) with a scheme of "https".
 
    "date" and "expires"  An integer (Section 3.5 of
       [I-D.ietf-httpbis-header-structure]) representing a Unix time.
@@ -353,27 +357,27 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 Signature:
  sig1;
   sig=*MEUCIQDXlI2gN3RNBlgFiuRNFpZXcDIaUpX6HIEwcZEc0cZYLAIga9DsVOMM+g5YpwEBdGW3sS+bvnmAJJiSMwhuBdqp5UY=*;
-  integrity="mi";
+  integrity="digest/mi-sha256";
   validity-url="https://example.com/resource.validity.1511128380";
   cert-url="https://example.com/oldcerts";
   cert-sha256=*W7uB969dFW3Mb5ZefPS9Tq5ZbH5iSmOILpjv2qEArmI=*;
   date=1511128380; expires=1511733180,
  sig2;
   sig=*MEQCIGjZRqTRf9iKNkGFyzRMTFgwf/BrY2ZNIP/dykhUV0aYAiBTXg+8wujoT4n/W+cNgb7pGqQvIUGYZ8u8HZJ5YH26Qg=*;
-  integrity="mi";
+  integrity="digest/mi-sha256";
   validity-url="https://example.com/resource.validity.1511128380";
   cert-url="https://example.com/newcerts";
   cert-sha256=*J/lEm9kNRODdCmINbvitpvdYKNQ+YgBj99DlYp4fEXw=*;
   date=1511128380; expires=1511733180,
  srisig;
   sig=*lGZVaJJM5f2oGczFlLmBdKTDL+QADza4BgeO494ggACYJOvrof6uh5OJCcwKrk7DK+LBch0jssDYPp5CLc1SDA=*
-  integrity="mi";
+  integrity="digest/mi-sha256";
   validity-url="https://example.com/resource.validity.1511128380";
   ed25519key=*zsSevyFsxyZHiUluVBDd4eypdRLTqyWRVOJuuKUz+A8=*
   date=1511128380; expires=1511733180,
  thirdpartysig;
   sig=*MEYCIQCNxJzn6Rh2fNxsobktir8TkiaJYQFhWTuWI1i4PewQaQIhAMs2TVjc4rTshDtXbgQEOwgj2mRXALhfXPztXgPupii+=*;
-  integrity="mi";
+  integrity="digest/mi-sha256";
   validity-url="https://thirdparty.example.com/resource.validity.1511161860";
   cert-url="https://thirdparty.example.com/certs";
   cert-sha256=*UeOwUPkvxlGRTyvHcsMUN0A2oNsZbU8EUvg8A9ZAnNc=*;
@@ -381,18 +385,21 @@ Signature:
 
    There are 4 signatures: 2 from different secp256r1 certificates
    within "https://example.com/", one using a raw ed25519 public key
-   that's also controlled by "example.com", and a fourth using a
-   secp256r1 certificate owned by "thirdparty.example.com".
-
-   All 4 signatures rely on the "MI" response header to guard the
-   integrity of the response payload.
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 7]
+
+Yasskin                 Expires February 15, 2019               [Page 7]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
+
+   that's also controlled by "example.com", and a fourth using a
+   secp256r1 certificate owned by "thirdparty.example.com".
+
+   All 4 signatures rely on the "Digest" response header with the mi-
+   sha256 digest algorithm to guard the integrity of the response
+   payload.
 
    The signatures include a "validity-url" that includes the first time
    the resource was seen.  This allows multiple versions of a resource
@@ -431,6 +438,18 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    [I-D.ietf-httpbis-header-structure] allows, so they're single items
    for now.
 
+
+
+
+
+
+
+
+Yasskin                 Expires February 15, 2019               [Page 8]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
 3.2.  CBOR representation of exchange headers
 
    To sign an exchange's headers, they need to be serialized into a byte
@@ -442,13 +461,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    The CBOR representation of an exchange "exchange"'s headers is the
    CBOR ([RFC7049]) array with the following content:
-
-
-
-Yasskin                 Expires February 9, 2019                [Page 8]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    1.  The map mapping:
 
@@ -479,14 +491,29 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    Given the HTTP exchange:
 
+
+
+
+
+
+
+
+
+
+
+Yasskin                 Expires February 15, 2019               [Page 9]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    GET / HTTP/1.1
    Host: example.com
    Accept: */*
 
    HTTP/1.1 200
    Content-Type: text/html
-   MI: mi-sha256=dcRDgR2GM35DluAV13PzgnG6-pvQwPywfFvAu1UeFrs
-   Signed-Headers: "content-type", "mi"
+   Digest: mi-sha256=dcRDgR2GM35DluAV13PzgnG6+pvQwPywfFvAu1UeFrs=
+   Signed-Headers: "content-type", "digest"
 
    <!doctype html>
    <html>
@@ -496,28 +523,18 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    using the extended diagnostic notation from [I-D.ietf-cbor-cddl]
    appendix G:
 
-
-
-
-
-
-Yasskin                 Expires February 9, 2019                [Page 9]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
-   [
-     {
-       ':url': 'https://example.com/',
-       'accept': '*/*',
-       ':method': 'GET',
-     },
-     {
-       'mi': 'mi-sha256=dcRDgR2GM35DluAV13PzgnG6-pvQwPywfFvAu1UeFrs',
-       ':status': '200',
-       'content-type': 'text/html'
-     }
-   ]
+ [
+   {
+     ':url': 'https://example.com/',
+     'accept': '*/*',
+     ':method': 'GET',
+   },
+   {
+     'digest': 'mi-sha256=dcRDgR2GM35DluAV13PzgnG6+pvQwPywfFvAu1UeFrs=',
+     ':status': '200',
+     'content-type': 'text/html'
+   }
+ ]
 
 3.3.  Loading a certificate chain
 
@@ -537,6 +554,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    The first map (second item) in the CBOR array is treated as the end-
    entity certificate, and the client will attempt to build a path
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 10]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    ([RFC5280]) to it from a trusted root using the other certificates in
    the chain.
 
@@ -554,13 +579,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        by Section 3.3 of [RFC6962].
 
    Loading a "cert-url" takes a "forceFetch" flag.  The client MUST:
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 10]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    1.  Let "raw-chain" be the result of fetching ([FETCH]) "cert-url".
        If "forceFetch" is _not_ set, the fetch can be fulfilled from a
@@ -592,6 +610,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       order of their canonical encodings.  For example, the following
       keys are correctly sorted:
 
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 11]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
       1.  10, encoded as 0A.
 
       2.  100, encoded as 18 64.
@@ -607,16 +633,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       7.  [-1], encoded as 81 20.
 
       8.  false, encoded as F4.
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 11]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    Note: this specification does not use floating point, tags, or other
    more complex data types, so it doesn't need rules to canonicalize
@@ -648,6 +664,16 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    MAY retry with "forceFetch" set to retrieve an updated OCSP from the
    original server.
 
+
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 12]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    1.  Let "payload" be the payload body (Section 3.3 of [RFC7230]) of
        "exchange".  Note that the payload body is the message body with
        any transfer encodings removed.
@@ -666,14 +692,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        *  "cert-sha256" be the signature's "cert-sha256" parameter, if
           any.
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 12]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
        *  "ed25519key" be the signature's "ed25519key" parameter, if
           any.
 
@@ -690,9 +708,27 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        If the selected header field provides integrity guarantees weaker
        than SHA-256, return "invalid".  If validating integrity using
        the selected header field requires the client to process records
-       larger than TBD bytes, return "invalid".  Clients MUST implement
-       at least the "MI" ([I-D.thomson-http-mice]) header field with its
-       "mi-sha256" content encoding.
+       larger than 16384 bytes, return "invalid".  Clients MUST
+       implement at least the "Digest" header field with its "mi-sha256"
+       digest algorithm (Section 3 of [I-D.thomson-http-mice]).
+
+       Note: RFC EDITOR PLEASE DELETE THIS NOTE; Implementations of
+       drafts of this RFC MUST recognize the draft spelling of the
+       content encoding and digest algorithm specified by
+       [I-D.thomson-http-mice] until that draft is published as an RFC.
+       For example, implementations of draft-thomson-http-mice-03 would
+       use "mi-sha256-03" and MUST NOT use "mi-sha256" itself.  This
+       ensures that final implementations don't need to handle
+       compatibility with implementations of early drafts of that
+       content encoding.
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 13]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
 
    4.  Set "publicKey" and "signing-alg" depending on which key fields
        are present:
@@ -723,13 +759,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        2.  If "ed25519key" is present, set "publicKey" to "ed25519key"
            and "signing-alg" to ed25519, as defined by [RFC8032]
 
-
-
-Yasskin                 Expires February 9, 2019               [Page 13]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    5.  If "expires" is more than 7 days (604800 seconds) after "date",
        return "invalid".
 
@@ -749,6 +778,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
            of the final RFC MUST use this context string, but
            implementations of drafts MUST NOT use it and MUST use
            another draft-specific string beginning with "HTTP Exchange 1
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 14]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
            " instead.  This ensures that signers can predict how their
            signatures will be used.
 
@@ -778,14 +815,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        presence was checked when the "Signature" header field was
        parsed), return "invalid".
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 14]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
        Note that this intentionally differs from TLS 1.3, which signs
        the entire certificate chain in its Certificate Verify
        (Section 4.4.3 of [I-D.ietf-tls-tls13]), in order to allow
@@ -799,17 +828,26 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    Note that the above algorithm can determine that an exchange's
    headers are potentially-valid before the exchange's payload is
-   received.  Similarly, if "integrity" identifies a header field like
-   "MI" ([I-D.thomson-http-mice]) that can incrementally validate the
-   payload, early parts of the payload can be determined to be
-   potentially-valid before later parts of the payload.  Higher-level
-   protocols MAY process parts of the exchange that have been determined
-   to be potentially-valid as soon as that determination is made but
-   MUST NOT process parts of the exchange that are not yet potentially-
-   valid.  Similarly, as the higher-level protocol determines that parts
-   of the exchange are actually valid, the client MAY process those
-   parts of the exchange and MUST wait to process other parts of the
-   exchange until they too are determined to be valid.
+   received.  Similarly, if "integrity" identifies a header field and
+   parameter like "Digest:mi-sha256" ([I-D.thomson-http-mice]) that can
+   incrementally validate the payload, early parts of the payload can be
+   determined to be potentially-valid before later parts of the payload.
+   Higher-level protocols MAY process parts of the exchange that have
+   been determined to be potentially-valid as soon as that determination
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 15]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
+   is made but MUST NOT process parts of the exchange that are not yet
+   potentially-valid.  Similarly, as the higher-level protocol
+   determines that parts of the exchange are actually valid, the client
+   MAY process those parts of the exchange and MUST wait to process
+   other parts of the exchange until they too are determined to be
+   valid.
 
 3.5.1.  Open Questions
 
@@ -835,13 +873,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    since each version needs different signatures and becomes obsolete at
    different times.
 
-
-
-Yasskin                 Expires February 9, 2019               [Page 15]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    The resource at a "validity-url" is "validity data", a CBOR map
    matching the following CDDL ([I-D.ietf-cbor-cddl]):
 
@@ -859,6 +890,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    enough that clients need to stop using the content, the "signatures"
    array MUST NOT be present.
 
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 16]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    If the the "update" map is present, that indicates that a new version
    of the signed exchange is available at its effective request URI
    (Section 5.5 of [RFC7230]) and can give an estimate of the size of
@@ -875,28 +914,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    For example, say a signed exchange whose URL is "https://example.com/
    resource" has the following "Signature" header field (with line
    breaks included and irrelevant fields omitted for ease of reading).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 16]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
 Signature:
  sig1;
@@ -924,12 +941,25 @@ Signature:
    (the "validity-url" of "sig1" and "sig2") if it wishes to update
    those signatures.  This URL might contain:
 
+
+
+
+
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 17]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
 {
   "signatures": [
     'sig1; '
     'sig=*MEQCIC/I9Q+7BZFP6cSDsWx43pBAL0ujTbON/+7RwKVk+ba5AiB3FSFLZqpzmDJ0NumNwN04pqgJZE99fcK86UjkPbj4jw==*; '
     'validity-url="https://example.com/resource.validity.1511157180"; '
-    'integrity="mi"; '
+    'integrity="digest/mi-sha256"; '
     'cert-url="https://example.com/newcerts"; '
     'cert-sha256=*J/lEm9kNRODdCmINbvitpvdYKNQ+YgBj99DlYp4fEXw=*; '
     'date=1511733180; expires=1512337980'
@@ -945,15 +975,6 @@ Signature:
    replacing the first two of the original signatures (the ones with a
    validity-url of "https://example.com/resource.validity.1511157180")
    with the single new signature provided.  (This might happen at the
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 17]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    end of a migration to a new root certificate.)  The signatures of the
    updated signed exchange would be:
 
@@ -981,6 +1002,14 @@ Signature:
    signatures, so servers might prefer to avoid sending them to clients
    that don't intend to use them.  A client can send the "Accept-
    Signature" header field to indicate that it does intend to take
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 18]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    advantage of any available signatures and to indicate what kinds of
    signatures it supports.
 
@@ -1002,14 +1031,6 @@ Signature:
    significant.  Identifiers, ignoring any initial "-" character, MUST
    NOT be duplicated.
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 18]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    Each identifier in the "Accept-Signature" header field's value
    indicates that a feature of the "Signature" header field
    (Section 3.1) is supported.  If the identifier begins with a "-"
@@ -1020,16 +1041,16 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 3.7.1.  Integrity identifiers
 
-   Identifiers starting with "mi/" indicate that the client supports the
-   "MI" header field ([I-D.thomson-http-mice]) with the parameter from
-   the HTTP MI Parameter Registry registry named in lower-case by the
-   rest of the identifier.  For example, "mi/mi-blake2" indicates
-   support for Merkle integrity with the as-yet-unspecified mi-blake2
-   parameter, and "-mi/mi-sha256" indicates non-support for Merkle
-   integrity with the mi-sha256 content encoding.
+   Identifiers starting with "digest/" indicate that the client supports
+   the "Digest" header field ({{!RFC3230) with the parameter from the
+   HTTP Digest Algorithm Values Registry [6] registry named in lower-
+   case by the rest of the identifier.  For example, "digest/mi-blake2"
+   indicates support for Merkle integrity with the as-yet-unspecified
+   mi-blake2 parameter, and "-digest/mi-sha256" indicates non-support
+   for Merkle integrity with the mi-sha256 content encoding.
 
    If the "Accept-Signature" header field is present, servers SHOULD
-   assume support for "mi/mi-sha256" unless the header field states
+   assume support for "digest/mi-sha256" unless the header field states
    otherwise.
 
 3.7.2.  Key type identifiers
@@ -1037,6 +1058,13 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    Identifiers starting with "ecdsa/" indicate that the client supports
    certificates holding ECDSA public keys on the curve named in lower-
    case by the rest of the identifier.
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 19]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
 
    If the "Accept-Signature" header field is present, servers SHOULD
    assume support for "ecdsa/secp256r1" unless the header field states
@@ -1058,14 +1086,6 @@ Accept-Signature: ..., ed25519key; *11qYAYKxCrfVS/7TyWQHOg==*
 Accept-Signature: ..., ed25519key; *11qYAQ==*
 Accept-Signature: ..., ed25519key; **
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 19]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    but not
 
    Accept-Signature: ..., ed25519key; *11qYA===*
@@ -1085,19 +1105,26 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 3.7.4.  Examples
 
-   Accept-Signature: mi/mi-sha256
+   Accept-Signature: digest/mi-sha256
 
    states that the client will accept signatures with payload integrity
-   assured by the "MI" header and "mi-sha256" content encoding and
-   implies that the client will accept integrity assured by the "Digest:
-   SHA-256" header and signatures from ECDSA keys on the secp256r1
-   curve.
+   assured by the "Digest" header and "mi-sha256" digest algorithm and
+   implies that the client will accept signatures from ECDSA keys on the
+   secp256r1 curve.
 
    Accept-Signature: -ecdsa/secp256r1, ecdsa/secp384r1
 
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 20]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    states that the client will accept ECDSA keys on the secp384r1 curve
    but not the secp256r1 curve and payload integrity assured with the
-   "MI: mi-sha256" header field.
+   "Digest: mi-sha256" header field.
 
 3.7.5.  Open Questions
 
@@ -1113,15 +1140,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    Do I have the right structure for the identifiers indicating feature
    support?
 
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 20]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
 4.  Cross-origin trust
 
    To determine whether to trust a cross-origin exchange, the client
@@ -1133,7 +1151,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    "valid".  Otherwise, return "invalid".
 
    1.  If the signature's "validity-url" parameter (Paragraph 6) is not
-       same-origin [6] with "exchange"'s effective request URI
+       same-origin [7] with "exchange"'s effective request URI
        (Section 5.5 of [RFC7230]), return "invalid".
 
    2.  Use Section 3.5 to determine the signature's validity for
@@ -1152,6 +1170,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    6.  Validate the "certificate-chain" using the following substeps.
        If any of them fail, re-run Section 3.5 once over the signature
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 21]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
        with the "forceFetch" flag set, and restart from step 2.  If a
        substep fails again, return "invalid".
 
@@ -1169,15 +1195,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
            (Section 3.3) with a valid OCSP response whose lifetime
            ("nextUpdate - thisUpdate") is less than 7 days ([RFC6960]).
            Note that this does not check for revocation of intermediate
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 21]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
            certificates, and clients SHOULD implement another mechanism
            for that.
 
@@ -1210,6 +1227,13 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    o  "Authorization", [RFC7235]
 
+
+
+Yasskin                 Expires February 15, 2019              [Page 22]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    o  "Cookie", [RFC6265]
 
    o  "Cookie2", [RFC2965]
@@ -1225,14 +1249,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    o  "Authentication-Control", [RFC8053]
 
    o  "Authentication-Info", [RFC7615]
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 22]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    o  "Optional-WWW-Authenticate", [RFC8053]
 
@@ -1267,6 +1283,13 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    Note that this extension contains an ASN.1 NULL (bytes "05 00")
    because some implementations have bugs with empty extensions.
 
+
+
+Yasskin                 Expires February 15, 2019              [Page 23]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    Leaf certificates without this extension need to be revoked if the
    private key is exposed to an unauthorized entity, but they generally
    don't need to be revoked if a signing oracle is exposed and then
@@ -1282,13 +1305,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    Clients MUST NOT accept certificates with this extension in TLS
    connections (Section 4.4.2.2 of [I-D.ietf-tls-tls13]).
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 23]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    RFC EDITOR PLEASE DELETE THE REST OF THE PARAGRAPHS IN THIS SECTION
 
@@ -1321,6 +1337,15 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    behavior, it MUST ignore any header fields that it didn't pass to the
    validation procedure.
 
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 24]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
 5.1.1.  Significant headers for a same-origin response
 
    The significant headers of an exchange represented as a normal HTTP
@@ -1336,15 +1361,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       that header field.  If a response header field name from "Signed-
       Headers" does not appear in the exchange's response header fields,
       the exchange has no significant headers.
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 24]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    If the exchange's "Signed-Headers" header field is not present,
    doesn't parse as a Structured Header
@@ -1377,6 +1393,15 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    See Appendix B.2 for a discussion of why only the URL from the
    request is included and not other request headers.
 
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 25]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    "Signed-Headers" is a Structured Header as defined by
    [I-D.ietf-httpbis-header-structure].  Its value MUST be a list
    (Section 3.2 of [I-D.ietf-httpbis-header-structure]).  Its ABNF is:
@@ -1390,17 +1415,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    Higher-level protocols SHOULD place requirements on the minimum set
    of headers to include in the "Signed-Headers" header field.
-
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 25]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
 5.2.  HTTP/2 extension for cross-origin Server Push
 
@@ -1436,6 +1450,14 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    The signatures on a Pushed cross-origin exchange may be untrusted for
    several reasons, for example that the certificate could not be
    fetched, that the certificate does not chain to a trusted root, that
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 26]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    the signature itself doesn't validate, that the signature is expired,
    etc.  This draft conflates all of these possible failures into one
    error code, NO_TRUSTED_EXCHANGE_SIGNATURE (0xERROR-TBD).
@@ -1449,15 +1471,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    If the client has set the ENABLE_CROSS_ORIGIN_PUSH setting to 1, the
    server MAY Push a signed exchange for which it is not authoritative,
    and the client MUST NOT treat a PUSH_PROMISE for which the server is
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 26]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
    not authoritative as a stream error (Section 5.4.2 of [RFC7540]) of
    type PROTOCOL_ERROR, as described in Section 8.2 of [RFC7540].
 
@@ -1494,6 +1507,13 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        recipients that receive both MUST check that they match and stop
        parsing if they don't.
 
+
+
+Yasskin                 Expires February 15, 2019              [Page 27]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
        Note: RFC EDITOR PLEASE DELETE THIS NOTE; The implementation of
        the final RFC MUST use this file signature, but implementations
        of drafts MUST NOT use it and MUST use another implementation-
@@ -1501,18 +1521,10 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
        instead.
 
    2.  3 bytes storing a big-endian integer "sigLength".  If this is
-       larger than TBD, parsing MUST fail.
+       larger than 16384 (16*1024), parsing MUST fail.
 
    3.  3 bytes storing a big-endian integer "headerLength".  If this is
-       larger than TBD, parsing MUST fail.
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 27]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
+       larger than 524288 (512*1024), parsing MUST fail.
 
    4.  "sigLength" bytes holding the "Signature" header field's value
        (Section 3.1).
@@ -1546,33 +1558,24 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 5.3.2.  Example
 
    An example "application/signed-exchange" file representing a possible
-   signed exchange with https://example.com/ [7] follows, with lengths
+   signed exchange with https://example.com/ [8] follows, with lengths
    represented by descriptions in "<>"s, CBOR represented in the
    extended diagnostic format defined in Appendix G of
-   [I-D.ietf-cbor-cddl], and most of the "Signature" header field and
-   payload elided with a ...:
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 28]
+Yasskin                 Expires February 15, 2019              [Page 28]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
+   [I-D.ietf-cbor-cddl], and most of the "Signature" header field and
+   payload elided with a ...:
+
    sxg1\0<3-byte length of the following header
    value><3-byte length of the encoding of the
-   following array>sig1; sig=*...; integrity="mi"; ...[
+   following array>sig1; sig=*...; integrity="digest/mi-sha256"; ...[
      {
        ':method': 'GET',
        ':url': 'https://example.com/',
@@ -1618,10 +1621,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 29]
+Yasskin                 Expires February 15, 2019              [Page 29]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1677,7 +1677,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 30]
+Yasskin                 Expires February 15, 2019              [Page 30]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1733,7 +1733,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 31]
+Yasskin                 Expires February 15, 2019              [Page 31]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1789,7 +1789,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 32]
+Yasskin                 Expires February 15, 2019              [Page 32]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1845,7 +1845,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 33]
+Yasskin                 Expires February 15, 2019              [Page 33]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1901,7 +1901,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 34]
+Yasskin                 Expires February 15, 2019              [Page 34]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -1914,7 +1914,10 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
       Note: RFC EDITOR PLEASE DELETE THIS NOTE; Implementations of
       drafts of this specification MUST NOT use simple integers to
       describe their versions, and MUST instead define implementation-
-      specific strings to identify which draft is implemented.
+      specific strings to identify which draft is implemented.  The
+      newest version of
+      [I-D.yasskin-httpbis-origin-signed-exchanges-impl] describes the
+      meaning of one such string.
 
    Optional parameters: N/A
 
@@ -1954,10 +1957,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 35]
+Yasskin                 Expires February 15, 2019              [Page 35]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2013,7 +2013,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 36]
+Yasskin                 Expires February 15, 2019              [Page 36]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2026,8 +2026,8 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    [I-D.ietf-cbor-cddl]
               Birkholz, H., Vigano, C., and C. Bormann, "Concise data
               definition language (CDDL): a notational convention to
-              express CBOR data structures", draft-ietf-cbor-cddl-03
-              (work in progress), July 2018.
+              express CBOR and JSON data structures", draft-ietf-cbor-
+              cddl-04 (work in progress), August 2018.
 
    [I-D.ietf-httpbis-header-structure]
               Nottingham, M. and P. Kamp, "Structured Headers for HTTP",
@@ -2040,8 +2040,9 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
               March 2018.
 
    [I-D.thomson-http-mice]
-              Thomson, M., "Merkle Integrity Content Encoding", draft-
-              thomson-http-mice-02 (work in progress), October 2016.
+              Thomson, M. and J. Yasskin, "Merkle Integrity Content
+              Encoding", draft-thomson-http-mice-03 (work in progress),
+              August 2018.
 
    [POSIX]    IEEE and The Open Group, "The Open Group Base
               Specifications Issue 7", name IEEE, value 1003.1-2008,
@@ -2068,8 +2069,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-
-Yasskin                 Expires February 9, 2019               [Page 37]
+Yasskin                 Expires February 15, 2019              [Page 37]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2125,7 +2125,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 38]
+Yasskin                 Expires February 15, 2019              [Page 38]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2162,6 +2162,11 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
               draft-thomson-http-content-signature-00 (work in
               progress), July 2015.
 
+   [I-D.yasskin-httpbis-origin-signed-exchanges-impl]
+              Yasskin, J. and K. Ueno, "Signed HTTP Exchanges
+              Implementation Checkpoints", draft-yasskin-httpbis-origin-
+              signed-exchanges-impl-01 (work in progress), July 2018.
+
    [I-D.yasskin-webpackage-use-cases]
               Yasskin, J., "Use Cases and Requirements for Web
               Packages", draft-yasskin-webpackage-use-cases-01 (work in
@@ -2171,20 +2176,20 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
               Mechanism", RFC 2965, DOI 10.17487/RFC2965, October 2000,
               <https://www.rfc-editor.org/info/rfc2965>.
 
+
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 39]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    [RFC6066]  Eastlake 3rd, D., "Transport Layer Security (TLS)
               Extensions: Extension Definitions", RFC 6066,
               DOI 10.17487/RFC6066, January 2011,
               <https://www.rfc-editor.org/info/rfc6066>.
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 39]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    [RFC6265]  Barth, A., "HTTP State Management Mechanism", RFC 6265,
               DOI 10.17487/RFC6265, April 2011,
@@ -2227,20 +2232,20 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
               Recommendation REC-SRI-20160623, June 2016,
               <http://www.w3.org/TR/2016/REC-SRI-20160623>.
 
+
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 40]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    [W3C.NOTE-OPS-OverHTTP]
               Hensley, P., Metral, M., Shardanand, U., Converse, D., and
               M. Myers, "Implementation of OPS Over HTTP", W3C NOTE
               NOTE-OPS-OverHTTP, June 1997.
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 40]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
 9.3.  URIs
 
@@ -2255,30 +2260,43 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    [5] http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/
        V1_chap04.html#tag_04_16
 
-   [6] https://html.spec.whatwg.org/multipage/origin.html#same-origin
+   [6] https://www.iana.org/assignments/http-dig-alg/http-dig-alg.xhtml
 
-   [7] https://example.com/
+   [7] https://html.spec.whatwg.org/multipage/origin.html#same-origin
 
-   [8] https://calendar.perfplanet.com/2013/big-bad-preloader/
+   [8] https://example.com/
 
-   [9] https://github.com/mikewest/signature-based-sri
+   [9] https://calendar.perfplanet.com/2013/big-bad-preloader/
 
-   [10] https://github.com/mikewest/signature-based-sri/issues/5
+   [10] https://github.com/mikewest/signature-based-sri
 
-   [11] https://www.apple.com/ios/app-store/
+   [11] https://github.com/mikewest/signature-based-sri/issues/5
 
-   [12] https://play.google.com/store
+   [12] https://www.apple.com/ios/app-store/
 
-   [13] https://github.com/WICG/webpackage
+   [13] https://play.google.com/store
 
-   [14] https://tools.ietf.org/html/rfc7540#section-8.2
+   [14] https://github.com/WICG/webpackage
 
-   [15] https://www.imperialviolet.org/2012/02/05/crlsets.html
+   [15] https://tools.ietf.org/html/rfc7540#section-8.2
 
-   [16] https://tlswg.github.io/tls13-spec/draft-ietf-tls-
+   [16] https://www.imperialviolet.org/2012/02/05/crlsets.html
+
+   [17] https://tlswg.github.io/tls13-spec/draft-ietf-tls-
         tls13.html#ocsp-and-sct
 
 Appendix A.  Use cases
+
+
+
+
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 41]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
 
 A.1.  PUSHed subresources
 
@@ -2289,14 +2307,6 @@ A.1.  PUSHed subresources
    server.
 
    For example, if "https://example.com/index.html" includes
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 41]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    <script src="https://jquery.com/jquery-1.2.3.min.js">
 
@@ -2327,7 +2337,7 @@ A.2.  Explicit use of a content distributor for subresources
    where the "<dist-img>" implementation generates an appropriate
    "<img>" based on, for example, a "<meta name="dist-base">" tag
    elsewhere in the page.  However, this has the downside that the
-   preloader [8] can no longer see the physical source to download it.
+   preloader [9] can no longer see the physical source to download it.
    The resulting delay might cancel out the benefit of using a
    distributor.
 
@@ -2336,23 +2346,22 @@ A.2.  Explicit use of a content distributor for subresources
 
    To implement this with the current proposal, the distributor would
    respond to the physical request to "https://distributor.com/O.com/
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 42]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    img.png" with first a signed PUSH_PROMISE for "https://O.com/img.png"
    and then a redirect to "https://O.com/img.png".
 
 A.3.  Subresource Integrity
 
-   The W3C WebAppSec group is investigating using signatures [9] in
+   The W3C WebAppSec group is investigating using signatures [10] in
    [SRI].  They need a way to transmit the signature with the response,
    which this proposal provides.
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 42]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    Their needs are simpler than most other use cases in that the
    "integrity="ed25519-[public-key]"" attribute and CSP-based ways of
@@ -2365,7 +2374,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    The current proposal for signature-based SRI describes signing only
    the content of a resource, while this specification requires them to
    sign the request URI as well.  This issue is tracked in
-   https://github.com/mikewest/signature-based-sri/issues/5 [10].  The
+   https://github.com/mikewest/signature-based-sri/issues/5 [11].  The
    details of what they need to sign will affect whether and how they
    can use this proposal.
 
@@ -2387,35 +2396,31 @@ A.4.  Binary Transparency
 
 A.5.  Static Analysis
 
-   Native app stores like the Apple App Store [11] and the Android Play
-   Store [12] grant their contents powerful abilities, which they
+   Native app stores like the Apple App Store [12] and the Android Play
+   Store [13] grant their contents powerful abilities, which they
    attempt to make safe by analyzing the applications before offering
    them to people.  The web has no equivalent way for people to wait to
    run an update of a web application until a trusted authority has
    vouched for it.
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 43]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
 
    While full application analysis probably needs to wait until the
    authority can sign bundles of exchanges, authorities may be able to
    guarantee certain properties by just checking a top-level resource
    and its [SRI]-constrained sub-resources.
 
-
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 43]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
-
 A.6.  Offline websites
 
    Fully-offline websites can be represented as bundles of signed
    exchanges, although an optimization to reduce the number of signature
    verifications may be needed.  Work on this is in progress in the
-   https://github.com/WICG/webpackage [13] repository.
+   https://github.com/WICG/webpackage [14] repository.
 
 Appendix B.  Requirements
 
@@ -2454,17 +2459,16 @@ B.1.2.  Signature constraints
    used in TLS servers.  If Section 4.2 changes to allow re-use in TLS
    servers, we would need to:
 
-   1.  Avoid key types that are used for non-TLS protocols whose output
-       could be confused with a signature.  That may be just the
-       "rsaEncryption" OID from [RFC8017].
 
 
-
-
-Yasskin                 Expires February 9, 2019               [Page 44]
+Yasskin                 Expires February 15, 2019              [Page 44]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
+
+   1.  Avoid key types that are used for non-TLS protocols whose output
+       could be confused with a signature.  That may be just the
+       "rsaEncryption" OID from [RFC8017].
 
    2.  Use the same format as TLS's signatures, specified in
        Section 4.4.3 of [I-D.ietf-tls-tls13], with a context string
@@ -2511,17 +2515,16 @@ B.2.  How much to sign
    flexible scheme to allow some higher-level protocols to accept a
    less-signed URL.
 
-   The question of whether to include other request headers--primarily
-   the "accept*" family--is still open.  These headers need to be
-   represented so that clients wanting a different language, say, can
 
 
-
-Yasskin                 Expires February 9, 2019               [Page 45]
+Yasskin                 Expires February 15, 2019              [Page 45]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
+   The question of whether to include other request headers--primarily
+   the "accept*" family--is still open.  These headers need to be
+   represented so that clients wanting a different language, say, can
    avoid using the wrong-language response, but it's not obvious that
    there's a security vulnerability if an attacker can spoof them.  For
    now, the proposal (Section 3) omits other request headers.
@@ -2538,7 +2541,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    accept-language: ja-JP, ja
 
    and clients would use the same matching logic as for PUSH_PROMISE
-   [14] frame headers.
+   [15] frame headers.
 
 B.2.1.  Conveying the signed headers
 
@@ -2566,17 +2569,17 @@ B.2.1.  Conveying the signed headers
 
    To help the PUSHed subresources use case (Appendix A.1), we might
    also want to extend the "PUSH_PROMISE" frame type to include a
-   signature, and that could tell intermediates not to change the
-   ensuing headers.
 
 
 
 
-
-Yasskin                 Expires February 9, 2019               [Page 46]
+Yasskin                 Expires February 15, 2019              [Page 46]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
+
+   signature, and that could tell intermediates not to change the
+   ensuing headers.
 
 B.3.  Response lifespan
 
@@ -2591,7 +2594,7 @@ B.3.1.  Certificate revocation
 
    Certificates are mis-issued and private keys are stolen, and in
    response clients need to be able to stop trusting these certificates
-   as promptly as possible.  Online revocation checks don't work [15],
+   as promptly as possible.  Online revocation checks don't work [16],
    so the industry has moved to pushed revocation lists and stapled OCSP
    responses [RFC6066].
 
@@ -2599,7 +2602,7 @@ B.3.1.  Certificate revocation
    signing an exchange, but the signatures need an explicit strategy to
    staple OCSP responses.  One option is to extend the certificate
    download (Appendix B.1.3) to include the OCSP response too, perhaps
-   in the TLS 1.3 CertificateEntry [16] format.
+   in the TLS 1.3 CertificateEntry [17] format.
 
 B.3.2.  Response downgrade attacks
 
@@ -2624,16 +2627,15 @@ B.3.2.  Response downgrade attacks
        allows intermediates to serve less data.  This is the approach
        taken in Section 3.
 
-   3.  A replacement for the exchange's signature and an update for the
-       embedded "expires" and related cache-control HTTP headers
 
 
-
-Yasskin                 Expires February 9, 2019               [Page 47]
+Yasskin                 Expires February 15, 2019              [Page 47]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
 
+   3.  A replacement for the exchange's signature and an update for the
+       embedded "expires" and related cache-control HTTP headers
        [RFC7234].  This naturally extends publishers' intuitions about
        cache expiration and the existing cache revalidation behavior to
        signed exchanges.  This is sketched and its downsides explored in
@@ -2664,12 +2666,12 @@ B.4.2.  Bounded-buffering integrity checking
    size, it can avoid the complexity of spooling large files to disk.
 
    To allow the network layer to verify signed exchanges using a bounded
-   amount of memory, Section 5.3 requires the signature and headers to
-   be less than TBD bytes long, and Section 3.5 requires that the MI
-   record size be less than TBD bytes.  This allows the network layer to
-   validate a bounded chunk at a time, and pass that chunk on to a
-   renderer, and then forget about that chunk before processing the next
-   one.
+   amount of memory, Section 5.3 requires the signature to be less than
+   16kB and the headers to be less than 512kB, and Section 3.5 requires
+   that the MI record size be less than 16kB.  This allows the network
+   layer to validate a bounded chunk at a time, and pass that chunk on
+   to a renderer, and then forget about that chunk before processing the
+   next one.
 
    The "Digest" header field from [RFC3230] requires the network layer
    to buffer the entire response body, so it's disallowed.
@@ -2683,9 +2685,7 @@ Appendix C.  Determining validity using cache control
 
 
 
-
-
-Yasskin                 Expires February 9, 2019               [Page 48]
+Yasskin                 Expires February 15, 2019              [Page 48]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2741,7 +2741,7 @@ C.1.  Example of updating cache control
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 49]
+Yasskin                 Expires February 15, 2019              [Page 49]
 
 Internet-Draft            Signed HTTP Exchanges              August 2018
 
@@ -2780,6 +2780,13 @@ Appendix D.  Change Log
 
    o  Define absolute URLs, and limit the schemes each instance can use.
 
+   o  Fill in TBD size limits.
+
+   o  Update to mice-03 including the Digest header.
+
+   o  Refer to draft-yasskin-httpbis-origin-signed-exchanges-impl for
+      draft version numbers.
+
    draft-04
 
    o  Update to draft-ietf-httpbis-header-structure-06.
@@ -2787,20 +2794,19 @@ Appendix D.  Change Log
    o  Replace the application/http-exchange+cbor format with a simpler
       application/signed-exchange format that:
 
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 50]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
       *  Doesn't require a streaming CBOR parser parse it from a network
          stream.
 
       *  Doesn't allow request payloads or response trailers, which
          don't fit into the signature model.
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 50]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
       *  Allows checking the signature before parsing the exchange
          headers.
@@ -2844,19 +2850,18 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    draft-02
 
+
+
+
+Yasskin                 Expires February 15, 2019              [Page 51]
+
+Internet-Draft            Signed HTTP Exchanges              August 2018
+
+
    o  Signatures identify a header (e.g.  Digest or MI) to guard the
       payload's integrity instead of directly signing over the payload.
 
    o  The validityUrl is signed.
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 51]
-
-Internet-Draft            Signed HTTP Exchanges              August 2018
-
 
    o  Use CBOR maps where appropriate, and define how they're
       canonicalized.
@@ -2904,9 +2909,4 @@ Author's Address
 
 
 
-
-
-
-
-
-Yasskin                 Expires February 9, 2019               [Page 52]
+Yasskin                 Expires February 15, 2019              [Page 52]

@@ -4,8 +4,8 @@
 
 Network Working Group                                         J. Yasskin
 Internet-Draft                                                    Google
-Intended status: Standards Track                         August 08, 2018
-Expires: February 9, 2019
+Intended status: Standards Track                         August 14, 2018
+Expires: February 15, 2019
 
 
                          Bundled HTTP Exchanges
@@ -43,7 +43,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 9, 2019.
+   This Internet-Draft will expire on February 15, 2019.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 1]
+Yasskin                 Expires February 15, 2019               [Page 1]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 2]
+Yasskin                 Expires February 15, 2019               [Page 2]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -165,7 +165,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 3]
+Yasskin                 Expires February 15, 2019               [Page 3]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -221,7 +221,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 4]
+Yasskin                 Expires February 15, 2019               [Page 4]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -277,7 +277,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 5]
+Yasskin                 Expires February 15, 2019               [Page 5]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -333,12 +333,13 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 6]
+Yasskin                 Expires February 15, 2019               [Page 6]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
-   4.   If "sectionLengthsLength" is TBD or greater, return an error.
+   4.   If "sectionLengthsLength" is 8192 (8*1024) or greater, return an
+        error.
 
    5.   Let "sectionLengthsBytes" be the result of reading
         "sectionLengthsLength" bytes from "stream".  If
@@ -388,8 +389,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-
-Yasskin                 Expires February 9, 2019                [Page 7]
+Yasskin                 Expires February 15, 2019               [Page 7]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -445,7 +445,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 8]
+Yasskin                 Expires February 15, 2019               [Page 8]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -501,7 +501,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019                [Page 9]
+Yasskin                 Expires February 15, 2019               [Page 9]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -557,7 +557,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 10]
+Yasskin                 Expires February 15, 2019              [Page 10]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -613,7 +613,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 11]
+Yasskin                 Expires February 15, 2019              [Page 11]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -669,7 +669,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 12]
+Yasskin                 Expires February 15, 2019              [Page 12]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -699,7 +699,8 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
         bytestring header from "stream" (Section 3.4.2).  If
         "headerLength" is an error, return that error.
 
-   4.   If "headerLength" is TBD or greater, return an error.
+   4.   If "headerLength" is 524288 (512*1024) or greater, return an
+        error.
 
    5.   Let "headerCbor" be the result of reading "headerLength" bytes
         from "stream" and parsing a CBOR item from them matching the
@@ -724,8 +725,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-
-Yasskin                 Expires February 9, 2019               [Page 13]
+Yasskin                 Expires February 15, 2019              [Page 13]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -781,7 +781,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 14]
+Yasskin                 Expires February 15, 2019              [Page 14]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -837,7 +837,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 15]
+Yasskin                 Expires February 15, 2019              [Page 15]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -893,7 +893,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 16]
+Yasskin                 Expires February 15, 2019              [Page 16]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -949,7 +949,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 17]
+Yasskin                 Expires February 15, 2019              [Page 17]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -1005,7 +1005,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 18]
+Yasskin                 Expires February 15, 2019              [Page 18]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -1061,7 +1061,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 19]
+Yasskin                 Expires February 15, 2019              [Page 19]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -1069,8 +1069,8 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
    [I-D.ietf-cbor-cddl]
               Birkholz, H., Vigano, C., and C. Bormann, "Concise data
               definition language (CDDL): a notational convention to
-              express CBOR data structures", draft-ietf-cbor-cddl-03
-              (work in progress), July 2018.
+              express CBOR and JSON data structures", draft-ietf-cbor-
+              cddl-04 (work in progress), August 2018.
 
    [INFRA]    WHATWG, "Infra", August 2018,
               <https://infra.spec.whatwg.org/>.
@@ -1117,7 +1117,7 @@ Internet-Draft           Bundled HTTP Exchanges              August 2018
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 20]
+Yasskin                 Expires February 15, 2019              [Page 20]
 
 Internet-Draft           Bundled HTTP Exchanges              August 2018
 
@@ -1173,4 +1173,4 @@ Author's Address
 
 
 
-Yasskin                 Expires February 9, 2019               [Page 21]
+Yasskin                 Expires February 15, 2019              [Page 21]
