@@ -1,6 +1,162 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/289",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/289/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/289/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/289/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/289",
+    "id": 351088145,
+    "node_id": "MDU6SXNzdWUzNTEwODgxNDU=",
+    "number": 289,
+    "title": "Feature detection and Accept: application/signed-exchanges headers",
+    "user": {
+      "login": "kinu",
+      "id": 860295,
+      "node_id": "MDQ6VXNlcjg2MDI5NQ==",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/860295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kinu",
+      "html_url": "https://github.com/kinu",
+      "followers_url": "https://api.github.com/users/kinu/followers",
+      "following_url": "https://api.github.com/users/kinu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kinu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kinu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kinu/subscriptions",
+      "organizations_url": "https://api.github.com/users/kinu/orgs",
+      "repos_url": "https://api.github.com/users/kinu/repos",
+      "events_url": "https://api.github.com/users/kinu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kinu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-16T07:33:00Z",
+    "updated_at": "2018-08-16T07:33:00Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "For feature detection some of us have been discussing that we could add Accept: application/signed-exchanges headers.  However given that SXG can have any resources it looks the UAs that support SXG always need to attach / append SXG type even when anything can be accepted, so it could look something like Accept: application/signed-exchange;q=0.9,*/*;q=0.8 for default, non-specific subresource requests.  Would it be just or if we want to think about alternative feature detection mechanism (e.g. specific headers etc)?"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/288",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/288/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/288/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/288/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/288",
+    "id": 350636926,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4NDQwOTc0",
+    "number": 288,
+    "title": "Put a fallback URL at the beginning of signed exchanges",
+    "user": {
+      "login": "jyasskin",
+      "id": 83420,
+      "node_id": "MDQ6VXNlcjgzNDIw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/83420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jyasskin",
+      "html_url": "https://github.com/jyasskin",
+      "followers_url": "https://api.github.com/users/jyasskin/followers",
+      "following_url": "https://api.github.com/users/jyasskin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jyasskin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jyasskin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jyasskin/subscriptions",
+      "organizations_url": "https://api.github.com/users/jyasskin/orgs",
+      "repos_url": "https://api.github.com/users/jyasskin/repos",
+      "events_url": "https://api.github.com/users/jyasskin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jyasskin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-14T23:52:48Z",
+    "updated_at": "2018-08-14T23:54:48Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/288",
+      "html_url": "https://github.com/WICG/webpackage/pull/288",
+      "diff_url": "https://github.com/WICG/webpackage/pull/288.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/288.patch"
+    },
+    "body": "This lets the browser redirect there if it doesn't recognize the version of the signed exchange.\r\n\r\nThis sits on top of #287 and #281, so please only review [`99fa76f`](https://github.com/WICG/webpackage/pull/288/commits/99fa76f42e04d3f4c0cc2d933f9f7d5ead2428ce). It fixes #242.\r\n\r\nOne question here is whether to include the method with the fallback URL. We can't do anything with a non-GET method right now, and after many years of HTTP, the only acceptable methods are GET and HEAD anyway, so I think we should consider dropping the method entirely, although not in this PR.\r\n\r\nsigned-responses: [Preview](https://jyasskin.github.io/webpackage/fallback-url/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/fix-276-clearly-reuse-header-bytes/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/fallback-url/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nLoading: [Preview](https://jyasskin.github.io/webpackage/fallback-url/loading.html#mp-http-fetch)"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/287",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/287/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/287/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/287/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/287",
+    "id": 350598280,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4NDEwOTA5",
+    "number": 287,
+    "title": "Operate over header bytes instead of logical exchanges.",
+    "user": {
+      "login": "jyasskin",
+      "id": 83420,
+      "node_id": "MDQ6VXNlcjgzNDIw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/83420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jyasskin",
+      "html_url": "https://github.com/jyasskin",
+      "followers_url": "https://api.github.com/users/jyasskin/followers",
+      "following_url": "https://api.github.com/users/jyasskin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jyasskin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jyasskin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jyasskin/subscriptions",
+      "organizations_url": "https://api.github.com/users/jyasskin/orgs",
+      "repos_url": "https://api.github.com/users/jyasskin/repos",
+      "events_url": "https://api.github.com/users/jyasskin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jyasskin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-14T21:07:45Z",
+    "updated_at": "2018-08-17T05:42:05Z",
+    "closed_at": "2018-08-17T05:42:04Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/287",
+      "html_url": "https://github.com/WICG/webpackage/pull/287",
+      "diff_url": "https://github.com/WICG/webpackage/pull/287.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/287.patch"
+    },
+    "body": "Fixes #276 and makes it clearer that implementations shouldn't reserialize things per https://crbug.com/863499.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/fix-276-clearly-reuse-header-bytes/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/fix-276-clearly-reuse-header-bytes/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nThe change to the signed-message format can only take effect in b2, of course."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/286",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/286/labels{/name}",
@@ -574,7 +730,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -583,8 +739,8 @@
     "milestone": null,
     "comments": 3,
     "created_at": "2018-07-30T06:19:51Z",
-    "updated_at": "2018-07-31T03:47:20Z",
-    "closed_at": null,
+    "updated_at": "2018-08-17T05:42:03Z",
+    "closed_at": "2018-08-17T05:42:03Z",
     "author_association": "COLLABORATOR",
     "body": "We might want to adjust the signature message format so that it is easy to reuse the encoded headers when verifying the signature.\r\nThe `headers` required in Section 3.5 step 7.4.5 is a copy of the cbor appearing earlier. However, the fact that it appears inline in the map makes it hard for many cbor encoder implementation to reconstruct the cbor representation of the map without decode(encode(headers)), which is non-secure.\r\n\r\nMore discussion on the [crbug](https://bugs.chromium.org/p/chromium/issues/detail?id=863499)"
   },
@@ -1439,7 +1595,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/260.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/259",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1601,10 +1760,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/257.patch"
     },
     "body": "Change gen-signedexchange to try parsing all blocks in the key file as a\r\nprivate key. On OpenSSL 1.1.0h, the instructions at README.md result in\r\na key file that has two blocks, where the first is an EC PARAMETERS\r\nblock and the second is the EC PRIVATE KEY. This allows that file to be\r\nread."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/256",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3169,7 +3325,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/230.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/229",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3325,10 +3484,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/227.patch"
     },
     "body": "Two instances of receipient => recipient"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/226",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4027,9 +4183,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2018-06-13T17:18:55Z",
-    "updated_at": "2018-06-13T17:22:49Z",
+    "updated_at": "2018-08-16T19:26:21Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "This should use http://wicg.github.io/reporting/."
@@ -4862,7 +5018,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/200.patch"
     },
     "body": "Follows spec change after #180."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/199",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5018,10 +5177,7 @@
     "closed_at": "2018-08-14T18:25:27Z",
     "author_association": "COLLABORATOR",
     "body": "I suppose the latest draft of the -impl checkpoint basically follows the latest responses draft ('the main draft) with some gaps, so a typical workflow could be like to keep cherry-picking changes from the latest responses into the latest impl draft.  However there are some diffs that are only tracked by the impl checkpoint but not in the main draft, e.g. like https://github.com/WICG/webpackage/pull/155 (`MI` vs `MI-draft2`).  I can see the reason not to track this in the main draft, but I'm afraid tracking such changes that only exist in some branch but not in the master responses draft may become a bit cumbersome, especially if we start to have multiple of such diffs.\r\n\r\nWould it be possible to avoid doing this but instead put some instructions for the implementors in the main draft? (This is something @jyasskin mentioned as a potential alternative in some of our offline chat)  Or could we have some special section in the ChangeLog in the main draft so that all we need to cherry-pick can be still found in the main draft?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/196",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6533,7 +6689,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/170.patch"
     },
     "body": "I realized this should probably also go in before I publish the implementation draft.\r\n\r\nSpec: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nImpl draft: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/169",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6689,10 +6848,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/167.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/166",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8311,7 +8467,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/140.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/139",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8467,10 +8626,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/137.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/archival-use-case/draft-yasskin-webpackage-use-cases.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-webpackage-use-cases.txt&url2=https://jyasskin.github.io/webpackage/archival-use-case/draft-yasskin-webpackage-use-cases.txt)\r\n\r\n@ibnesayeed @craigfrancis @TzviyaSiegman, you've been interested in this topic in issues like #105. What should I write in this section? I don't know enough about the topic to even describe the use case well.\r\n\r\nI'm probably going to merge this without review to get it in time for the IETF deadline, but I'll definitely fix any comments that show up after that."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/136",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9925,7 +10081,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/110.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/envelope-format/draft-yasskin-http-origin-signed-responses.html#application-http-exchange)\r\n\r\nThis format wraps an HTTP exchange, which allows an HTTP/1 connection to\r\ntransfer cross-origin signed exchanges, and which may have other uses.\r\n\r\n@kinu @yoavweiss Does this look reasonable?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/109",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10081,10 +10240,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "If and when browser support for webpackage arrives, batch cache synchronization [1] or cache initialization [2] might be good use-cases, especially in the context of Service Worker. Using some sort of content negotiation mechanism, Service Worker might be able to ask the server for a webpackage that at least contains desired request URL(s). By unpacking the response and populating the cache, it can serve subsequent requests pretty quickly. What will be packed in the response is something that can be negotiated using some means or the server can decide as it does in case of HTTP/2 Server Hints (`prefetch`).\r\n\r\n[1] https://github.com/WICG/BackgroundSync\r\n[2] https://developer.mozilla.org/en-US/docs/Web/API/Cache/addAll"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/106",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11500,7 +11656,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/80.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/draft-webpackage-use-cases/draft-yasskin-webpackage-use-cases.html\r\n\r\n@mnot, you seemed to have some use cases for signing individual request/response/body triples, but I don't remember what they were. Could you list a couple so I can add them to this document?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/79",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11650,10 +11809,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/77.patch"
     },
     "body": "I've heard from at least two people who started reading the TAG's document instead of this one because of how prominently we highlight it."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/76",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13159,7 +13315,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/50.patch"
     },
     "body": "This uses the tool from #49."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/49",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13309,10 +13468,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "I received feedback from some of our security people that [DER](https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf) is easier to parse securely than [CBOR](https://tools.ietf.org/html/rfc7049). I'm not 100% sure that's the right choice yet, so here are some pros and cons.\r\n\r\nDER Pro's:\r\n1. Much older, with security-hardened implementations in many languages. e.g. BoringSSL includes a library for memory-safe DER parsing. CBOR has [many implementations](http://cbor.io/impls.html), but they aren't hardened.\r\n1. Prefixing with the length in bytes makes it easier to skip unneeded items. CBOR can work around this by embedding things into bytestrings.\r\n1. Generic parsing has only 2 cases: Primitive, where the interpretation of the bytes depends on the tag, and Constructed, where the content bytes encode a sequence of items. CBOR has 8 cases: integer, string, array, map, tag, simple value, simple value in next byte, and float. This is primarily used to skip unknown fields in structures.\r\n\r\nCBOR Pro's:\r\n1. ~8 primitive types instead of 30+. We can subset ASN.1 to only use INTEGER, OCTET STRING, UTF8String, and SEQUENCE, but we can also subset CBOR to use integers, byte strings, text strings, arrays, and maps.\r\n1. Extensibility based on maps from strings to values is easier to understand and possibly to manage than ASN.1's extensibility based on appending to sequences. However, it's possible I've missed a better way to extend structures in ASN.1.\r\n1. It's easy to find the latest specification.\r\n1. Combining the length into the type saves a byte for smaller items.\r\n1. Serializing canonical CBOR, which is needed for signature checking, is significantly easier to implement.\r\n1. All DER integers and floats have to deal with the complexity of encoding bignums. For our purposes, where bignums aren't needed, CBOR's 8,16,32, and 64-bit integers are simpler. Even if bignums were needed, it's likely that a fixed length would be simpler to specify and implement than DER's variable-length encoding.\r\n\r\n\r\nIf we stick with CBOR, we'll mandate [Canonical CBOR](https://tools.ietf.org/html/rfc7049#section-3.9), which includes minimal integer encodings. That means offsets will need to measure a range that doesn't include the offset itself, but that's doable for both the section list and the resource index.\r\n\r\nI'll update this list as more considerations come up."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/46",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14686,7 +14842,10 @@
     "closed_at": "2017-03-30T18:07:48Z",
     "author_association": "COLLABORATOR",
     "body": "For self extracting executables, the common implementation is to produce a file which is a concatenated binary executable head, and an archive tail.\r\n\r\nNode and Electron are looking at reusing webpackage possibly as things progress and need a way:\r\n\r\n* Have a signature for the concatenated binary+archive\r\n* Have a length pointer to let the runtime jump to the start of the archive\r\n\r\nSelf extracting zip files, ASAR from electron, and NODA are examples of this from the past. These all work by having a directory at end of file, but for all use cases I know a pointer to start of archive on the tail would be sufficient. Doing so would most likely just be a series of magic bytes and kength that exists at the end of the file. It could be optional but must be easy to add to an existing webpackage.\r\n\r\nFor a signature of the entire binary + archive this is important so people don't perform a secondary concatenation and load a different archive than expected, it most likely can just be a well known header that optionally exists on the package headers."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/19",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14842,10 +15001,7 @@
     "closed_at": "2016-12-07T00:40:56Z",
     "author_association": "NONE",
     "body": "It's not clear from the document whether offsets specified in the header or index of a nested package are to be taken from the start of the containing/primary package data or from the start of the nested package header.  \r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/16",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
