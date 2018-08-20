@@ -525,7 +525,6 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
  [
    {
-     ':url': 'https://example.com/',
      'accept': '*/*',
      ':method': 'GET',
    },
@@ -554,6 +553,7 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
 
    The first map (second item) in the CBOR array is treated as the end-
    entity certificate, and the client will attempt to build a path
+
 
 
 
@@ -1657,12 +1657,12 @@ Internet-Draft            Signed HTTP Exchanges              August 2018
    [I-D.ietf-cbor-cddl], and most of the "Signature" header field and
    payload elided with a ...:
 
-   sxg1\0<3-byte length of the following header
+   sxg1\0\0\0\0<2-byte length of the following url string>
+   https://example.com/<3-byte length of the following header
    value><3-byte length of the encoding of the
    following array>sig1; sig=*...; integrity="digest/mi-sha256"; ...[
      {
        ':method': 'GET',
-       ':url': 'https://example.com/',
        'accept', '*/*'
      },
      {
