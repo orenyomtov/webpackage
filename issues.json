@@ -43,10 +43,10 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-08-16T07:33:00Z",
-    "updated_at": "2018-08-16T07:33:00Z",
+    "updated_at": "2018-08-20T04:43:57Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
-    "body": "For feature detection some of us have been discussing that we could add Accept: application/signed-exchanges headers.  However given that SXG can have any resources it looks the UAs that support SXG always need to attach / append SXG type even when anything can be accepted, so it could look something like Accept: application/signed-exchange;q=0.9,*/*;q=0.8 for default, non-specific subresource requests.  Would it be just or if we want to think about alternative feature detection mechanism (e.g. specific headers etc)?"
+    "body": "For feature detection some of us have been discussing that we could add Accept: application/signed-exchanges headers.  However given that SXG can have any resources it looks the UAs that support SXG always need to attach / append SXG type even when anything can be accepted, so it could look something like `Accept: application/signed-exchange;q=0.9,*/*;q=0.8` for default, non-specific subresource requests.  Would it be just or if we want to think about alternative feature detection mechanism (e.g. specific headers etc)?"
   },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/288",
@@ -91,7 +91,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-08-14T23:52:48Z",
-    "updated_at": "2018-08-14T23:54:48Z",
+    "updated_at": "2018-08-20T07:11:02Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -298,7 +298,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -307,8 +307,8 @@
     "milestone": null,
     "comments": 1,
     "created_at": "2018-08-08T21:16:30Z",
-    "updated_at": "2018-08-14T09:50:36Z",
-    "closed_at": null,
+    "updated_at": "2018-08-20T07:10:10Z",
+    "closed_at": "2018-08-20T07:10:10Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/284",
@@ -460,17 +460,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 3,
     "created_at": "2018-08-06T21:26:25Z",
-    "updated_at": "2018-08-13T22:26:23Z",
-    "closed_at": null,
+    "updated_at": "2018-08-20T07:09:32Z",
+    "closed_at": "2018-08-20T07:09:32Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/281",
@@ -568,17 +568,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 2,
+    "comments": 3,
     "created_at": "2018-07-31T03:34:39Z",
-    "updated_at": "2018-07-31T03:47:49Z",
-    "closed_at": null,
+    "updated_at": "2018-08-20T01:38:16Z",
+    "closed_at": "2018-08-20T01:38:16Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/279",
@@ -2268,10 +2268,10 @@
     "milestone": null,
     "comments": 4,
     "created_at": "2018-07-08T16:22:38Z",
-    "updated_at": "2018-07-16T17:10:07Z",
+    "updated_at": "2018-08-17T16:54:11Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
-    "body": "## I wish signed exchanges to cover the non-repudiation use-case\r\n\r\nI wish to use the `Signature` header for non repudiation.\r\n\r\nExample:\r\n\r\n  - client sends a request with a Signature of given headers and payload\r\n  - server replies with a Signature that may contain e.g. the request hash\r\n\r\nAn example of non-repudiation via HTTP Headers is defined in:\r\n\r\n-  [Berlin Group Financial API §11](https://docs.wixstatic.com/ugd/c2914b_5351b289bf844c6881e46ee3561d95bb.pdf) based on [https://tools.ietf.org/html/draft-cavage-http-signatures-10](draft-cavage-http-signatures-10)\r\n\r\n## Questions \r\n\r\nMinimal data was similar to a JWS claim\r\n\r\n  - issuer, audience, subject, issued_at, not_before, expires\r\n\r\nNice to have data, with certificate content:\r\n\r\n  - eg. x5c\r\n\r\n## Questions from #88 \r\n\r\nAbout https://github.com/WICG/webpackage/pull/88#discussion_r152628889\r\n\r\n  - agree JWS security issues though not everybody agrees on deprecating JOSE [see those tweets on jose vs paseto]( https://twitter.com/ioggstream/status/972126134136647687)\r\n\r\n  -  support for different curves and rsa is useful: is `CSP-style` eg `key=ed25519-base64` that dangerous, considering that we should somewhat converge in some way? Clearly RSA would be insanely longer\r\n\r\n  - about algos, in your opinion will ed25519 replace all the other algos in the near future so that we should \"hardcode\" its name? Should we \"deprecate\" RSA signatures?\r\n\r\n  - About `Digest`: which is the difference b/w using `Digest` and eg `MI` for that purpose? See https://github.com/martinthomson/http-mice/issues/11\r\n  \r\n\r\n\r\n"
+    "body": "## I wish signed exchanges to cover the non-repudiation use-case\r\n\r\nI wish to use the `Signature` header for non repudiation.\r\n\r\nExample:\r\n\r\n  - client sends a request with a Signature of given headers and payload\r\n  - server replies with a Signature that may contain e.g. the request hash\r\n\r\n### Non repudiation\r\nSee [nist 800-32](https://csrc.nist.gov/publications/detail/sp/800-32/final)\r\n\r\nAssurance that:\r\n\r\n  - the sender is provided with proof of delivery \r\n  - and that the recipient is provided with proof of the sender's identity \r\n\r\nso that neither can later deny having processed the data.\r\n\r\nTechnical non repudiation refers to the assurance a Relying Party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key. Legal non-repudiation refers to how well possession or control of the private signature key can be established. \r\n\r\n### Elements for non repudiation\r\n\r\nNon repudiation via PKI is usually achieved adding\r\n\r\n1- in a request\r\n\r\n  - an hash of the request representation\r\n  - a signature of the above hash and further elements, eg: `issuer, audience, subject, issued_at, not_before, expires`, similar to JWS claims\r\n  - sender informations\r\n\r\n2- in a response\r\n\r\n  - an hash of the response representation\r\n  - a signature of the above hash and further elements, including an hash of the original request\r\n  - original request informations (eg. the hash) may be added in the response representation\r\n\r\n\r\nFurther informations may include:\r\n\r\n  - URL or content of the certificate to be used for validating the signature\r\n\r\n### Signature and Non Repudiation\r\n\r\nThere are various similarities b/w the informations contained in this spec and Non Repudiation.\r\n\r\n  - `Digest` can be used to guarantee the integrity of the representation (eg. with other values of Content-Encoding)\r\n  - `Signature` covers a list of `Signed-Headers` which may cover all necessary headers\r\n\r\n\r\n## References\r\n\r\nAn example of non-repudiation via HTTP Headers is defined in:\r\n\r\n-  [Berlin Group Financial API §11](https://docs.wixstatic.com/ugd/c2914b_5351b289bf844c6881e46ee3561d95bb.pdf) based on [https://tools.ietf.org/html/draft-cavage-http-signatures-10](draft-cavage-http-signatures-10)\r\n\r\n\r\n## Questions from #88 \r\n\r\nAbout https://github.com/WICG/webpackage/pull/88#discussion_r152628889\r\n\r\n  - agree JWS security issues though not everybody agrees on deprecating JOSE [see those tweets on jose vs paseto]( https://twitter.com/ioggstream/status/972126134136647687)\r\n\r\n  -  support for different curves and rsa is useful: is `CSP-style` eg `key=ed25519-base64` that dangerous, considering that we should somewhat converge in some way? Clearly RSA would be insanely longer\r\n\r\n  - about algos, in your opinion will ed25519 replace all the other algos in the near future so that we should \"hardcode\" its name? Should we \"deprecate\" RSA signatures?\r\n\r\n  \r\n\r\n\r\n"
   },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/247",
@@ -9499,9 +9499,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 3,
     "created_at": "2018-02-07T22:49:20Z",
-    "updated_at": "2018-02-28T23:28:31Z",
+    "updated_at": "2018-08-20T06:19:55Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
