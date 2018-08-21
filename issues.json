@@ -1,6 +1,114 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/291",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/291/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/291/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/291/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/291",
+    "id": 352451482,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5NzU3Nzgx",
+    "number": 291,
+    "title": "Add signedexchange/version",
+    "user": {
+      "login": "hajimehoshi",
+      "id": 16950,
+      "node_id": "MDQ6VXNlcjE2OTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16950?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hajimehoshi",
+      "html_url": "https://github.com/hajimehoshi",
+      "followers_url": "https://api.github.com/users/hajimehoshi/followers",
+      "following_url": "https://api.github.com/users/hajimehoshi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hajimehoshi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hajimehoshi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hajimehoshi/subscriptions",
+      "organizations_url": "https://api.github.com/users/hajimehoshi/orgs",
+      "repos_url": "https://api.github.com/users/hajimehoshi/repos",
+      "events_url": "https://api.github.com/users/hajimehoshi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hajimehoshi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-21T09:12:00Z",
+    "updated_at": "2018-08-21T09:16:53Z",
+    "closed_at": "2018-08-21T09:16:38Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/291",
+      "html_url": "https://github.com/WICG/webpackage/pull/291",
+      "diff_url": "https://github.com/WICG/webpackage/pull/291.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/291.patch"
+    },
+    "body": "This PR introduces `Version` type to represent spec versions. This is needed to be a new package since this is referenced from multiple packages not only `signedexchange` but also `mice`."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/290",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/290/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/290/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/290/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/290",
+    "id": 352014812,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5NDMyNjky",
+    "number": 290,
+    "title": "Update examples to match the new format",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-20T07:25:40Z",
+    "updated_at": "2018-08-20T08:23:20Z",
+    "closed_at": "2018-08-20T08:23:20Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/290",
+      "html_url": "https://github.com/WICG/webpackage/pull/290",
+      "diff_url": "https://github.com/WICG/webpackage/pull/290.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/290.patch"
+    },
+    "body": "@jyasskin FYI OOO"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/289",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/289/labels{/name}",
@@ -82,7 +190,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -91,8 +199,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-08-14T23:52:48Z",
-    "updated_at": "2018-08-20T07:11:02Z",
-    "closed_at": null,
+    "updated_at": "2018-08-20T21:41:49Z",
+    "closed_at": "2018-08-20T07:21:22Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/288",
@@ -145,7 +253,7 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2018-08-14T21:07:45Z",
-    "updated_at": "2018-08-17T05:42:05Z",
+    "updated_at": "2018-08-20T21:41:01Z",
     "closed_at": "2018-08-17T05:42:04Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -307,7 +415,7 @@
     "milestone": null,
     "comments": 1,
     "created_at": "2018-08-08T21:16:30Z",
-    "updated_at": "2018-08-20T07:10:10Z",
+    "updated_at": "2018-08-20T21:41:30Z",
     "closed_at": "2018-08-20T07:10:10Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -469,7 +577,7 @@
     "milestone": null,
     "comments": 3,
     "created_at": "2018-08-06T21:26:25Z",
-    "updated_at": "2018-08-20T07:09:32Z",
+    "updated_at": "2018-08-20T21:42:03Z",
     "closed_at": "2018-08-20T07:09:32Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1487,7 +1595,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/262.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/261",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1595,10 +1706,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/260.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/259",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -2688,7 +2796,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -2697,8 +2805,8 @@
     "milestone": null,
     "comments": 5,
     "created_at": "2018-07-03T16:12:13Z",
-    "updated_at": "2018-07-06T05:19:54Z",
-    "closed_at": null,
+    "updated_at": "2018-08-20T07:21:21Z",
+    "closed_at": "2018-08-20T07:21:21Z",
     "author_association": "COLLABORATOR",
     "body": "Chromium would like to be able to ship these formats and then continue evolving them as they make their way through the standards process. QUIC attempts something like this by defining [\"invariants\"](https://tools.ietf.org/html/draft-ietf-quic-invariants-01), \"properties of the QUIC transport protocol that are expected to remain unchanged over time as new versions of the protocol are developed.\" To try the same thing in these specifications, it might make sense to put a fallback URL in a fixed place in both the signed exchange and bundles formats.\r\n\r\nFor signed exchanges, this would be the request URL that's currently encoded as the `:url` field in the [request headers](https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses-04#section-3.2). For bundles, it would be the [`start_url`](https://www.w3.org/TR/appmanifest/#start_url-member) that's expected to be in the bundle's [manifest](https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges-00#section-3.2.2). In both cases, the value would be moved instead of copied to the new location, to avoid the possibility of inconsistencies.\r\n\r\nWhen the client receives an unknown version of the format (either too old or too new), it would redirect to the fallback URL. Offline users would be out of luck, but online ones would still be able to get the content.\r\n\r\nThis could also be accomplished using content negotiation on the `Accept` header, but that's a [joint that might rust shut](https://www.imperialviolet.org/2016/05/16/agility.html), so we should try to make things work even if it's rusty, if possible.\r\n\r\nThoughts?"
   },
@@ -3217,7 +3325,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/232.patch"
     },
     "body": "I think this catches everything that we're expecting to be different or missing in the Chrome 69 implementation vs the main spec. Let me know if I've missed anything.\r\n\r\nFixes #186."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/231",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3325,10 +3436,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/230.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/229",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4878,7 +4986,10 @@
     "closed_at": "2018-06-19T05:50:47Z",
     "author_association": "COLLABORATOR",
     "body": "cc: @jyasskin \r\n\r\nIn the step 12.2 of \"[Load a bundle's metadata](https://wicg.github.io/webpackage/draft-yasskin-dispatch-bundled-exchanges.html#load-metadata)\", the text says:\r\n> If \"name\"’s Metadata field is “No”, continue to the next triple.\r\n\r\nI couldn't find where a Metadata field for a \"name\" is. Can we clarify the text here?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/201",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5018,10 +5129,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/200.patch"
     },
     "body": "Follows spec change after #180."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/199",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6581,7 +6689,10 @@
     "closed_at": "2018-04-10T22:18:52Z",
     "author_association": "NONE",
     "body": "After the change https://github.com/WICG/webpackage/pull/170, URLs (request URL, certUrl, and validityUrl) must be **[absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string)**.\r\n\r\nIf my understanding is correct, **[absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string)** can't contain the fragment.\r\nThe fragments is meaningless for certURL and validityUrl.\r\nBut I think it is useful for request URL.\r\n\r\ncc: @jyasskin @twifkak @nyaxt "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/171",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6689,10 +6800,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/170.patch"
     },
     "body": "I realized this should probably also go in before I publish the implementation draft.\r\n\r\nSpec: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\nImpl draft: [Preview](https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt&url2=https://jyasskin.github.io/webpackage/absolute-urls/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/169",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8365,7 +8473,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/141",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8467,10 +8578,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/140.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/139",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9973,7 +10081,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/112.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/cleanup/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/cleanup/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n@KenjiBaheux, the introduction here should be usable as a simple explainer. Please check that it's readable and explains enough."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/111",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10081,10 +10192,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/110.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/envelope-format/draft-yasskin-http-origin-signed-responses.html#application-http-exchange)\r\n\r\nThis format wraps an HTTP exchange, which allows an HTTP/1 connection to\r\ntransfer cross-origin signed exchanges, and which may have other uses.\r\n\r\n@kinu @yoavweiss Does this look reasonable?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/109",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11548,7 +11656,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/82.patch"
     },
     "body": "Preview in https://jyasskin.github.io/webpackage/alex-changes/draft-yasskin-webpackage-use-cases.html.\r\n\r\nDid I miss anything obvious or say anything incorrect?\r\n\r\nThis also adds an explicit \"Implementations are hard to get wrong\" requirement."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/81",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11656,10 +11767,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/80.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/draft-webpackage-use-cases/draft-yasskin-webpackage-use-cases.html\r\n\r\n@mnot, you seemed to have some use cases for signing individual request/response/body triples, but I don't remember what they were. Could you list a couple so I can add them to this document?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/79",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13207,7 +13315,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://research.google.com/pubs/pub41892.html describes a way to grant capabilities in a way the receiver can attenuate and pass on. We're thinking of having authorities counter-sign packages in order to say, for example, that FooCorp trusts this package to `fetch()` from internal systems. Maybe macaroons are a better way to express this."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/51",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13315,10 +13426,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/50.patch"
     },
     "body": "This uses the tool from #49."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/49",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14740,7 +14848,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/22.patch"
     },
     "body": "fixes #14 "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/21",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14842,10 +14953,7 @@
     "closed_at": "2017-03-30T18:07:48Z",
     "author_association": "COLLABORATOR",
     "body": "For self extracting executables, the common implementation is to produce a file which is a concatenated binary executable head, and an archive tail.\r\n\r\nNode and Electron are looking at reusing webpackage possibly as things progress and need a way:\r\n\r\n* Have a signature for the concatenated binary+archive\r\n* Have a length pointer to let the runtime jump to the start of the archive\r\n\r\nSelf extracting zip files, ASAR from electron, and NODA are examples of this from the past. These all work by having a directory at end of file, but for all use cases I know a pointer to start of archive on the tail would be sufficient. Doing so would most likely just be a series of magic bytes and kength that exists at the end of the file. It could be optional but must be easy to add to an existing webpackage.\r\n\r\nFor a signature of the entire binary + archive this is important so people don't perform a secondary concatenation and load a different archive than expected, it most likely can just be a well known header that optionally exists on the package headers."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/19",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
