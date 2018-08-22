@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/292",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/292/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/292/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/292/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/292",
+    "id": 352512893,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5ODA1OTE3",
+    "number": 292,
+    "title": "Implement b2 version of encoder",
+    "user": {
+      "login": "hajimehoshi",
+      "id": 16950,
+      "node_id": "MDQ6VXNlcjE2OTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16950?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hajimehoshi",
+      "html_url": "https://github.com/hajimehoshi",
+      "followers_url": "https://api.github.com/users/hajimehoshi/followers",
+      "following_url": "https://api.github.com/users/hajimehoshi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hajimehoshi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hajimehoshi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hajimehoshi/subscriptions",
+      "organizations_url": "https://api.github.com/users/hajimehoshi/orgs",
+      "repos_url": "https://api.github.com/users/hajimehoshi/repos",
+      "events_url": "https://api.github.com/users/hajimehoshi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hajimehoshi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-21T12:18:15Z",
+    "updated_at": "2018-08-22T08:26:42Z",
+    "closed_at": "2018-08-22T08:26:37Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/292",
+      "html_url": "https://github.com/WICG/webpackage/pull/292",
+      "diff_url": "https://github.com/WICG/webpackage/pull/292.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/292.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/291",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/291/labels{/name}",
@@ -41,9 +95,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-08-21T09:12:00Z",
-    "updated_at": "2018-08-21T09:16:53Z",
+    "updated_at": "2018-08-21T09:56:57Z",
     "closed_at": "2018-08-21T09:16:38Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1541,7 +1595,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/263.patch"
     },
     "body": "That function is not used anywhere."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/262",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1595,10 +1652,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/262.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/261",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3271,7 +3325,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/233.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/232",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3325,10 +3382,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/232.patch"
     },
     "body": "I think this catches everything that we're expecting to be different or missing in the Chrome 69 implementation vs the main spec. Let me know if I've missed anything.\r\n\r\nFixes #186."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/231",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4893,7 +4947,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/203.patch"
     },
     "body": "The leading `+` in L336 caused the markdown parser to interpret it as a new unordered list. This PR fixes it by moving the `+` to the end of previous line."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/202",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4986,10 +5043,7 @@
     "closed_at": "2018-06-19T05:50:47Z",
     "author_association": "COLLABORATOR",
     "body": "cc: @jyasskin \r\n\r\nIn the step 12.2 of \"[Load a bundle's metadata](https://wicg.github.io/webpackage/draft-yasskin-dispatch-bundled-exchanges.html#load-metadata)\", the text says:\r\n> If \"name\"’s Metadata field is “No”, continue to the next triple.\r\n\r\nI couldn't find where a Metadata field for a \"name\" is. Can we clarify the text here?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/201",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6641,7 +6695,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/173.patch"
     },
     "body": "Thanks @kinu! This is a subset of your document that I think will give folks like the TAG enough to go on. The rest of your doc is most of the specification.\r\n\r\nhttps://github.com/jyasskin/webpackage/blob/sketch-loading/explainer.md#signed-exchange-loading-sketch"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/172",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6689,10 +6746,7 @@
     "closed_at": "2018-04-10T22:18:52Z",
     "author_association": "NONE",
     "body": "After the change https://github.com/WICG/webpackage/pull/170, URLs (request URL, certUrl, and validityUrl) must be **[absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string)**.\r\n\r\nIf my understanding is correct, **[absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string)** can't contain the fragment.\r\nThe fragments is meaningless for certURL and validityUrl.\r\nBut I think it is useful for request URL.\r\n\r\ncc: @jyasskin @twifkak @nyaxt "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/171",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8380,7 +8434,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/143.patch"
     },
     "body": "Updates gen-signedexchange to match spec text changes in 3cae5496a86cafde2ab59f95bb62d6d47202445b"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/142",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8473,10 +8530,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/141",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10027,7 +10081,10 @@
     "closed_at": "2018-05-08T22:54:07Z",
     "author_association": "NONE",
     "body": "I'd like to propose that we explore an alternative name for webpackage. Although [webpack](https://webpack.js.org/) is a separate tool in concerns of responsibilities from webpackage, I've already had a variety of confusion expressed from our userbase about what webpackage is and how it relates to webpack. \r\n\r\n\r\nMaybe some options: \r\n* WebParcel\r\n* WebZip\r\n* WebDistro\r\n\r\nMind you these are off the cuff, but I'd like to formally spin up the work involved to start exploring a replacement if there are no objections. "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/112",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10081,10 +10138,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/112.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/cleanup/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/cleanup/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n@KenjiBaheux, the introduction here should be usable as a simple explainer. Please check that it's readable and explains enough."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/111",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11602,7 +11656,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/83.patch"
     },
     "body": "Preview in https://jyasskin.github.io/webpackage/alex-changes/draft-yasskin-webpackage-use-cases.html.\r\n\r\nThis also adds a \"Metadata\" requirement from https://www.w3.org/TR/pwp-ucr/#archmetadata, which is also used by the offline-installation use case."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/82",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11656,10 +11713,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/82.patch"
     },
     "body": "Preview in https://jyasskin.github.io/webpackage/alex-changes/draft-yasskin-webpackage-use-cases.html.\r\n\r\nDid I miss anything obvious or say anything incorrect?\r\n\r\nThis also adds an explicit \"Implementations are hard to get wrong\" requirement."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/81",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13267,7 +13321,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/53.patch"
     },
     "body": "It also removes the O(#parts^2) slowdown from inserting offsets one at a time, and makes it possible to build packages larger than fit in memory.\r\n\r\n@mrdewitt"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/52",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13315,10 +13372,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://research.google.com/pubs/pub41892.html describes a way to grant capabilities in a way the receiver can attenuate and pass on. We're thinking of having authorities counter-sign packages in order to say, for example, that FooCorp trusts this package to `fetch()` from internal systems. Maybe macaroons are a better way to express this."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/51",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14794,7 +14848,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/23.patch"
     },
     "body": "This allows for:\r\n\r\n* streaming without worrying about collision and without the need to pre-parse the file\r\n* signatures to be preserved even if chunk sizes differ due to streaming\r\n\r\nfixes #6"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/22",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14848,10 +14905,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/22.patch"
     },
     "body": "fixes #14 "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/21",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
