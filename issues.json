@@ -1,6 +1,210 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/298",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/298/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/298/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/298/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/298",
+    "id": 356377056,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEyNjU0MzM3",
+    "number": 298,
+    "title": "Update Change Log entries",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-03T06:45:27Z",
+    "updated_at": "2018-09-03T06:45:27Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/298",
+      "html_url": "https://github.com/WICG/webpackage/pull/298",
+      "diff_url": "https://github.com/WICG/webpackage/pull/298.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/298.patch"
+    },
+    "body": "Ported from https://github.com/WICG/webpackage/pull/296"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/297",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/297/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/297/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/297/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/297",
+    "id": 354564651,
+    "node_id": "MDU6SXNzdWUzNTQ1NjQ2NTE=",
+    "number": 297,
+    "title": "Specify how to handle too-long URLs?",
+    "user": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-28T04:15:09Z",
+    "updated_at": "2018-08-28T04:15:09Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "The new spec allows fallbackURLs up to 65536 bytes long, but several existing browsers have lower limits than that. Perhaps the fetch spec should say how browsers should respond if the fallbackUrl is too long, or alternatively specify a minimum length they must support. Otherwise, browsers may behave differently (e.g. network error, redirect to fallback URL, or display a trimmed URL). Or is this already covered by some other part of Fetch?"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/296",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/296/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/296/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/296/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/296",
+    "id": 354183002,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjExMDA3Nzcx",
+    "number": 296,
+    "title": "Snapshot implementation draft b2",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-27T05:19:21Z",
+    "updated_at": "2018-09-03T12:46:42Z",
+    "closed_at": "2018-09-03T12:46:42Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/296",
+      "html_url": "https://github.com/WICG/webpackage/pull/296",
+      "diff_url": "https://github.com/WICG/webpackage/pull/296.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/296.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/295",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/295/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/295/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/295",
+    "id": 353349293,
+    "node_id": "MDU6SXNzdWUzNTMzNDkyOTM=",
+    "number": 295,
+    "title": "Recommend that a browser \"reload\" contacts the logical origin",
+    "user": {
+      "login": "ithinkihaveacat",
+      "id": 51244,
+      "node_id": "MDQ6VXNlcjUxMjQ0",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/51244?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ithinkihaveacat",
+      "html_url": "https://github.com/ithinkihaveacat",
+      "followers_url": "https://api.github.com/users/ithinkihaveacat/followers",
+      "following_url": "https://api.github.com/users/ithinkihaveacat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ithinkihaveacat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ithinkihaveacat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ithinkihaveacat/subscriptions",
+      "organizations_url": "https://api.github.com/users/ithinkihaveacat/orgs",
+      "repos_url": "https://api.github.com/users/ithinkihaveacat/repos",
+      "events_url": "https://api.github.com/users/ithinkihaveacat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ithinkihaveacat/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-23T12:01:00Z",
+    "updated_at": "2018-08-23T12:01:00Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "body": "Recommend that if the user hits the \"reload\" button in their browser, the browser will contact the logical origin (i.e. the URL that is visible in the browser's URL bar) to determine freshness.\r\n\r\n(Currently not specified, but seem to be the expected behaviour, see e.g. [1](https://github.com/WICG/webpackage/issues/149#issuecomment-374011263), [2](https://github.com/WICG/webpackage/issues/293#issuecomment-415102090).) "
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/294",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/294/labels{/name}",
@@ -43,7 +247,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-08-23T01:30:13Z",
-    "updated_at": "2018-08-23T02:18:36Z",
+    "updated_at": "2018-08-23T02:49:49Z",
     "closed_at": "2018-08-23T02:18:36Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1379,7 +1583,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/269.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/268",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1589,10 +1796,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/265.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/264",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -2532,10 +2736,10 @@
     "milestone": null,
     "comments": 4,
     "created_at": "2018-07-08T16:22:38Z",
-    "updated_at": "2018-08-17T16:54:11Z",
+    "updated_at": "2018-08-29T12:25:12Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
-    "body": "## I wish signed exchanges to cover the non-repudiation use-case\r\n\r\nI wish to use the `Signature` header for non repudiation.\r\n\r\nExample:\r\n\r\n  - client sends a request with a Signature of given headers and payload\r\n  - server replies with a Signature that may contain e.g. the request hash\r\n\r\n### Non repudiation\r\nSee [nist 800-32](https://csrc.nist.gov/publications/detail/sp/800-32/final)\r\n\r\nAssurance that:\r\n\r\n  - the sender is provided with proof of delivery \r\n  - and that the recipient is provided with proof of the sender's identity \r\n\r\nso that neither can later deny having processed the data.\r\n\r\nTechnical non repudiation refers to the assurance a Relying Party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key. Legal non-repudiation refers to how well possession or control of the private signature key can be established. \r\n\r\n### Elements for non repudiation\r\n\r\nNon repudiation via PKI is usually achieved adding\r\n\r\n1- in a request\r\n\r\n  - an hash of the request representation\r\n  - a signature of the above hash and further elements, eg: `issuer, audience, subject, issued_at, not_before, expires`, similar to JWS claims\r\n  - sender informations\r\n\r\n2- in a response\r\n\r\n  - an hash of the response representation\r\n  - a signature of the above hash and further elements, including an hash of the original request\r\n  - original request informations (eg. the hash) may be added in the response representation\r\n\r\n\r\nFurther informations may include:\r\n\r\n  - URL or content of the certificate to be used for validating the signature\r\n\r\n### Signature and Non Repudiation\r\n\r\nThere are various similarities b/w the informations contained in this spec and Non Repudiation.\r\n\r\n  - `Digest` can be used to guarantee the integrity of the representation (eg. with other values of Content-Encoding)\r\n  - `Signature` covers a list of `Signed-Headers` which may cover all necessary headers\r\n\r\n\r\n## References\r\n\r\nAn example of non-repudiation via HTTP Headers is defined in:\r\n\r\n-  [Berlin Group Financial API §11](https://docs.wixstatic.com/ugd/c2914b_5351b289bf844c6881e46ee3561d95bb.pdf) based on [https://tools.ietf.org/html/draft-cavage-http-signatures-10](draft-cavage-http-signatures-10)\r\n\r\n\r\n## Questions from #88 \r\n\r\nAbout https://github.com/WICG/webpackage/pull/88#discussion_r152628889\r\n\r\n  - agree JWS security issues though not everybody agrees on deprecating JOSE [see those tweets on jose vs paseto]( https://twitter.com/ioggstream/status/972126134136647687)\r\n\r\n  -  support for different curves and rsa is useful: is `CSP-style` eg `key=ed25519-base64` that dangerous, considering that we should somewhat converge in some way? Clearly RSA would be insanely longer\r\n\r\n  - about algos, in your opinion will ed25519 replace all the other algos in the near future so that we should \"hardcode\" its name? Should we \"deprecate\" RSA signatures?\r\n\r\n  \r\n\r\n\r\n"
+    "body": "## I wish signed exchanges to cover the non-repudiation use-case\r\n\r\nI wish to use the `Signature` header for non repudiation.\r\n\r\nExample:\r\n\r\n  - client sends a request with a Signature of given headers and payload\r\n  - server replies with a Signature that may contain e.g. the request hash\r\n\r\n### Non repudiation\r\nSee [nist 800-32](https://csrc.nist.gov/publications/detail/sp/800-32/final)\r\n\r\nAssurance that:\r\n\r\n  - the sender is provided with proof of delivery \r\n  - and that the recipient is provided with proof of the sender's identity \r\n\r\nso that neither can later deny having processed the data.\r\n\r\nTechnical non repudiation refers to the assurance a Relying Party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key. \r\n\r\nLegal non-repudiation refers to how well possession or control of the private signature key can be established. \r\n\r\n### Elements for non repudiation\r\n\r\nNon repudiation via PKI is usually achieved adding\r\n\r\n1- in a request\r\n\r\n  - an hash of the request representation\r\n  - a signature of the above hash and further elements, eg: `issuer, audience, subject, issued_at, not_before, expires`, similar to JWS claims\r\n  - sender informations\r\n\r\n2- in a response\r\n\r\n  - an hash of the response representation\r\n  - a signature of the above hash and further elements, including an hash of the original request\r\n  - original request informations (eg. the hash) may be added in the response representation\r\n\r\n\r\nFurther informations may include:\r\n\r\n  - URL or content of the certificate to be used for validating the signature\r\n\r\n### Signature and Non Repudiation\r\n\r\nThere are various similarities b/w the informations contained in this spec and Non Repudiation.\r\n\r\n  - `Digest` can be used to guarantee the integrity of the representation (eg. with other values of Content-Encoding)\r\n  - `Signature` covers a list of `Signed-Headers` which may cover all necessary headers\r\n\r\n\r\n## References\r\n\r\nAn example of non-repudiation via HTTP Headers is defined in:\r\n\r\n-  [Berlin Group Financial API §11](https://docs.wixstatic.com/ugd/c2914b_5351b289bf844c6881e46ee3561d95bb.pdf) based on [https://tools.ietf.org/html/draft-cavage-http-signatures-10](draft-cavage-http-signatures-10)\r\n\r\n\r\n## Questions from #88 \r\n\r\nAbout https://github.com/WICG/webpackage/pull/88#discussion_r152628889\r\n\r\n  - agree JWS security issues though not everybody agrees on deprecating JOSE [see those tweets on jose vs paseto]( https://twitter.com/ioggstream/status/972126134136647687)\r\n\r\n  -  support for different curves and rsa is useful: is `CSP-style` eg `key=ed25519-base64` that dangerous, considering that we should somewhat converge in some way? Clearly RSA would be insanely longer\r\n\r\n  - about algos, in your opinion will ed25519 replace all the other algos in the near future so that we should \"hardcode\" its name? Should we \"deprecate\" RSA signatures?\r\n\r\n  \r\n\r\n\r\n"
   },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/247",
@@ -3127,7 +3331,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/239.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/238",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3325,10 +3532,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/235.patch"
     },
     "body": "The examples show a mi-sha256 hexdigest instead of bas64 encoding,\r\n\r\nsee https://github.com/martinthomson/http-mice/blob/master/draft-thomson-http-mice.md"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/234",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4731,7 +4935,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/209.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/208",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4941,10 +5148,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/205.patch"
     },
     "body": "HTTP Header names are case-insensitive."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/204",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6453,7 +6657,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/179.patch"
     },
     "body": "See discussion in\r\nhttps://lists.w3.org/Archives/Public/ietf-http-wg/2018AprJun/0041.html.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.txt)\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/178",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6689,10 +6896,7 @@
     "closed_at": "2018-07-10T06:34:41Z",
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cert-chain-format\r\n\r\n> 2. The first certificate’s ocsp value *if any* MUST be a complete, DER-encoded OCSP response for that certificate\r\n\r\nThis reads main certificate's ocsp property is optional, but actually it's required in the step 6.3 of [Cross-origin trust](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-trust)?\r\n\r\n> 3. Each certificate’s sct value MUST be a SignedCertificateTimestampList for that certificate\r\n\r\n- Add \"if any\" since SCTs may be embedded in the `cert` or `ocsp`? (#171)\r\n- The step 6.4 of [Cross-origin trust](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-trust) uses only SCTs for main certificate. If `sct` is to provide a channel to supply SCTs instead of the TLS extension, should the spec say that subsequent certificates MUST NOT have a `sct` value?\r\n\r\n@jyasskin @hajimehoshi @nyaxt "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/174",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8211,7 +8415,10 @@
     "closed_at": "2018-05-15T16:10:30Z",
     "author_association": "NONE",
     "body": "The use case document has a section on [how webpackages may help users avoid censorship](https://wicg.github.io/webpackage/draft-yasskin-webpackage-use-cases.html#rfc.section.2.2.2) but I'm wondering if they may also help achieve the opposite outcome: to allow authorities to censor content. (In particular, to withhold new content, and present old content as if it were fresh.)\r\n\r\nWith current browsers, when a user clicks on a link, if a page subsequently loads and `https://news.example.com/` is shown in the URL bar, they can be confident that the browser is displaying content retrieved from `news.example.com` and that was retrieved *after* they clicked on the link.  (That is, the content is fresh.) However, this is not necessarily true if the resource in question is a signed webpackage delivered by a CDN: whilst the content was signed by `news.example.com`, it could be up to 7 days old.\r\n\r\nThis may result in unexpected behavior for users in regions where the use of such CDNs/caches is pervasive (for e.g. performance and/or regulatory reasons) and where the cache operator has the ability and desire to selectively censor information (perhaps in reaction to a particular event or crisis). \r\n\r\nIf the cache rewrites links, it may even be possible to arrange for an entire website to appear up to date and completely functional when in fact fresh content is mixed with old at the discretion of the intermediary.\r\n\r\nSome mechanisms that may help reduce these risks:\r\n\r\n- Clients could indicate to users that content was not retrieved from an intermediary, and not the origin, and recommend that the \"reload\" feature be used if users are unsure of its freshness. (This also requires that the reload feature applies to the user-visible URL, and not the network URL; is this a recommendation of the format?)\r\n- Clients could verify the `validityUrl` more frequently than required, or allow users to manually trigger a validity check. (Related to [6.3 Downgrades](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#rfc.section.6.3).)\r\n- Recommend that origins who believe they might be subject to such attacks expire signatures within seconds or minutes. (Perhaps this could vary per cache, depending on the degree of confidence the origin has in the cache.)\r\n- Recommend that origins embed absolute timestamps within their content (e.g. \"Last modified: 2018-03-15 18:45\"), so that users are aware when content is not fresh."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/148",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8421,10 +8628,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/145.patch"
     },
     "body": "PTAL"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/144",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9883,7 +10087,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/119.patch"
     },
     "body": "This PR introduces a generator tool which implements the \"Signed HTTP Exchange\" proposed as in https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html\r\n\r\nThe code is written by @hajimehoshi, @nyaxt, @irori (all Googlers, thus can skip CLA) with adopted code from https://github.com/WICG/webpackage/tree/master/go/webpack.\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/118",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10087,10 +10294,7 @@
     "closed_at": "2018-01-30T00:46:19Z",
     "author_association": "NONE",
     "body": "The README suggests loading will be done at the W3C, which made me wonder. Shouldn't loading be integrated into Fetch somehow?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/114",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11440,7 +11644,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/89.patch"
     },
     "body": "Use \"content distributor\" instead, in the hope that it only implies\r\ndistribution without authority.\r\n\r\nHow's this, @yoavweiss?\r\n\r\nPreviews in https://jyasskin.github.io/webpackage/clarify-cdn/."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/88",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11650,10 +11857,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/85.patch"
     },
     "body": "I hope this'll make it a little easier to follow along as things move into formal standards bodies."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/84",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13111,7 +13315,10 @@
     "closed_at": "2018-01-26T23:53:37Z",
     "author_association": "COLLABORATOR",
     "body": "The sketch, which I've run by @sleevi, is:\r\n1. Check the manifest's signature and that the signing certificate is for the package's claimed origin and that it chains to a trusted root, using intermediate certificates included in the package.\r\n2. Each package also has an accompanying set of OCSP responses and anti-downgrade information.\r\n3. The UA checks that the OCSP responses are signed by the certificate's signer and were generated less than 7 days ago.\r\n4. The UA checks that the anti-downgrade information is signed by a certificate trusted for package's origin (potentially taking advantage of the package's intermediate certs), hasn't expired yet and was signed less than 7 days ago, and says that the package's date is sufficiently recent.\r\n5. If any of this isn't recent enough, the package identifies a URL from which to fetch newer validity information. This validity information is small (<1kb?), so it should be cheap enough to fetch even when full packages are too expensive.\r\n\r\nThere's some evidence that we'll still have a significant number of UAs that are fully offline and won't be able to fetch new validity information every week. Depending on the existing HTTP cache's behavior, maybe we don't need to revalidate once we've opened a package once. Maybe it's ok to trust older validations as long as the package doesn't make any network requests, and have revalidation block the package's first network request when the UA gets back online. We'll need to decide what to do about local storage if that validation fails.\r\n\r\nI need to add this to the main explainer."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/58",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13315,10 +13522,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/55.patch"
     },
     "body": "There's no support yet for serializing the text format including manifest data, or serializing and signing the CBOR format."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/54",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14632,7 +14836,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Without index, we will have to scan the whole package to find it out."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/28",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14842,10 +15049,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/25.patch"
     },
     "body": "fixes https://github.com/dimich-g/webpackage/issues/9 by using a sub tree of `application/package.index`"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/24",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
