@@ -303,7 +303,7 @@ ul.toc li {
 <link href="#rfc.section.4.2" rel="Chapter" title="4.2 Certificate Requirements">
 <link href="#rfc.section.5" rel="Chapter" title="5 Transferring a signed exchange">
 <link href="#rfc.section.5.1" rel="Chapter" title="5.1 Same-origin response">
-<link href="#rfc.section.5.1.1" rel="Chapter" title="5.1.1 Significant headers for a same-origin response">
+<link href="#rfc.section.5.1.1" rel="Chapter" title="5.1.1 Serialized headers for a same-origin response">
 <link href="#rfc.section.5.1.2" rel="Chapter" title="5.1.2 The Signed-Headers Header">
 <link href="#rfc.section.5.2" rel="Chapter" title="5.2 HTTP/2 extension for cross-origin Server Push">
 <link href="#rfc.section.5.3" rel="Chapter" title="5.3 application/signed-exchange format">
@@ -326,7 +326,7 @@ ul.toc li {
 
   <meta name="dct.creator" content="Yasskin, J. and K. Ueno" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-yasskin-httpbis-origin-signed-exchanges-impl-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2018-08-23" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-09-03" />
   <meta name="dct.abstract" content="This document describes checkpoints of draft-yasskin-http-origin-signed-responses to synchronize implementation between clients, intermediates, and publishers." />
   <meta name="description" content="This document describes checkpoints of draft-yasskin-http-origin-signed-responses to synchronize implementation between clients, intermediates, and publishers." />
 
@@ -350,8 +350,8 @@ ul.toc li {
 <td class="right">Google</td>
 </tr>
 <tr>
-<td class="left">Expires: February 24, 2019</td>
-<td class="right">August 23, 2018</td>
+<td class="left">Expires: March 7, 2019</td>
+<td class="right">September 03, 2018</td>
 </tr>
 
     	
@@ -370,7 +370,7 @@ ul.toc li {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on February 24, 2019.</p>
+<p>This Internet-Draft will expire on March 7, 2019.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2018 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -424,7 +424,7 @@ ul.toc li {
 </li>
 <ul><li>5.1.   <a href="#rfc.section.5.1">Same-origin response</a>
 </li>
-<ul><li>5.1.1.   <a href="#rfc.section.5.1.1">Significant headers for a same-origin response</a>
+<ul><li>5.1.1.   <a href="#rfc.section.5.1.1">Serialized headers for a same-origin response</a>
 </li>
 <li>5.1.2.   <a href="#rfc.section.5.1.2">The Signed-Headers Header</a>
 </li>
@@ -507,7 +507,7 @@ Signature = sh-param-list
 <dt>&#8220;sig&#8221;</dt>
 <dd style="margin-left: 8">Binary content (Section 3.9 of <a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) holding the signature of most of these parameters and the exchange&#8217;s headers.</dd>
 <dt>&#8220;integrity&#8221;</dt>
-<dd style="margin-left: 8">A string (Section 3.7 of <a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) containing the lowercase name of the response header field that guards the response payload&#8217;s integrity.</dd>
+<dd style="margin-left: 8">A string (Section 3.7 of <a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) containing a &#8220;/&#8221;-separated sequence of names starting with the lowercase name of the response header field that guards the response payload&#8217;s integrity. The meaning of subsequent names depends on the response header field, but for the &#8220;digest&#8221; header field, the single following name is the name of the digest algorithm that guards the payload&#8217;s integrity.</dd>
 <dt>&#8220;cert-url&#8221;</dt>
 <dd style="margin-left: 8">A string (Section 3.7 of <a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) containing an absolute URL (<a href="#terminology" class="xref">Section 2</a>) with a scheme of &#8220;https&#8221; or &#8220;data&#8221;.</dd>
 <dt>&#8220;cert-sha256&#8221;</dt>
@@ -527,33 +527,32 @@ Signature = sh-param-list
 Signature:
  sig1;
   sig=*MEUCIQDXlI2gN3RNBlgFiuRNFpZXcDIaUpX6HIEwcZEc0cZYLAIga9DsVOMM+g5YpwEBdGW3sS+bvnmAJJiSMwhuBdqp5UY=*;
-  integrity="mi-draft2";
+  integrity="digest/mi-sha256-03";
   validity-url="https://example.com/resource.validity.1511128380";
   cert-url="https://example.com/oldcerts";
   cert-sha256=*W7uB969dFW3Mb5ZefPS9Tq5ZbH5iSmOILpjv2qEArmI=*;
   date=1511128380; expires=1511733180
 </pre>
 <p id="rfc.section.3.1.1.p.2">The signature uses a secp256r1 certificate within <samp>https://example.com/</samp>.</p>
-<p id="rfc.section.3.1.1.p.3">It relies on the <samp>MI-Draft2</samp> response header to guard the integrity of the response payload.</p>
+<p id="rfc.section.3.1.1.p.3">It relies on the <samp>Digest</samp> response header with the mi-sha256-03 digest algorithm to guard the integrity of the response payload.</p>
 <p id="rfc.section.3.1.1.p.4">The signature includes a &#8220;validity-url&#8221; that includes the first time the resource was seen. This allows multiple versions of a resource at the same URL to be updated with new signatures, which allows clients to avoid transferring extra data while the old versions don&#8217;t have known security bugs.</p>
 <p id="rfc.section.3.1.1.p.5">The certificate at <samp>https://example.com/certs</samp> has a <samp>subjectAltName</samp> of <samp>example.com</samp>, meaning that if it and its signature validate, the exchange can be trusted as having an origin of <samp>https://example.com/</samp>.</p>
 <h1 id="rfc.section.3.2">
 <a href="#rfc.section.3.2">3.2.</a> <a href="#cbor-representation" id="cbor-representation">CBOR representation of exchange headers</a>
 </h1>
 <p id="rfc.section.3.2.p.1">To sign an exchange&#8217;s headers, they need to be serialized into a byte string.  Since intermediaries and distributors might rearrange, add, or just reserialize headers, we can&#8217;t use the literal bytes of the headers as this serialization. Instead, this section defines a CBOR representation that can be embedded into other CBOR, canonically serialized (<a href="#canonical-cbor" class="xref">Section 3.4</a>), and then signed.</p>
-<p id="rfc.section.3.2.p.2">The CBOR representation of an exchange <samp>exchange</samp>&#8217;s headers is the CBOR (<a href="#RFC7049" class="xref">[RFC7049]</a>) array with the following content:</p>
+<p id="rfc.section.3.2.p.2">The CBOR representation of a set of request and response metadata and headers is the CBOR (<a href="#RFC7049" class="xref">[RFC7049]</a>) array with the following content:</p>
 <p></p>
 
 <ol>
 <li>The map mapping: <ul>
-<li>The byte string &#8216;:method&#8217; to the byte string containing <samp>exchange</samp>&#8217;s request&#8217;s method.</li>
-<li>The byte string &#8216;:url&#8217; to the byte string containing <samp>exchange</samp>&#8217;s request&#8217;s effective request URI, which MUST be an absolute URL (<a href="#terminology" class="xref">Section 2</a>) with a scheme of &#8220;https&#8221;.</li>
-<li>For each request header field in <samp>exchange</samp> except for the <samp>Host</samp> header field, the header field&#8217;s lowercase name as a byte string to the header field&#8217;s value as a byte string.      <br><br> Note: <samp>Host</samp> is excluded because it is already part of the effective request URI.</li>
+<li>The byte string &#8216;:method&#8217; to the byte string containing the request&#8217;s method.</li>
+<li>For each request header field except for the <samp>Host</samp> header field, the header field&#8217;s lowercase name as a byte string to the header field&#8217;s value as a byte string.      <br><br> Note: <samp>Host</samp> is excluded because it is part of the effective request URI, which is represented outside of this map.</li>
 </ul>
 </li>
 <li>The map mapping: <ul>
-<li>the byte string &#8216;:status&#8217; to the byte string containing <samp>exchange</samp>&#8217;s response&#8217;s 3-digit status code, and</li>
-<li>for each response header field in <samp>exchange</samp>, the header field&#8217;s lowercase name as a byte string to the header field&#8217;s value as a byte string.</li>
+<li>The byte string &#8216;:status&#8217; to the byte string containing the response&#8217;s 3-digit status code, and</li>
+<li>For each response header field, the header field&#8217;s lowercase name as a byte string to the header field&#8217;s value as a byte string.</li>
 </ul>
 </li>
 </ol>
@@ -568,8 +567,8 @@ Accept: */*
 
 HTTP/1.1 200
 Content-Type: text/html
-MI-Draft2: mi-sha256-draft2=dcRDgR2GM35DluAV13PzgnG6-pvQwPywfFvAu1UeFrs
-Signed-Headers: "content-type", "mi-draft2"
+Digest: mi-sha256-03=dcRDgR2GM35DluAV13PzgnG6+pvQwPywfFvAu1UeFrs=
+Signed-Headers: "content-type", "digest"
 
 &lt;!doctype html&gt;
 &lt;html&gt;
@@ -579,12 +578,11 @@ Signed-Headers: "content-type", "mi-draft2"
 <pre>
 [
   {
-    ':url': 'https://example.com/',
     'accept': '*/*',
     ':method': 'GET',
   },
   {
-    'mi-draft2': 'mi-sha256-draft2=dcRDgR2GM35DluAV13PzgnG6-pvQwPywfFvAu1UeFrs',
+    'digest': 'mi-sha256-03=dcRDgR2GM35DluAV13PzgnG6+pvQwPywfFvAu1UeFrs=',
     ':status': '200',
     'content-type': 'text/html'
   }
@@ -647,14 +645,25 @@ cert-chain = [
 <a href="#rfc.section.3.5">3.5.</a> <a href="#signature-validity" id="signature-validity">Signature validity</a>
 </h1>
 <p id="rfc.section.3.5.p.1">The client MUST parse the <samp>Signature</samp> header field as the parameterised list (Section 4.2.3 of <a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) described in <a href="#signature-header" class="xref">Section 3.1</a>. If an error is thrown during this parsing or any of the requirements described there aren&#8217;t satisfied, the exchange has no valid signatures. Otherwise, each member of this list represents a signature with parameters.</p>
-<p id="rfc.section.3.5.p.2">The client MUST use the following algorithm to determine whether each signature with parameters is invalid or potentially-valid for an <samp>exchange</samp>.  Potentially-valid results include:</p>
+<p id="rfc.section.3.5.p.2">The client MUST use the following algorithm to determine whether each signature with parameters is invalid or potentially-valid for an exchange&#8217;s</p>
+<p></p>
+
+<ul>
+<li>
+<samp>requestUrl</samp>, a byte sequence that can be parsed into the exchange&#8217;s effective request URI (Section 5.5 of <a href="#RFC7230" class="xref">[RFC7230]</a>),</li>
+<li>
+<samp>headers</samp>, a byte sequence holding the canonical serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of the CBOR representation (<a href="#cbor-representation" class="xref">Section 3.2</a>) of the exchange&#8217;s request and response metadata and headers, and</li>
+<li>
+<samp>payload</samp>, a stream of bytes constituting the exchange&#8217;s payload body (Section 3.3 of <a href="#RFC7230" class="xref">[RFC7230]</a>). Note that the payload body is the message body with any transfer encodings removed.</li>
+</ul>
+<p id="rfc.section.3.5.p.4">Potentially-valid results include:</p>
 <p></p>
 
 <ul>
 <li>The signed headers of the exchange so that higher-level protocols can avoid relying on unsigned headers, and</li>
 <li>Either a certificate chain or a public key so that a higher-level protocol can determine whether it&#8217;s actually valid.</li>
 </ul>
-<p id="rfc.section.3.5.p.4"><a name="force-fetch"></a>This algorithm accepts a <samp>forceFetch</samp> flag that avoids the cache when fetching URLs. A client that determines that a potentially-valid certificate chain is actually invalid due to an expired OCSP response MAY retry with <samp>forceFetch</samp> set to retrieve an updated OCSP from the original server.</p>
+<p id="rfc.section.3.5.p.6"><a name="force-fetch"></a>This algorithm accepts a <samp>forceFetch</samp> flag that avoids the cache when fetching URLs. A client that determines that a potentially-valid certificate chain is actually invalid due to an expired OCSP response MAY retry with <samp>forceFetch</samp> set to retrieve an updated OCSP from the original server.</p>
 <p></p>
 
 <ol>
@@ -676,7 +685,6 @@ cert-chain = [
 <samp>expires</samp> be the signature&#8217;s &#8220;expires&#8221; parameter, interpreted as a Unix time.</li>
 </ul>
 </li>
-<li>If <samp>integrity</samp> names a header field other than <samp>MI-Draft2</samp> or this header field is not present in <samp>exchange</samp>&#8217;s response headers, then return &#8220;invalid&#8221;.  If validating integrity using the selected header field requires the client to process records larger than 16kB (for example, if the <samp>mi-sha256-draft2</samp> record length is greater than 16kB), return &#8220;invalid&#8221;. Clients MUST be able to check the integrity of <samp>payload</samp> using the <samp>MI-Draft2</samp> header field with its <samp>mi-sha256-draft2</samp> content encoding, which are defined equivalently to the <samp>MI</samp> header field and <samp>mi-sha256</samp> content encoding from <a href="#I-D.thomson-http-mice" class="xref">[I-D.thomson-http-mice]</a>.</li>
 <li>Set <samp>publicKey</samp> and <samp>signing-alg</samp> depending on which key fields are present: <ol><li>Assert: <samp>cert-url</samp> is present.  <ol>
 <li>Let <samp>certificate-chain</samp> be the result of loading the certificate chain at <samp>cert-url</samp> passing the <samp>forceFetch</samp> flag (<a href="#cert-chain-format" class="xref">Section 3.3</a>). If this returns &#8220;invalid&#8221;, return &#8220;invalid&#8221;.</li>
 <li>Let <samp>main-certificate</samp> be the first certificate in <samp>certificate-chain</samp>.</li>
@@ -691,23 +699,22 @@ cert-chain = [
 <li>If the current time is before <samp>date</samp> or after <samp>expires</samp>, return &#8220;invalid&#8221;.</li>
 <li>Let <samp>message</samp> be the concatenation of the following byte strings. This matches the <a href="#I-D.ietf-tls-tls13" class="xref">[I-D.ietf-tls-tls13]</a> format to avoid cross-protocol attacks if anyone uses the same key in a TLS certificate and an exchange-signing certificate.  <ol>
 <li>A string that consists of octet 32 (0x20) repeated 64 times.</li>
-<li>A context string: the ASCII encoding of &#8220;HTTP Exchange 1 b1&#8221;.      <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct context string.</li>
+<li>A context string: the ASCII encoding of &#8220;HTTP Exchange 1 b2&#8221;.      <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct context string.</li>
 <li>A single 0 byte which serves as a separator.</li>
-<li>The bytes of the canonical CBOR serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of a CBOR map mapping: <ol>
-<li>If <samp>cert-sha256</samp> is set: <ol><li>The text string &#8220;cert-sha256&#8221; to the byte string value of <samp>cert-sha256</samp>.</li></ol>
-</li>
-<li>The text string &#8220;validity-url&#8221; to the byte string value of <samp>validity-url</samp>.</li>
-<li>The text string &#8220;date&#8221; to the integer value of <samp>date</samp>.</li>
-<li>The text string &#8220;expires&#8221; to the integer value of <samp>expires</samp>.</li>
-<li>The text string &#8220;headers&#8221; to the CBOR representation (<a href="#cbor-representation" class="xref">Section 3.2</a>) of <samp>exchange</samp>&#8217;s headers.</li>
-</ol>
-</li>
+<li>If <samp>cert-sha256</samp> is set, a byte holding the value 32 followed by the 32 bytes of the value of <samp>cert-sha256</samp>. Otherwise a 0 byte.</li>
+<li>The 8-byte big-endian encoding of the length in bytes of <samp>validity-url</samp>, followed by the bytes of <samp>validity-url</samp>.</li>
+<li>The 8-byte big-endian encoding of <samp>date</samp>.</li>
+<li>The 8-byte big-endian encoding of <samp>expires</samp>.</li>
+<li>The 8-byte big-endian encoding of the length in bytes of <samp>requestUrl</samp>, followed by the bytes of <samp>requestUrl</samp>.</li>
+<li>The 8-byte big-endian encoding of the length in bytes of <samp>headers</samp>, followed by the bytes of <samp>headers</samp>.</li>
 </ol>
 </li>
 <li>If <samp>cert-url</samp> is present and the SHA-256 hash of <samp>main-certificate</samp>&#8217;s <samp>cert_data</samp> is not equal to <samp>cert-sha256</samp> (whose presence was checked when the <samp>Signature</samp> header field was parsed), return &#8220;invalid&#8221;.  <br><br> Note that this intentionally differs from TLS 1.3, which signs the entire certificate chain in its Certificate Verify (Section 4.4.3 of <a href="#I-D.ietf-tls-tls13" class="xref">[I-D.ietf-tls-tls13]</a>), in order to allow updating the stapled OCSP response without updating signatures at the same time.</li>
-<li>If <samp>signature</samp> is a valid signature of <samp>message</samp> by <samp>publicKey</samp> using <samp>signing-alg</samp>, return &#8220;potentially-valid&#8221; with <samp>certificate-chain</samp>.  Otherwise, return &#8220;invalid&#8221;.</li>
+<li>If <samp>signature</samp> is not a valid signature of <samp>message</samp> by <samp>publicKey</samp> using <samp>signing-alg</samp>, return &#8220;invalid&#8221;.</li>
+<li>If <samp>integrity</samp> does not match &#8220;digest/mi-sha256-03&#8221;, return &#8220;invalid&#8221;.</li>
+<li>If <samp>payload</samp> doesn&#8217;t match the integrity information in the header described by <samp>integrity</samp>, return &#8220;invalid&#8221;.</li>
 </ol>
-<p id="rfc.section.3.5.p.6">Note that the above algorithm can determine that an exchange&#8217;s headers are potentially-valid before the exchange&#8217;s payload is received. Similarly, if <samp>integrity</samp> identifies a header field like <samp>MI-Draft2</samp> (<a href="#I-D.thomson-http-mice" class="xref">[I-D.thomson-http-mice]</a>) that can incrementally validate the payload, early parts of the payload can be determined to be potentially-valid before later parts of the payload.  Higher-level protocols MAY process parts of the exchange that have been determined to be potentially-valid as soon as that determination is made but MUST NOT process parts of the exchange that are not yet potentially-valid.  Similarly, as the higher-level protocol determines that parts of the exchange are actually valid, the client MAY process those parts of the exchange and MUST wait to process other parts of the exchange until they too are determined to be valid.</p>
+<p id="rfc.section.3.5.p.8">Note that the above algorithm can determine that an exchange&#8217;s headers are potentially-valid before the exchange&#8217;s payload is received. Similarly, if <samp>integrity</samp> identifies a header field and parameter like <samp>Digest: mi-sha256-03</samp> (<a href="#I-D.thomson-http-mice" class="xref">[I-D.thomson-http-mice]</a>) that can incrementally validate the payload, early parts of the payload can be determined to be potentially-valid before later parts of the payload.  Higher-level protocols MAY process parts of the exchange that have been determined to be potentially-valid as soon as that determination is made but MUST NOT process parts of the exchange that are not yet potentially-valid.  Similarly, as the higher-level protocol determines that parts of the exchange are actually valid, the client MAY process those parts of the exchange and MUST wait to process other parts of the exchange until they too are determined to be valid.</p>
 <h1 id="rfc.section.3.6">
 <a href="#rfc.section.3.6">3.6.</a> <a href="#updating-validity" id="updating-validity">Updating signature validity</a>
 </h1>
@@ -747,7 +754,7 @@ Signature:
     'sig1; '
     'sig=*MEQCIC/I9Q+7BZFP6cSDsWx43pBAL0ujTbON/+7RwKVk+ba5AiB3FSFLZqpzmDJ0NumNwN04pqgJZE99fcK86UjkPbj4jw==*; '
     'validity-url="https://example.com/resource.validity.1511157180"; '
-    'integrity="mi-draft2"; '
+    'integrity="digest/mi-sha256-03"'
     'cert-url="https://example.com/newcerts"; '
     'cert-sha256=*J/lEm9kNRODdCmINbvitpvdYKNQ+YgBj99DlYp4fEXw=*; '
     'date=1511733180; expires=1512337980'
@@ -781,8 +788,8 @@ Accept-Signature = sh-param-list
 <h1 id="rfc.section.3.7.1">
 <a href="#rfc.section.3.7.1">3.7.1.</a> <a href="#accept-signature-integrity" id="accept-signature-integrity">Integrity identifiers</a>
 </h1>
-<p id="rfc.section.3.7.1.p.1">Identifiers starting with &#8220;mi-draft2/&#8221; indicate that the client supports the <samp>MI-Draft2</samp> header field (equivalent to <samp>MI</samp> in <a href="#I-D.thomson-http-mice" class="xref">[I-D.thomson-http-mice]</a>) with the parameter from the HTTP MI Parameter Registry registry named in lower-case by the rest of the identifier.  For example, &#8220;mi-draft2/mi-blake2&#8221; indicates support for Merkle integrity with the as-yet-unspecified mi-blake2 parameter, and &#8220;-mi-draft2/mi-sha256-draft2&#8221; indicates non-support for Merkle integrity with the mi-sha256-draft2 content encoding.</p>
-<p id="rfc.section.3.7.1.p.2">If the <samp>Accept-Signature</samp> header field is present, servers SHOULD assume support for &#8220;mi-draft2/mi-sha256-draft2&#8221; unless the header field states otherwise.</p>
+<p id="rfc.section.3.7.1.p.1">Identifiers starting with &#8220;digest/&#8221; indicate that the client supports the <samp>Digest</samp> header field ({{!RFC3230) with the parameter from the <a href="https://www.iana.org/assignments/http-dig-alg/http-dig-alg.xhtml">HTTP Digest Algorithm Values Registry</a> registry named in lower-case by the rest of the identifier. For example, &#8220;digest/mi-blake2&#8221; indicates support for Merkle integrity with the as-yet-unspecified mi-blake2 parameter, and &#8220;-digest/mi-sha256&#8221; indicates non-support for Merkle integrity with the mi-sha256 content encoding.</p>
+<p id="rfc.section.3.7.1.p.2">If the <samp>Accept-Signature</samp> header field is present, servers SHOULD assume support for &#8220;digest/mi-sha256-03&#8221; unless the header field states otherwise.</p>
 <h1 id="rfc.section.3.7.2">
 <a href="#rfc.section.3.7.2">3.7.2.</a> <a href="#accept-signature-key-types" id="accept-signature-key-types">Key type identifiers</a>
 </h1>
@@ -812,25 +819,37 @@ Accept-Signature: ..., ed25519key; 11qYAQ
 <a href="#rfc.section.3.7.4">3.7.4.</a> <a href="#accept-signature-examples" id="accept-signature-examples">Examples</a>
 </h1>
 <pre>
-Accept-Signature: mi-draft2/mi-sha256
+Accept-Signature: digest/mi-sha256-03
 </pre>
-<p id="rfc.section.3.7.4.p.1">states that the client will accept signatures with payload integrity assured by the <samp>MI-Draft2</samp> header and <samp>mi-sha256-draft2</samp> content encoding and implies that the client will accept integrity assured by the <samp>Digest: SHA-256</samp> header and signatures from ECDSA keys on the secp256r1 curve.</p>
+<p id="rfc.section.3.7.4.p.1">states that the client will accept signatures with payload integrity assured by the <samp>Digest</samp> header and <samp>mi-sha256-03</samp> digest algorithm and implies that the client will accept signatures from ECDSA keys on the secp256r1 curve.</p>
 <pre>
 Accept-Signature: -ecdsa/secp256r1, ecdsa/secp384r1
 </pre>
-<p id="rfc.section.3.7.4.p.2">states that the client will accept ECDSA keys on the secp384r1 curve but not the secp256r1 curve and payload integrity assured with the <samp>MI-Draft2: mi-sha256-draft2</samp> header field.</p>
+<p id="rfc.section.3.7.4.p.2">states that the client will accept ECDSA keys on the secp384r1 curve but not the secp256r1 curve and payload integrity assured with the <samp>Digest: mi-sha256-03</samp> header field.</p>
 <h1 id="rfc.section.4">
 <a href="#rfc.section.4">4.</a> <a href="#cross-origin-trust" id="cross-origin-trust">Cross-origin trust</a>
 </h1>
-<p id="rfc.section.4.p.1">To determine whether to trust a cross-origin exchange, the client takes a <samp>Signature</samp> header field (<a href="#signature-header" class="xref">Section 3.1</a>) and the <samp>exchange</samp>. The client MUST parse the <samp>Signature</samp> header into a list of signatures according to the instructions in <a href="#signature-validity" class="xref">Section 3.5</a>, and run the following algorithm for each signature, stopping at the first one that returns &#8220;valid&#8221;. If any signature returns &#8220;valid&#8221;, return &#8220;valid&#8221;. Otherwise, return &#8220;invalid&#8221;.</p>
+<p id="rfc.section.4.p.1">To determine whether to trust a cross-origin exchange, the client takes a <samp>Signature</samp> header field (<a href="#signature-header" class="xref">Section 3.1</a>) and the <samp>exchange</samp>&#8217;s</p>
+<p></p>
+
+<ul>
+<li>
+<samp>requestUrl</samp>, a byte sequence that can be parsed into the exchange&#8217;s effective request URI (Section 5.5 of <a href="#RFC7230" class="xref">[RFC7230]</a>),</li>
+<li>
+<samp>headers</samp>, a byte sequence holding the canonical serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of the CBOR representation (<a href="#cbor-representation" class="xref">Section 3.2</a>) of the exchange&#8217;s request and response metadata and headers, and</li>
+<li>
+<samp>payload</samp>, a stream of bytes constituting the exchange&#8217;s payload body (Section 3.3 of <a href="#RFC7230" class="xref">[RFC7230]</a>).</li>
+</ul>
+<p id="rfc.section.4.p.3">The client MUST parse the <samp>Signature</samp> header into a list of signatures according to the instructions in <a href="#signature-validity" class="xref">Section 3.5</a>, and run the following algorithm for each signature, stopping at the first one that returns &#8220;valid&#8221;. If any signature returns &#8220;valid&#8221;, return &#8220;valid&#8221;. Otherwise, return &#8220;invalid&#8221;.</p>
 <p></p>
 
 <ol>
-<li>If the signature&#8217;s <a href="#signature-validityurl" class="xref">&#8220;validity-url&#8221; parameter</a> is not <a href="https://html.spec.whatwg.org/multipage/origin.html#same-origin">same-origin</a> with <samp>exchange</samp>&#8217;s effective request URI (Section 5.5 of <a href="#RFC7230" class="xref">[RFC7230]</a>), return &#8220;invalid&#8221;.</li>
-<li>Use <a href="#signature-validity" class="xref">Section 3.5</a> to determine the signature&#8217;s validity for <samp>exchange</samp>, getting <samp>certificate-chain</samp> back. If this returned &#8220;invalid&#8221; or didn&#8217;t return a certificate chain, return &#8220;invalid&#8221;.</li>
+<li>If the signature&#8217;s <a href="#signature-validityurl" class="xref">&#8220;validity-url&#8221; parameter</a> is not <a href="https://html.spec.whatwg.org/multipage/origin.html#same-origin">same-origin</a> with <samp>requestUrl</samp>, return &#8220;invalid&#8221;.</li>
+<li>Use <a href="#signature-validity" class="xref">Section 3.5</a> to determine the signature&#8217;s validity for <samp>requestUrl</samp>, <samp>headers</samp>, and <samp>payload</samp>, getting <samp>certificate-chain</samp> back. If this returned &#8220;invalid&#8221; or didn&#8217;t return a certificate chain, return &#8220;invalid&#8221;.</li>
+<li>Let <samp>exchange</samp> be the exchange metadata and headers parsed out of <samp>headers</samp>.</li>
 <li>If <samp>exchange</samp>&#8217;s request method is not safe (Section 4.2.1 of <a href="#RFC7231" class="xref">[RFC7231]</a>) or not cacheable (Section 4.2.3 of <a href="#RFC7231" class="xref">[RFC7231]</a>), return &#8220;invalid&#8221;.</li>
 <li>If <samp>exchange</samp>&#8217;s headers contain a stateful header field, as defined in <a href="#stateful-headers" class="xref">Section 4.1</a>, return &#8220;invalid&#8221;.</li>
-<li>Let <samp>authority</samp> be the host component of <samp>exchange</samp>&#8217;s effective request URI.</li>
+<li>Let <samp>authority</samp> be the host component of <samp>requestUrl</samp>.</li>
 <li>Validate the <samp>certificate-chain</samp> using the following substeps. If any of them fail, re-run <a href="#signature-validity" class="xref">Section 3.5</a> once over the signature with the <samp>forceFetch</samp> flag set, and restart from step 2. If a substep fails again, return &#8220;invalid&#8221;.  <ol>
 <li>Use <samp>certificate-chain</samp> to validate that its first entry, <samp>main-certificate</samp> is trusted as <samp>authority</samp>&#8217;s server certificate (<a href="#RFC5280" class="xref">[RFC5280]</a> and other undocumented conventions). Let <samp>path</samp> be the path that was used from the <samp>main-certificate</samp> to a trusted root, including the <samp>main-certificate</samp> but excluding the root.</li>
 <li>Validate that <samp>main-certificate</samp> has the CanSignHttpExchanges extension (<a href="#cross-origin-cert-req" class="xref">Section 4.2</a>).</li>
@@ -931,19 +950,27 @@ Accept-Signature: -ecdsa/secp256r1, ecdsa/secp384r1
 <h1 id="rfc.section.5.1">
 <a href="#rfc.section.5.1">5.1.</a> <a href="#same-origin-response" id="same-origin-response">Same-origin response</a>
 </h1>
-<p id="rfc.section.5.1.p.1">The signature for a signed exchange can be included in a normal HTTP response.  Because different clients send different request header fields, and intermediate servers add response header fields, it can be impossible to have a signature for the exact request and response that the client sees. Therefore, when a client validates the <samp>Signature</samp> header field for an exchange represented as a normal HTTP request/response pair, it MUST pass only the subset of header fields defined by <a href="#significant-headers" class="xref">Section 5.1.1</a> to the validation procedure (<a href="#signature-validity" class="xref">Section 3.5</a>).</p>
-<p id="rfc.section.5.1.p.2">If the client relies on signature validity for any aspect of its behavior, it MUST ignore any header fields that it didn&#8217;t pass to the validation procedure.</p>
-<h1 id="rfc.section.5.1.1">
-<a href="#rfc.section.5.1.1">5.1.1.</a> <a href="#significant-headers" id="significant-headers">Significant headers for a same-origin response</a>
-</h1>
-<p id="rfc.section.5.1.1.p.1">The significant headers of an exchange represented as a normal HTTP request/response pair (Section 2.1 of <a href="#RFC7230" class="xref">[RFC7230]</a> or Section 8.1 of <a href="#RFC7540" class="xref">[RFC7540]</a>) are:</p>
+<p id="rfc.section.5.1.p.1">The signature for a signed exchange can be included in a normal HTTP response.  Because different clients send different request header fields, and intermediate servers add response header fields, it can be impossible to have a signature for the exact request and response that the client sees. Therefore, when a client calls the validation procedure in <a href="#signature-validity" class="xref">Section 3.5</a>) to validate the <samp>Signature</samp> header field for an exchange represented as a normal HTTP request/response pair, it MUST pass:</p>
 <p></p>
 
 <ul>
-<li>The method (Section 4 of <a href="#RFC7231" class="xref">[RFC7231]</a>) and effective request URI (Section 5.5 of <a href="#RFC7230" class="xref">[RFC7230]</a>) of the request.</li>
-<li>The response status code (Section 6 of <a href="#RFC7231" class="xref">[RFC7231]</a>) and the response header fields whose names are listed in that exchange&#8217;s <samp>Signed-Headers</samp> header field (<a href="#signed-headers" class="xref">Section 5.1.2</a>), in the order they appear in that header field. If a response header field name from <samp>Signed-Headers</samp> does not appear in the exchange&#8217;s response header fields, the exchange has no significant headers.</li>
+<li>The <samp>Signature</samp> header field,</li>
+<li>The effective request URI (Section 5.5 of <a href="#RFC7230" class="xref">[RFC7230]</a>) of the request,</li>
+<li>The serialized headers defined by <a href="#serialized-headers" class="xref">Section 5.1.1</a>, and</li>
+<li>The response&#8217;s payload.</li>
 </ul>
-<p id="rfc.section.5.1.1.p.3">If the exchange&#8217;s <samp>Signed-Headers</samp> header field is not present, doesn&#8217;t parse as a Structured Header (<a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) or doesn&#8217;t follow the constraints on its value described in <a href="#signed-headers" class="xref">Section 5.1.2</a>, the exchange has no significant headers.</p>
+<p id="rfc.section.5.1.p.3">If the client relies on signature validity for any aspect of its behavior, it MUST ignore any header fields that it didn&#8217;t pass to the validation procedure.</p>
+<h1 id="rfc.section.5.1.1">
+<a href="#rfc.section.5.1.1">5.1.1.</a> <a href="#serialized-headers" id="serialized-headers">Serialized headers for a same-origin response</a>
+</h1>
+<p id="rfc.section.5.1.1.p.1">The serialized headers of an exchange represented as a normal HTTP request/response pair (Section 2.1 of <a href="#RFC7230" class="xref">[RFC7230]</a> or Section 8.1 of <a href="#RFC7540" class="xref">[RFC7540]</a>) are the canonical serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of the CBOR representation (<a href="#cbor-representation" class="xref">Section 3.2</a>) of the following request and response metadata and headers:</p>
+<p></p>
+
+<ul>
+<li>The method (Section 4 of <a href="#RFC7231" class="xref">[RFC7231]</a>) of the request.</li>
+<li>The response status code (Section 6 of <a href="#RFC7231" class="xref">[RFC7231]</a>) and the response header fields whose names are listed in that exchange&#8217;s <samp>Signed-Headers</samp> header field (<a href="#signed-headers" class="xref">Section 5.1.2</a>). If a response header field name from <samp>Signed-Headers</samp> does not appear in the exchange&#8217;s response header fields, the exchange has no serialized headers.</li>
+</ul>
+<p id="rfc.section.5.1.1.p.3">If the exchange&#8217;s <samp>Signed-Headers</samp> header field is not present, doesn&#8217;t parse as a Structured Header (<a href="#I-D.ietf-httpbis-header-structure" class="xref">[I-D.ietf-httpbis-header-structure]</a>) or doesn&#8217;t follow the constraints on its value described in <a href="#signed-headers" class="xref">Section 5.1.2</a>, the exchange has no serialized headers.</p>
 <h1 id="rfc.section.5.1.2">
 <a href="#rfc.section.5.1.2">5.1.2.</a> <a href="#signed-headers" id="signed-headers">The Signed-Headers Header</a>
 </h1>
@@ -967,30 +994,33 @@ Signed-Headers = sh-list
 <p></p>
 
 <ol>
-<li>The ASCII characters &#8220;sxg1-b1&#8221; followed by a 0 byte, to serve as a file signature. This is redundant with the MIME type, and recipients that receive both MUST check that they match and stop parsing if they don&#8217;t.  <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct file signature.</li>
-<li>3 bytes storing a big-endian integer <samp>sigLength</samp>. If this is larger than 16kB, parsing MUST fail.</li>
-<li>3 bytes storing a big-endian integer <samp>headerLength</samp>. If this is larger than 512kB, parsing MUST fail.</li>
+<li>The ASCII characters &#8220;sxg1-b2&#8221; followed by a 0 byte, to serve as a file signature. This is redundant with the MIME type, and recipients that receive both MUST check that they match and stop parsing if they don&#8217;t.  <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct file signature.</li>
+<li>2 bytes storing a big-endian integer <samp>fallbackUrlLength</samp>.</li>
+<li>
+<samp>fallbackUrlLength</samp> bytes holding a <samp>fallbackUrl</samp>, which MUST be an absolute URL with a scheme of &#8220;https&#8221;.  <br><br> Note: The byte location of the fallback URL is intended to remain invariant across versions of the <samp>application/signed-exchange</samp> format so that parsers encountering unknown versions can always find a URL to redirect to.  <br><br> Issue: Should this fallback information also include the method?</li>
+<li>3 bytes storing a big-endian integer <samp>sigLength</samp>. If this is larger than 16384 (16*1024), parsing MUST fail.</li>
+<li>3 bytes storing a big-endian integer <samp>headerLength</samp>. If this is larger than 524288 (512*1024), parsing MUST fail.</li>
 <li>
 <samp>sigLength</samp> bytes holding the <samp>Signature</samp> header field&#8217;s value (<a href="#signature-header" class="xref">Section 3.1</a>).</li>
 <li>
-<samp>headerLength</samp> bytes holding the signed headers, the canonical serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of the CBOR representation of the request and response headers of the exchange represented by the <samp>application/signed-exchange</samp> resource (<a href="#cbor-representation" class="xref">Section 3.2</a>), excluding the <samp>Signature</samp> header field.  <br><br> Note that this is exactly the bytes used when checking signature validity in <a href="#signature-validity" class="xref">Section 3.5</a>.</li>
+<samp>headerLength</samp> bytes holding <samp>signedHeaders</samp>, the canonical serialization (<a href="#canonical-cbor" class="xref">Section 3.4</a>) of the CBOR representation of the request and response headers of the exchange represented by the <samp>application/signed-exchange</samp> resource (<a href="#cbor-representation" class="xref">Section 3.2</a>), excluding the <samp>Signature</samp> header field.  <br><br> Note that this is exactly the bytes used when checking signature validity in <a href="#signature-validity" class="xref">Section 3.5</a>.</li>
 <li>The payload body (Section 3.3 of <a href="#RFC7230" class="xref">[RFC7230]</a>) of the exchange represented by the <samp>application/signed-exchange</samp> resource.  <br><br> Note that the use of the payload body here means that a <samp>Transfer-Encoding</samp> header field inside the <samp>application/signed-exchange</samp> header block has no effect. A <samp>Transfer-Encoding</samp> header field on the outer HTTP response that transfers this resource still has its normal effect.</li>
 </ol>
 <h1 id="rfc.section.5.3.1">
 <a href="#rfc.section.5.3.1">5.3.1.</a> <a href="#co-trust-app-signed-exchange" id="co-trust-app-signed-exchange">Cross-origin trust in application/signed-exchange</a>
 </h1>
-<p id="rfc.section.5.3.1.p.1">To determine whether to trust a cross-origin exchange stored in an <samp>application/signed-exchange</samp> resource, pass the <samp>Signature</samp> header field&#8217;s value and an exchange consisting of the headers from the signed headers section and the payload body, to the algorithm in <a href="#cross-origin-trust" class="xref">Section 4</a>.</p>
+<p id="rfc.section.5.3.1.p.1">To determine whether to trust a cross-origin exchange stored in an <samp>application/signed-exchange</samp> resource, pass the <samp>Signature</samp> header field&#8217;s value, <samp>fallbackUrl</samp> as the effective request URI, <samp>signedHeaders</samp>, and the payload body to the algorithm in <a href="#cross-origin-trust" class="xref">Section 4</a>.</p>
 <h1 id="rfc.section.5.3.2">
 <a href="#rfc.section.5.3.2">5.3.2.</a> <a href="#example-application-signed-exchange" id="example-application-signed-exchange">Example</a>
 </h1>
 <p id="rfc.section.5.3.2.p.1">An example <samp>application/signed-exchange</samp> file representing a possible signed exchange with <a href="https://example.com/">https://example.com/</a> follows, with lengths represented by descriptions in <samp>&lt;&gt;</samp>s, CBOR represented in the extended diagnostic format defined in Appendix G of <a href="#I-D.ietf-cbor-cddl" class="xref">[I-D.ietf-cbor-cddl]</a>, and most of the <samp>Signature</samp> header field and payload elided with a &#8230;:</p>
 <pre>
-sxg1-b1\0&lt;3-byte length of the following header
+sxg1-b2\0&lt;2-byte length of the following url string&gt;
+https://example.com/&lt;3-byte length of the following header
 value&gt;&lt;3-byte length of the encoding of the
-following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
+following array&gt;sig1; sig=*...; integrity="digest/mi-sha256-03"; ...[
   {
     ':method': 'GET',
-    ':url': 'https://example.com/',
     'accept', '*/*'
   },
   {
@@ -1031,8 +1061,8 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <p id="rfc.section.8.1.p.3">Required parameters:</p>
 <p></p>
 
-<ul><li>v: A string denoting the version of the file format. (<a href="#RFC5234" class="xref">[RFC5234]</a> ABNF: <samp>version = DIGIT/%x61-7A</samp>) The version defined in this specification is <samp>b1</samp>.  When used with the <samp>Accept</samp> header field (Section 5.3.1 of <a href="#RFC7231" class="xref">[RFC7231]</a>), this parameter can be a comma (,)-separated list of version strings. (<a href="#RFC5234" class="xref">[RFC5234]</a> ABNF: <samp>version-list = version *( "," version )</samp>) The server is then expected to reply with a resource using a particular version from that list.  <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct version number.</li></ul>
-<p id="rfc.section.8.1.p.5">Magic number(s):  73 78 67 31 2D 62 31 00</p>
+<ul><li>v: A string denoting the version of the file format. (<a href="#RFC5234" class="xref">[RFC5234]</a> ABNF: <samp>version = DIGIT/%x61-7A</samp>) The version defined in this specification is <samp>b2</samp>.  When used with the <samp>Accept</samp> header field (Section 5.3.1 of <a href="#RFC7231" class="xref">[RFC7231]</a>), this parameter can be a comma (,)-separated list of version strings. (<a href="#RFC5234" class="xref">[RFC5234]</a> ABNF: <samp>version-list = version *( "," version )</samp>) The server is then expected to reply with a resource using a particular version from that list.  <br><br> Note: As this is a snapshot of a draft of <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>, it uses a distinct version number.</li></ul>
+<p id="rfc.section.8.1.p.5">Magic number(s):  73 78 67 31 2D 62 32 00</p>
 <p id="rfc.section.8.1.p.6">The other fields are the same as the registration in <a href="#I-D.yasskin-http-origin-signed-responses" class="xref">[I-D.yasskin-http-origin-signed-responses]</a>.</p>
 <h1 id="rfc.references">
 <a href="#rfc.references">9.</a> References</h1>
@@ -1042,12 +1072,12 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <tr>
 <td class="reference"><b id="FETCH">[FETCH]</b></td>
 <td class="top">
-<a>WHATWG</a>, "<a href="https://fetch.spec.whatwg.org/">Fetch</a>", August 2018.</td>
+<a>WHATWG</a>, "<a href="https://fetch.spec.whatwg.org/">Fetch</a>", September 2018.</td>
 </tr>
 <tr>
 <td class="reference"><b id="I-D.ietf-cbor-cddl">[I-D.ietf-cbor-cddl]</b></td>
 <td class="top">
-<a>Birkholz, H.</a>, <a>Vigano, C.</a> and <a>C. Bormann</a>, "<a href="https://tools.ietf.org/html/draft-ietf-cbor-cddl-04">Concise data definition language (CDDL): a notational convention to express CBOR and JSON data structures</a>", Internet-Draft draft-ietf-cbor-cddl-04, August 2018.</td>
+<a>Birkholz, H.</a>, <a>Vigano, C.</a> and <a>C. Bormann</a>, "<a href="https://tools.ietf.org/html/draft-ietf-cbor-cddl-05">Concise data definition language (CDDL): a notational convention to express CBOR and JSON data structures</a>", Internet-Draft draft-ietf-cbor-cddl-05, August 2018.</td>
 </tr>
 <tr>
 <td class="reference"><b id="I-D.ietf-httpbis-header-structure">[I-D.ietf-httpbis-header-structure]</b></td>
@@ -1058,11 +1088,6 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <td class="reference"><b id="I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</b></td>
 <td class="top">
 <a>Rescorla, E.</a>, "<a href="https://tools.ietf.org/html/draft-ietf-tls-tls13-28">The Transport Layer Security (TLS) Protocol Version 1.3</a>", Internet-Draft draft-ietf-tls-tls13-28, March 2018.</td>
-</tr>
-<tr>
-<td class="reference"><b id="I-D.thomson-http-mice">[I-D.thomson-http-mice]</b></td>
-<td class="top">
-<a>Thomson, M.</a> and <a>J. Yasskin</a>, "<a href="https://tools.ietf.org/html/draft-thomson-http-mice-03">Merkle Integrity Content Encoding</a>", Internet-Draft draft-thomson-http-mice-03, August 2018.</td>
 </tr>
 <tr>
 <td class="reference"><b id="I-D.yasskin-http-origin-signed-responses">[I-D.yasskin-http-origin-signed-responses]</b></td>
@@ -1132,12 +1157,17 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <tr>
 <td class="reference"><b id="URL">[URL]</b></td>
 <td class="top">
-<a>WHATWG</a>, "<a href="https://url.spec.whatwg.org/">URL</a>", August 2018.</td>
+<a>WHATWG</a>, "<a href="https://url.spec.whatwg.org/">URL</a>", September 2018.</td>
 </tr>
 </tbody></table>
 <h1 id="rfc.references.2">
 <a href="#rfc.references.2">9.2.</a> Informative References</h1>
 <table><tbody>
+<tr>
+<td class="reference"><b id="I-D.thomson-http-mice">[I-D.thomson-http-mice]</b></td>
+<td class="top">
+<a>Thomson, M.</a> and <a>J. Yasskin</a>, "<a href="https://tools.ietf.org/html/draft-thomson-http-mice-03">Merkle Integrity Content Encoding</a>", Internet-Draft draft-thomson-http-mice-03, August 2018.</td>
+</tr>
 <tr>
 <td class="reference"><b id="I-D.yasskin-http-origin-signed-responses-03">[I-D.yasskin-http-origin-signed-responses-03]</b></td>
 <td class="top">
@@ -1192,8 +1222,21 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <h1 id="rfc.appendix.A">
 <a href="#rfc.appendix.A">Appendix A.</a> <a href="#change-log" id="change-log">Change Log</a>
 </h1>
-<p id="rfc.section.A.p.1">draft-01</p>
-<p id="rfc.section.A.p.2">Vs. <a href="#I-D.yasskin-http-origin-signed-responses-04" class="xref">[I-D.yasskin-http-origin-signed-responses-04]</a>:</p>
+<p id="rfc.section.A.p.1">draft-02</p>
+<p id="rfc.section.A.p.2">Vs. draft-01:</p>
+<p></p>
+
+<ul>
+<li>Define absolute URLs, and limit the schemes each instance can use.</li>
+<li>Update to mice-03 including the Digest header.</li>
+<li>Define the &#8220;integrity&#8221; field of the Signature header to include the digest algorithm.</li>
+<li>Put a fallback URL at the beginning of the <samp>application/signed-exchange</samp> format, and remove &#8216;:url&#8217; key from the CBOR representation of the exchange&#8217;s request and response metadata and headers.</li>
+<li>The new signed message format which embeds the exact bytes of the CBOR representation of the exchange&#8217;s request and response metadata and headers.</li>
+<li>When validating the signature validity, move the <samp>payload</samp> integrity check steps to after verifying <samp>header</samp>.</li>
+<li>Versions in file signatures and context strings are &#8220;b2&#8221;.</li>
+</ul>
+<p id="rfc.section.A.p.4">draft-01</p>
+<p id="rfc.section.A.p.5">Vs. <a href="#I-D.yasskin-http-origin-signed-responses-04" class="xref">[I-D.yasskin-http-origin-signed-responses-04]</a>:</p>
 <p></p>
 
 <ul>
@@ -1207,8 +1250,8 @@ following array&gt;sig1; sig=*...; integrity="mi-draft2"; ...[
 <li>Only 1 signature is supported.</li>
 <li>Removed support for ed25519 signatures.</li>
 </ul>
-<p id="rfc.section.A.p.4">draft-00</p>
-<p id="rfc.section.A.p.5">Vs. <a href="#I-D.yasskin-http-origin-signed-responses-03" class="xref">[I-D.yasskin-http-origin-signed-responses-03]</a>:</p>
+<p id="rfc.section.A.p.7">draft-00</p>
+<p id="rfc.section.A.p.8">Vs. <a href="#I-D.yasskin-http-origin-signed-responses-03" class="xref">[I-D.yasskin-http-origin-signed-responses-03]</a>:</p>
 <p></p>
 
 <ul>
