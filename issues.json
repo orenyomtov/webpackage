@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/304",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/304/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/304/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/304/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/304",
+    "id": 357472169,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEzNDc3NTg4",
+    "number": 304,
+    "title": "Update gen-certurl test",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-06T02:23:08Z",
+    "updated_at": "2018-09-06T03:00:04Z",
+    "closed_at": "2018-09-06T03:00:01Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/304",
+      "html_url": "https://github.com/WICG/webpackage/pull/304",
+      "diff_url": "https://github.com/WICG/webpackage/pull/304.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/304.patch"
+    },
+    "body": "- Add OCSP and SCT to the test input\r\n- Remove an unused function"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/303",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/303/labels{/name}",
@@ -1517,7 +1571,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/275.patch"
     },
     "body": "Fixes #268"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/274",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1571,10 +1628,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/274.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/273",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3206,7 +3260,10 @@
     "closed_at": "2018-07-23T16:21:01Z",
     "author_association": "COLLABORATOR",
     "body": "@davidben @irori, would you take a look at self-signed cert generation instructions at https://github.com/WICG/webpackage/tree/master/go/signedexchange#creating-our-first-signed-exchange ?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/244",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3260,10 +3317,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/244.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/243",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4861,7 +4915,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/215.patch"
     },
     "body": "I believe this is just updates to section numbers, and the addition of ABNF for the headers.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/update-structured-headers/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/update-structured-headers/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/214",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4909,10 +4966,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "This should use http://wicg.github.io/reporting/."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/213",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6591,7 +6645,10 @@
     "closed_at": "2018-05-10T21:25:59Z",
     "author_association": "COLLABORATOR",
     "body": "If A prefetches sxg_0, which includes a preload for sxg_1, which includes a preload for sxg_2, ... This could lead to unbounded prefetches. Perhaps include a limit like https://fetch.spec.whatwg.org/#ref-for-concept-request-redirect-count%E2%91%A0."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/184",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6645,10 +6702,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/184.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/183",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8269,7 +8323,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/155.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/draft-mice/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt&url2=https://jyasskin.github.io/webpackage/draft-mice/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/154",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8317,10 +8374,7 @@
     "closed_at": "2018-05-08T22:41:28Z",
     "author_association": "COLLABORATOR",
     "body": "The signature's expiry limits when you can receive the exchange. The HTTP cache control headers limit when you can use the exchange after it's successfully received.\r\n\r\nIt's not obvious what the policy should be, but a simple policy is to say that the resource expires from the cache at the earlier time of the signature expiration and the cache expiration.\r\n\r\nWe also need to specify how the resource is revalidated after it expires.\r\n1. The first use needs to be similar to [`<link rel=preload>`](https://w3c.github.io/preload/#link-type-preload) so that it's not revalidated during that first use.\r\n1. Subsequent uses can either [update signature validity](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#updating-validity) if the signature's expired, or use a conditional request if the cache information's expired. Once the signature's expired, remember that the etag isn't trustworthy."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/153",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10014,7 +10068,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/125.patch"
     },
     "body": "#124 \r\n\r\nThis is WIP: I have no idea how to treat the passed request headers."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/124",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10069,10 +10126,7 @@
     "closed_at": "2018-03-01T17:29:55Z",
     "author_association": "COLLABORATOR",
     "body": "Originally requested by @kinu.\r\n\r\nWe should be able to set arbitrary request/response HTTP headers to be captured in the generated signed exchange.\r\n```\r\n$ ./gen-signedexchange \\\r\n    -requestHeader \"Accept-Language: en\" \\\r\n    -responseHeader \"Server: Nginx\" \\\r\n    -responseHeader \"X-Frame-Options: Deny\"\r\n```\r\n\r\n@hajimehoshi Would you work on this?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/123",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11572,7 +11626,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/95.patch"
     },
     "body": "(for instance, this is not a work item of the HTTP working group)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/94",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11626,10 +11683,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/94.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/http-extension/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/http-extension/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/93",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13249,7 +13303,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/65.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/64",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13303,10 +13360,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/64.patch"
     },
     "body": "And add some Go code to sign a message into a byte string."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/63",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14788,7 +14842,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Hi all, I saw some of you at Blink On, and I promised to come up with a few user stories. Rather than trying help shape the implementation, I thought I could just outline why electron is looking at this format. Here's my first pass at some user stories.\r\n\r\n## App Installer Story\r\n\r\nDeveloper Kim builds a new electron app, and wants to host it on her site. She wants to make the install as easy as possible, and a new hot installation tool some people have downloaded knows how to take a web package, and install it like a desktop app. Right now, every electron app comes with its own chromium. A web package format distribution could link out to the required chromium, which may already be installed on the users desktop.\r\n\r\nThe end-user downloads the `.electron` bundle, double-clicks it, and the installer installs a new app.\r\n\r\nBoth the installer, and the operating system should be validating the package and checking code signatures. (Open question if the dynamic installer messes up the signature story)\r\n\r\nA new icon is placed wherever there operating system installs applications, and double-clicking it opens the app.\r\n\r\n## Lifecycle with _shared_ resources\r\n\r\nKim is at it again, but this time her users have demanded an even slimmer after install experience. Kim builds the next web package bundle, but instead of including everything in `node_modules` the web package simply links out to indicate that a requires these and PM modules at specific versions. To complicate matters, some of these modules require compilation.\r\n\r\nKim knows that not all of her users have developer tools installed, but also doesn't want to set up CI on numerous different platforms. That's okay, we have your back. The top 100 electron modules that require compilation have been precompiled on common platforms packaged into a web package format.\r\n\r\nUser Angela downloads Kim's latest web package, which only includes the core app code. The installer understands the outbound links in the web package, and first attempts to satisfy them with a local cache on disk. One of the compiled dependencies is missing however, and the installer has to downloaded fresh. Instead of pulling from npm directly, the installer is able to resolve the location of a precompiled version and use that.\r\n\r\n## BigCorp\r\n\r\nBig Corp once control over every last bit of their installed application. They want to block every last piece down. They want a self-contained packaging format, where everything gets shipped altogether.\r\n\r\nThis is the situation we have now, which is why it's worth putting down.\r\n\r\n## BigCrop Internal\r\n\r\nInternally at big Corp, they have a lot of internal tools developers that wish to distribute quick one-off applications. Because everything is running behind their firewall, they only want vetted code. Developers love the hotlinking that the web package can do, but all links should resolve to an internal npm mirror and an internal blob store for precompiled modules."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/34",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14842,10 +14899,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/34.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/33",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16303,7 +16357,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/5.patch"
     },
     "body": "s/tot he/to the/"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/4",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16357,10 +16414,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/4.patch"
     },
     "body": "s/subresourcves/resources/"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/3",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
