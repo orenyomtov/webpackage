@@ -1,6 +1,114 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/307",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/307/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/307/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/307/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/307",
+    "id": 358482063,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE0MjA3OTY0",
+    "number": 307,
+    "title": "dump-signedexchange: Add a flag to dump only signature value",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-10T06:16:53Z",
+    "updated_at": "2018-09-10T06:45:10Z",
+    "closed_at": "2018-09-10T06:45:06Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/307",
+      "html_url": "https://github.com/WICG/webpackage/pull/307",
+      "diff_url": "https://github.com/WICG/webpackage/pull/307.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/307.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/306",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/306/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/306/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/306/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/306",
+    "id": 357922953,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEzODE4ODIy",
+    "number": 306,
+    "title": "certurl: Add a parser of application/cert-chain+cbor format",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-07T05:17:39Z",
+    "updated_at": "2018-09-07T05:21:22Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/306",
+      "html_url": "https://github.com/WICG/webpackage/pull/306",
+      "diff_url": "https://github.com/WICG/webpackage/pull/306.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/306.patch"
+    },
+    "body": "This will be used by upcoming `dump-certurl` tool."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/305",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/305/labels{/name}",
@@ -1469,7 +1577,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/278.patch"
     },
     "body": "Chromium generates HAR that includes HTTP/2 pseudo headers in the\r\n`request.headers` field. Drop them so that they don't conflict with\r\nBundled Exchanges' pseudo headers."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/277",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1571,10 +1682,7 @@
     "closed_at": "2018-08-17T05:42:03Z",
     "author_association": "COLLABORATOR",
     "body": "We might want to adjust the signature message format so that it is easy to reuse the encoded headers when verifying the signature.\r\nThe `headers` required in Section 3.5 step 7.4.5 is a copy of the cbor appearing earlier. However, the fact that it appears inline in the map makes it hard for many cbor encoder implementation to reconstruct the cbor representation of the map without decode(encode(headers)), which is non-secure.\r\n\r\nMore discussion on the [crbug](https://bugs.chromium.org/p/chromium/issues/detail?id=863499)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/275",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3100,7 +3208,10 @@
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "## I wish signed exchanges to cover the non-repudiation use-case\r\n\r\nI wish to use the `Signature` header for non repudiation.\r\n\r\nExample:\r\n\r\n  - client sends a request with a Signature of given headers and payload\r\n  - server replies with a Signature that may contain e.g. the request hash\r\n\r\n### Non repudiation\r\nSee [nist 800-32](https://csrc.nist.gov/publications/detail/sp/800-32/final)\r\n\r\nAssurance that:\r\n\r\n  - the sender is provided with proof of delivery \r\n  - and that the recipient is provided with proof of the sender's identity \r\n\r\nso that neither can later deny having processed the data.\r\n\r\nTechnical non repudiation refers to the assurance a Relying Party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key. \r\n\r\nLegal non-repudiation refers to how well possession or control of the private signature key can be established. \r\n\r\n### Elements for non repudiation\r\n\r\nNon repudiation via PKI is usually achieved adding\r\n\r\n1- in a request\r\n\r\n  - an hash of the request representation\r\n  - a signature of the above hash and further elements, eg: `issuer, audience, subject, issued_at, not_before, expires`, similar to JWS claims\r\n  - sender informations\r\n\r\n2- in a response\r\n\r\n  - an hash of the response representation\r\n  - a signature of the above hash and further elements, including an hash of the original request\r\n  - original request informations (eg. the hash) may be added in the response representation\r\n\r\n\r\nFurther informations may include:\r\n\r\n  - URL or content of the certificate to be used for validating the signature\r\n\r\n### Signature and Non Repudiation\r\n\r\nThere are various similarities b/w the informations contained in this spec and Non Repudiation.\r\n\r\n  - `Digest` can be used to guarantee the integrity of the representation (eg. with other values of Content-Encoding)\r\n  - `Signature` covers a list of `Signed-Headers` which may cover all necessary headers\r\n\r\n\r\n## References\r\n\r\nAn example of non-repudiation via HTTP Headers is defined in:\r\n\r\n-  [Berlin Group Financial API §11](https://docs.wixstatic.com/ugd/c2914b_5351b289bf844c6881e46ee3561d95bb.pdf) based on [https://tools.ietf.org/html/draft-cavage-http-signatures-10](draft-cavage-http-signatures-10)\r\n\r\n\r\n## Questions from #88 \r\n\r\nAbout https://github.com/WICG/webpackage/pull/88#discussion_r152628889\r\n\r\n  - agree JWS security issues though not everybody agrees on deprecating JOSE [see those tweets on jose vs paseto]( https://twitter.com/ioggstream/status/972126134136647687)\r\n\r\n  -  support for different curves and rsa is useful: is `CSP-style` eg `key=ed25519-base64` that dangerous, considering that we should somewhat converge in some way? Clearly RSA would be insanely longer\r\n\r\n  - about algos, in your opinion will ed25519 replace all the other algos in the near future so that we should \"hardcode\" its name? Should we \"deprecate\" RSA signatures?\r\n\r\n  \r\n\r\n\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/247",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3208,10 +3319,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/246.patch"
     },
     "body": "* Certificate chains have an array item before the first certificate.\r\n* The first certificate's OCSP response was described as optional when\r\n  it's not.\r\n* The first certificate's SCT was *not* described as optional, but it\r\n  can appear in the certificate itself or the OCSP response.\r\n* \"digest/mi-sha256\" doesn't make sense.\r\n* There's no longer a non-signed headers section in SXG files.\r\n* An example had lengths in the wrong order.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/devin-cleanups/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/devin-cleanups/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/245",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4807,7 +4915,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/218.patch"
     },
     "body": "There doesn't seem to be a section that \"says not to process other sections\" as of now. Can we omit the steps until we have one?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/217",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4915,10 +5026,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/216.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/register-headers/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/register-headers/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/215",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6479,7 +6587,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Both Signed Exchange and CBOR cert chain have short lifetime (max 7 days). This makes it difficult to use pre-generated signed exchange / cert files in end-to-end testing. To workaround this, Chromium has an [internal testing API](https://chromium-review.googlesource.com/c/chromium/src/+/991833) (available only in test runner) that overrides signature verification time.\r\n\r\nIn order to test Signed Exchange Loading in web-platform-tests, we need an interoperable way to override signature verification time. The preferred way is defining a [WebDriver extension](https://w3c.github.io/webdriver/#dfn-extension-command) in the respective spec (in this case, Signed Exchange) so that the same surface API is used across UAs.\r\n\r\nSee [this doc](https://docs.google.com/document/d/1zlFRcKuTM3RpoYjcOtiVOioRErEkJyCyv8hDs9_mlXo/edit#heading=h.n0pzm6uk5f69) for more details and discussions."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/187",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6651,10 +6762,7 @@
     "closed_at": "2018-07-09T18:41:36Z",
     "author_association": "COLLABORATOR",
     "body": "Chromium would like to start adding support for next \"implementation checkpoint\".\r\nCan we increment ver num on https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#rfc.section.5.3 ?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/185",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8221,7 +8329,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/158.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/157",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8323,10 +8434,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "This came up in https://chromium-review.googlesource.com/c/chromium/src/+/967632.\r\n\r\nWhen a HTTP Exchange is loaded from an application/http-exchange+cbor envelope, what the resource timing fields for that load should represent?\r\n\r\ncc: @jyasskin @kinu\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/155",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9960,7 +10068,10 @@
     "closed_at": "2018-03-05T21:35:53Z",
     "author_association": "NONE",
     "body": "With PWA's rise, there is allot of action going on with P2P. \r\nYour browser is almost a web server now.\r\nI am seeing so many different ways to do the security aspects for P2P. \r\nHTTPS is not designed to do P2P, so i wanted to raise this and se if there is any thoughts on this going forward.\r\n\r\nI am expected to be told that this aspect is not part of the \"WebPackage\" spec and probably rightly so.\r\nBut i am trying to find where people are trying things out using golang to try to use HTTPS and P2p.\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/127",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10068,10 +10179,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/126.patch"
     },
     "body": "The test results was changed at https://github.com/WICG/webpackage/commit/d989c1be0e6e717476f4291cea2edd2adbd867ac and this PR updates the test results."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/125",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11518,7 +11626,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/98.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/bundles/draft-yasskin-dispatch-bundled-exchanges.html)\r\n\r\nThis fills a similar niche as [MHTML](https://tools.ietf.org/html/rfc2557), but\r\n* is random access,\r\n* efficiently encodes 8-bit payloads,\r\n* can represent multiple top-level resources,\r\n* can represent content-negotiated resources,\r\n* and possibly other advantages.\r\n\r\nI believe that combined with [signed exchanges](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html), bundles fill all of the [web packaging use cases](https://wicg.github.io/webpackage/draft-yasskin-webpackage-use-cases.html) except that they'll need a subsequent change to work for \"Third-party security review\", which will need a signature to cover groups of resources to enforce that their versions are consistent."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/97",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11626,10 +11737,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/96.patch"
     },
     "body": "I used the pre-hashed variants for those and switched the raw ed25519\r\npublic key to use ed25519ph, with an Open Question for whether that's\r\nthe right choice.\r\n\r\nIlari Liusvaara pointed out that draft-ietf-curdle-pkix is nearly published, so it makes sense to include its public key types in this document now. \r\n\r\n@sleevi, is this the right choice?\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/define-ed25519-certs/draft-yasskin-http-origin-signed-responses.html#signature-validity), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/define-ed25519-certs/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/95",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13195,7 +13303,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/68.patch"
     },
     "body": "This update was generated using #67, but we can commit it without all that code."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/67",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13303,10 +13414,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/66.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/65",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14740,7 +14848,10 @@
     "closed_at": "2017-06-27T22:41:25Z",
     "author_association": "COLLABORATOR",
     "body": "Hi,\r\n\r\nCapturing recent conversations with @jyasskin and @mrdewitt:\r\n\r\n1. We think it makes sense to switch to 100% binary format since the header compression and parts body compression makes it mostly binary anyways. It also lets us to replace MIME boundary strings with direct chunk-size kind of encoding.\r\n2. The Explainer and samples in it will be gradually updated to reflect switch to binary encoding. While in update, there can be some inconsistency in the doc.\r\n\r\nAlso discussed:\r\n- Binary alignment at 32 bit boundaries (decided not to)\r\n- Use Self-Delimiting Numeric Values (rfc 6256) (decided not to)\r\n- Split content index and offset table (so the resources may be rearranged)\r\n- Multiple hashes (to support deprecation of old ones)\r\n- Cross-signing\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/37",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14848,10 +14959,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/36.patch"
     },
     "body": "I haven't updated the Use Cases yet, but here are some thoughts on how we should update the format to deal with #33 (@bmeck), Ryan's security concerns in #31, #29 (@jianli-chromium), and #10, #11, and #12 (@lrosenthal). I've tried to mark all the places that still need work with \"TODO\", but I may have missed some."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/35",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16261,7 +16369,10 @@
     "closed_at": "2017-06-27T22:42:25Z",
     "author_association": "NONE",
     "body": "Having the index file be in a text-like format that (a) doesn't specify or mandate an encoding and  (b) no provisions for proper data typing, (c) requires writing a custom parser and (d) will need a newly defined MIME type (see issue #9 ) - doesn't seem like a good idea.\r\n\r\nI recommend instead that the index be a well defined JSON grammar.  That way standard parsers can be used and there is no question about encodings, data types, etc.\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/7",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16357,10 +16468,7 @@
     "closed_at": "2017-03-30T03:05:56Z",
     "author_association": "NONE",
     "body": "One of the reasons that the [packaging on the web](https://w3ctag.github.io/packaging-on-the-web/) spec chose to avoid ZIP in favor of something new & different was due to the (perceived) lack of streaming support.\r\n\r\nHowever, this proposal suffers from the same problem.  You cannot create it entirely in stream, due to (a) the way that offsets are used and (b) the index file needing to list all other files.\r\n\r\nIf streaming is not a requirement for this format - that's fine.  But then, that should also be called out in the spec."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/5",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
