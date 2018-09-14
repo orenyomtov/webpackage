@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/309",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/309/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/309/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/309/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/309",
+    "id": 360171038,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE1NDkxODcy",
+    "number": 309,
+    "title": "gen-signedexchange: Emit 1b2 format by default",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-14T06:20:14Z",
+    "updated_at": "2018-09-14T06:28:59Z",
+    "closed_at": "2018-09-14T06:28:59Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/309",
+      "html_url": "https://github.com/WICG/webpackage/pull/309",
+      "diff_url": "https://github.com/WICG/webpackage/pull/309.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/309.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/308",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/308/labels{/name}",
@@ -359,9 +413,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2018-09-04T15:45:47Z",
-    "updated_at": "2018-09-04T19:12:41Z",
+    "updated_at": "2018-09-14T06:20:54Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1523,7 +1577,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/280.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/279",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1577,10 +1634,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/279.patch"
     },
     "body": "To address #276 "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/278",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3160,7 +3214,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/250.patch"
     },
     "body": "Address #243 "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/249",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3214,10 +3271,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/249.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/248",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4861,7 +4915,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/220.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/219",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4915,10 +4972,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/219.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/218",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6539,7 +6593,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/190.patch"
     },
     "body": "Follow spec changes after #178 and 3fc67e270b4a89bed9a46732c985fd984c2a66d3\r\n\r\nFYI: @jyasskin "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/189",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6593,10 +6650,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/189.patch"
     },
     "body": "Addresses #135 \r\nCorresponding spec change at f4ca17d1377bed966fdba85c03adbd798cfb5a96\r\n\r\n@jyasskin FYI"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/188",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8275,7 +8329,10 @@
     "closed_at": "2018-04-02T01:35:44Z",
     "author_association": "COLLABORATOR",
     "body": "https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#stateful-headers\r\n\r\nCC @twifkak @nyaxt "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/159",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8329,10 +8386,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/159.patch"
     },
     "body": "#152 \r\n\r\nPTAL"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/158",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10026,7 +10080,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/130.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/129",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10074,10 +10131,7 @@
     "closed_at": "2018-03-05T21:29:35Z",
     "author_association": "NONE",
     "body": "It's \"Chrome OS\", not \"ChromeOS\"."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/128",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11572,7 +11626,10 @@
     "closed_at": "2017-12-24T15:30:17Z",
     "author_association": "NONE",
     "body": "Hnm"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/99",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11626,10 +11683,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/99.patch"
     },
     "body": "Instead of arrays with alternating keys and values, which side-steps the\r\ndisagreement about CBOR canonical map ordering rules, I now specify one\r\nof the ordering rules and use maps where they make sense.\r\n\r\nThe one place I'm still not using a map is in the top level of the\r\nexchange representation, where the request/response/payload ordering\r\nseems useful and where we might someday want to add, for example, the\r\nrequest payload between the request and response.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/use-maps/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/use-maps/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n@MikeBishop"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/98",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13255,7 +13309,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://github.com/WICG/webpackage/pull/60#discussion_r121227994 points out that we might not want to store the [`:method` header](http://httpwg.org/specs/rfc7540.html#HttpRequest) in requests. We only know of uses of `GET` requests, and having the ability to code other methods might cause bugs."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/69",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13303,10 +13360,7 @@
     "closed_at": "2018-01-24T18:39:34Z",
     "author_association": "COLLABORATOR",
     "body": "For example, we might want to be able to start playing a large video file without hashing the whole thing.\r\n\r\nSee https://tools.ietf.org/html/draft-thomson-http-mice for one approach."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/68",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14806,7 +14860,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "From @dimich-g's https://github.com/dimich-g/webpackage/pull/36#issuecomment-290316360:\r\n\r\nHaving external sub-packages could be useful to tell the UA that it's likely to need some files, without incurring an extra download cost when the UA happens to already have that package."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/39",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14854,10 +14911,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "From @dimich-g's https://github.com/dimich-g/webpackage/pull/36#issuecomment-290316360:\r\n\r\nWithout a signed manifest, there's no structure to identify sub-packages.\r\n\r\nHowever, it might just work to lump all the resources together at the top level. Do we need to identify the sub-package structure?"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/38",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16327,7 +16381,10 @@
     "closed_at": "2017-08-10T13:48:24Z",
     "author_association": "NONE",
     "body": "[The section on the index ](https://github.com/dimich-g/webpackage#use-case-optional-content-index) says that compression may be permitted, but that may/will yield binary data.  However, because the header of the is document is text - most sniffers will consider this a text file and treat it accordingly (eg. screwing up line endings).\r\n\r\nEither require that all data be text-encoded (eg. BASE64) or use a binary format."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/9",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16375,10 +16432,7 @@
     "closed_at": "2017-01-24T02:07:46Z",
     "author_association": "NONE",
     "body": "As defined [in its IANA registration](https://www.iana.org/assignments/media-types/application/index), this is not a valid media type.  Instead, either a new sub-type should be defined and/or the appropriate format extension (eg. +json) should be added."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/8",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
