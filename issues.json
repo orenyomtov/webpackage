@@ -1,6 +1,108 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/311",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/311/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/311/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/311/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/311",
+    "id": 361537573,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE2NDg1NDUx",
+    "number": 311,
+    "title": "Grammar fixes",
+    "user": {
+      "login": "dandv",
+      "id": 33569,
+      "node_id": "MDQ6VXNlcjMzNTY5",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/33569?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dandv",
+      "html_url": "https://github.com/dandv",
+      "followers_url": "https://api.github.com/users/dandv/followers",
+      "following_url": "https://api.github.com/users/dandv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dandv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dandv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dandv/subscriptions",
+      "organizations_url": "https://api.github.com/users/dandv/orgs",
+      "repos_url": "https://api.github.com/users/dandv/repos",
+      "events_url": "https://api.github.com/users/dandv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dandv/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-09-19T00:59:56Z",
+    "updated_at": "2018-09-19T01:34:54Z",
+    "closed_at": "2018-09-19T01:34:54Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/311",
+      "html_url": "https://github.com/WICG/webpackage/pull/311",
+      "diff_url": "https://github.com/WICG/webpackage/pull/311.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/311.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/310",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/310/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/310/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/310/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/310",
+    "id": 361039598,
+    "node_id": "MDU6SXNzdWUzNjEwMzk1OTg=",
+    "number": 310,
+    "title": "Update loading spec per b2",
+    "user": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-09-17T20:52:52Z",
+    "updated_at": "2018-09-18T22:48:08Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "https://wicg.github.io/webpackage/loading.html makes several mentions of `b1`. It will need to updated to refer to `b2`, as well as changes to where inner URL and payload digest are found, per the changes in #296 ([change log](https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#change-log)). Possibly other things?"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/309",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/309/labels{/name}",
@@ -413,9 +515,9 @@
 
     ],
     "milestone": null,
-    "comments": 2,
+    "comments": 3,
     "created_at": "2018-09-04T15:45:47Z",
-    "updated_at": "2018-09-14T06:20:54Z",
+    "updated_at": "2018-09-14T06:32:21Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -868,7 +970,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -877,8 +979,8 @@
     "milestone": null,
     "comments": 5,
     "created_at": "2018-08-22T08:40:36Z",
-    "updated_at": "2018-08-22T16:54:23Z",
-    "closed_at": null,
+    "updated_at": "2018-09-16T13:12:34Z",
+    "closed_at": "2018-09-16T13:12:34Z",
     "author_association": "NONE",
     "body": "In order to discourage centralization of the web, authors should have an incentive to keep their websites active.\r\n\r\nOne way is to make sure is that the author's server provides the client with the decryption key to decrypt the package.\r\n\r\ni.e:\r\n1. example.com signs and packages example.com/index.html and submits to google.com\r\n2. google.com distributes example.com/index.html \r\n3. users downloads example.com/index.html from google.com\r\n4. user connects to example.com for the index.html's decryption key\r\n5. browser decrypt the index.html package supplied by google with the decryption key supplied by example.com\r\n\r\nThis all should be optional to the author. Some authors might only want google.com to distribute the html/css/js for faster loading but ensure that the client has a first party contact with example.com too.  \r\n\r\nIt is already possible to do the same with javascript, but the web should also provide a native way to do this. \r\n"
   },
@@ -1297,7 +1399,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-08-08T22:22:19Z",
-    "updated_at": "2018-08-08T22:31:22Z",
+    "updated_at": "2018-09-18T22:46:57Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1306,7 +1408,7 @@
       "diff_url": "https://github.com/WICG/webpackage/pull/285.diff",
       "patch_url": "https://github.com/WICG/webpackage/pull/285.patch"
     },
-    "body": "This builds on #281, so please only review [`71e29a32`](https://github.com/WICG/webpackage/pull/285/commits/71e29a321509be1ac5b9c2e25220254e16f5dea2) here.\r\n\r\nSee https://docs.google.com/document/d/1JdJkdY7cK2rD9JXbK75sSn069c0rhF9UnLQACBZ1OtY/edit for more analysis and options, but building on @mnot's Variants seems like a good plan here.\r\n\r\nIf we go this way, it probably makes sense to move away from storing arbitrary request headers in both signed exchanges and bundles, and toward storing something like a [Variants header](https://httpwg.org/http-extensions/draft-ietf-httpbis-variants.html#variants) directly.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/request-matching/loading.html#request-matching) | [Diff](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fjyasskin.github.io%2Fwebpackage%2Floading-spec%2Floading.html&doc2=https%3A%2F%2Fjyasskin.github.io%2Fwebpackage%2Frequest-matching%2Floading.html#request-matching)"
+    "body": "See https://docs.google.com/document/d/1JdJkdY7cK2rD9JXbK75sSn069c0rhF9UnLQACBZ1OtY/edit for more analysis and options, but building on @mnot's Variants seems like a good plan here.\n\nIf we go this way, it probably makes sense to move away from storing arbitrary request headers in both signed exchanges and bundles, and toward storing something like a [Variants header](https://httpwg.org/http-extensions/draft-ietf-httpbis-variants.html#variants) directly.\n\n\n<!--\n    This comment and the below content is programatically generated.\n    You may add a comma-separated list of anchors you'd like a\n    direct link to below (e.g. #idl-serializers, #idl-sequence):\n\n    Don't remove this comment or modify anything below this line.\n    If you don't want a preview generated for this pull request,\n    just replace the whole of this comment's content by \"no preview\"\n    and remove what's below.\n-->\n***\n<a href=\"https://pr-preview.s3.amazonaws.com/jyasskin/webpackage/pull/285.html\" title=\"Last updated on Sep 18, 2018, 10:46 PM GMT (a7d3eb4)\">Preview</a> | <a href=\"https://pr-preview.s3.amazonaws.com/WICG/webpackage/285/cf685b1...jyasskin:a7d3eb4.html\" title=\"Last updated on Sep 18, 2018, 10:46 PM GMT (a7d3eb4)\">Diff</a>"
   },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/284",
@@ -1469,7 +1571,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/282.patch"
     },
     "body": "Drop the HAR entry if:\r\n- Request method is not GET.\r\n- Status code is not valid. Chromium puts status code 0 if the request\r\n  failed with a network error."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/281",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1577,10 +1682,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/280.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/279",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3106,7 +3208,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/252.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/251",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3214,10 +3319,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/250.patch"
     },
     "body": "Address #243 "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/249",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4806,7 +4908,10 @@
     "closed_at": "2018-06-21T02:30:43Z",
     "author_association": "COLLABORATOR",
     "body": "Current Signed Exchange spec draft [says](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#rfc.section.3.1) `cert-url` and `validity-url` should be [an absolute-URL string](https://url.spec.whatwg.org/#absolute-url-string), but that could potentially allow multiple schemes than http/https (e.g. file and ws), while it doesn't seem to include data: URL.  It looks we'd better clarify what schemes should be allowed there."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/221",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4915,10 +5020,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/220.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/219",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6491,7 +6593,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/192.patch"
     },
     "body": "Addresses #191 "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/191",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6593,10 +6698,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/190.patch"
     },
     "body": "Follow spec changes after #178 and 3fc67e270b4a89bed9a46732c985fd984c2a66d3\r\n\r\nFYI: @jyasskin "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/189",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8195,7 +8297,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/162.patch"
     },
     "body": "#160 \r\n\r\nPTAL"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/161",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8329,10 +8434,7 @@
     "closed_at": "2018-04-02T01:35:44Z",
     "author_association": "COLLABORATOR",
     "body": "https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#stateful-headers\r\n\r\nCC @twifkak @nyaxt "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/159",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9972,7 +10074,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/132.patch"
     },
     "body": "@davidben, you'll probably like this one. It refactors the rules for trusting cross-origin exchanges so that they can be shared by Push and the application/http-exchange format. This let me cover all headers from those two transfer methods unconditionally, with only same-origin exchanges able to use `Signed-Headers` to select a subset.\r\n\r\nThere's a bunch of text motion, but sections id'ed `signed-headers` and `significant-headers` are basically unchanged in their new locations, and `authority-chain-validation` became the algorithm in `cross-origin-trust`.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/unify-cross-origin/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/unify-cross-origin/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/131",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10080,10 +10185,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/130.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/129",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11530,7 +11632,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Scenario: Developer A includes a package from Developer B (e.g. a specific version of jQuery, or a hypothetical wasm implementation of python3) to serve the purpose of a shared library. This is loaded from a version-specific URL, say packages.jquery.com/v3-2-1, to ensure that A's app is running with the right version of jQuery or python that it was developed for. However, A has to trust the integrity of B and B's server to actually keep the resource static. B or any attacker on B's server has the power to inject malicious code into A's web app. This makes shared libraries impractical for security-critical applications. \r\n\r\nTo solve this problem, A links B's package with both a URL and a hash, which is checked by the client as soon as B's package is loaded (libraries are unlikely to need streaming). So A can have absolute confidence that their app uses the exact same version of the resource that it has been developed for, while keeping the benefits of shared library use.\r\n  "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/101",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11626,10 +11731,7 @@
     "closed_at": "2017-12-24T15:30:17Z",
     "author_association": "NONE",
     "body": "Hnm"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/99",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13137,7 +13239,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "[example.com.key](https://github.com/WICG/webpackage/tree/master/go/webpack/testdata/pki/example.com.key) is currently a secp256r1 key, but we should also test creating packages for each of:\r\n* RSA <= 3072 bits\r\n* RSA with 3073-7680 bits (probably 4096)\r\n* secp384r1\r\n* secp521r1\r\n\r\nI'll probably create the keys for `rsa2048.example.com`, `secp521r1.example.com`, etc."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/71",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13309,10 +13414,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://github.com/WICG/webpackage/pull/60#discussion_r121227994 points out that we might not want to store the [`:method` header](http://httpwg.org/specs/rfc7540.html#HttpRequest) in requests. We only know of uses of `GET` requests, and having the ability to code other methods might cause bugs."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/69",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14764,7 +14866,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "https://github.com/dimich-g/webpackage#use-cases has lots of examples that use an old version of the design."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/41",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14860,10 +14965,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "From @dimich-g's https://github.com/dimich-g/webpackage/pull/36#issuecomment-290316360:\r\n\r\nHaving external sub-packages could be useful to tell the UA that it's likely to need some files, without incurring an extra download cost when the UA happens to already have that package."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/39",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16285,7 +16387,10 @@
     "closed_at": "2017-06-27T22:40:15Z",
     "author_association": "NONE",
     "body": "There is nothing specified for exactly which bytes are hashed - either for an individual file/resource for the header or the index.  \r\n\r\nDo you include the boundary string?  Do you include any closing line endings?  "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/11",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16381,10 +16486,7 @@
     "closed_at": "2017-08-10T13:48:24Z",
     "author_association": "NONE",
     "body": "[The section on the index ](https://github.com/dimich-g/webpackage#use-case-optional-content-index) says that compression may be permitted, but that may/will yield binary data.  However, because the header of the is document is text - most sniffers will consider this a text file and treat it accordingly (eg. screwing up line endings).\r\n\r\nEither require that all data be text-encoded (eg. BASE64) or use a binary format."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/9",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
