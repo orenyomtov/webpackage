@@ -1,6 +1,334 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/318",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/318/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/318/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/318/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/318",
+    "id": 373305452,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI1MjY1MjI5",
+    "number": 318,
+    "title": "gen-signedexchange: Write SXG to stdout when \"-o -\" is given",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-10-24T04:59:34Z",
+    "updated_at": "2018-10-25T01:28:17Z",
+    "closed_at": "2018-10-25T01:27:57Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/318",
+      "html_url": "https://github.com/WICG/webpackage/pull/318",
+      "diff_url": "https://github.com/WICG/webpackage/pull/318.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/318.patch"
+    },
+    "body": "This is useful when using gen-signedexchange in a command pipeline."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/317",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/317/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/317/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/317/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/317",
+    "id": 371752018,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI0MTI5ODEx",
+    "number": 317,
+    "title": "Delete outdated examples.",
+    "user": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-10-18T23:30:25Z",
+    "updated_at": "2018-10-24T11:17:39Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/317",
+      "html_url": "https://github.com/WICG/webpackage/pull/317",
+      "diff_url": "https://github.com/WICG/webpackage/pull/317.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/317.patch"
+    },
+    "body": "Keep firebase.json, which is still up-to-date.\r\n\r\nFixes #316."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/316",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/316/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/316/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/316/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/316",
+    "id": 371749016,
+    "node_id": "MDU6SXNzdWUzNzE3NDkwMTY=",
+    "number": 316,
+    "title": "Delete examples/ directory (except for firebase.json)",
+    "user": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "assignees": [
+      {
+        "login": "twifkak",
+        "id": 2893,
+        "node_id": "MDQ6VXNlcjI4OTM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/twifkak",
+        "html_url": "https://github.com/twifkak",
+        "followers_url": "https://api.github.com/users/twifkak/followers",
+        "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+        "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+        "organizations_url": "https://api.github.com/users/twifkak/orgs",
+        "repos_url": "https://api.github.com/users/twifkak/repos",
+        "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/twifkak/received_events",
+        "type": "User",
+        "site_admin": false
+      }
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-10-18T23:15:58Z",
+    "updated_at": "2018-10-18T23:30:39Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "The files in there (except for firebase.json) are out of date and caused some confusion in #315."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/315",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/315/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/315/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/315/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/315",
+    "id": 371585355,
+    "node_id": "MDU6SXNzdWUzNzE1ODUzNTU=",
+    "number": 315,
+    "title": "How to open a .wpk file?",
+    "user": {
+      "login": "jimbojetlag",
+      "id": 11205806,
+      "node_id": "MDQ6VXNlcjExMjA1ODA2",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11205806?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jimbojetlag",
+      "html_url": "https://github.com/jimbojetlag",
+      "followers_url": "https://api.github.com/users/jimbojetlag/followers",
+      "following_url": "https://api.github.com/users/jimbojetlag/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jimbojetlag/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jimbojetlag/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jimbojetlag/subscriptions",
+      "organizations_url": "https://api.github.com/users/jimbojetlag/orgs",
+      "repos_url": "https://api.github.com/users/jimbojetlag/repos",
+      "events_url": "https://api.github.com/users/jimbojetlag/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jimbojetlag/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-10-18T15:24:24Z",
+    "updated_at": "2018-10-25T00:21:33Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "body": "I noticed there are some sample .wpk file sin https://github.com/WICG/webpackage/tree/master/examples . Do browsers open these files at this point? If not, how are they supposed to be opened by the end user?"
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/314",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/314/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/314/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/314/events",
+    "html_url": "https://github.com/WICG/webpackage/issues/314",
+    "id": 365078475,
+    "node_id": "MDU6SXNzdWUzNjUwNzg0NzU=",
+    "number": 314,
+    "title": "Integrity record size limit is missing from b2 snapshot",
+    "user": {
+      "login": "twifkak",
+      "id": 2893,
+      "node_id": "MDQ6VXNlcjI4OTM=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twifkak",
+      "html_url": "https://github.com/twifkak",
+      "followers_url": "https://api.github.com/users/twifkak/followers",
+      "following_url": "https://api.github.com/users/twifkak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twifkak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twifkak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twifkak/subscriptions",
+      "organizations_url": "https://api.github.com/users/twifkak/orgs",
+      "repos_url": "https://api.github.com/users/twifkak/repos",
+      "events_url": "https://api.github.com/users/twifkak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twifkak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "assignees": [
+      {
+        "login": "nyaxt",
+        "id": 18355,
+        "node_id": "MDQ6VXNlcjE4MzU1",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nyaxt",
+        "html_url": "https://github.com/nyaxt",
+        "followers_url": "https://api.github.com/users/nyaxt/followers",
+        "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+        "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+        "repos_url": "https://api.github.com/users/nyaxt/repos",
+        "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+        "type": "User",
+        "site_admin": false
+      }
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-29T00:26:35Z",
+    "updated_at": "2018-09-29T00:26:44Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "[The snapshot](https://wicg.github.io/webpackage/draft-yasskin-httpbis-origin-signed-exchanges-impl.html#signature-validity) is missing the following text, present in the [spec](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html):\r\n\r\n\"If validating integrity using the selected header field requires the client to process records larger than 16384 bytes, return “invalid”.\"\r\n\r\nHowever, this limitation still exists in the [implementation](https://cs.chromium.org/chromium/src/content/browser/loader/merkle_integrity_source_stream.cc?l=18&rcl=591949795043a818e50aba8a539094c321a4220c)."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/313",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/313/labels{/name}",
@@ -1301,7 +1629,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "For feature detection some of us have been discussing that we could add Accept: application/signed-exchanges headers.  However given that SXG can have any resources it looks the UAs that support SXG always need to attach / append SXG type even when anything can be accepted, so it could look something like `Accept: application/signed-exchange;q=0.9,*/*;q=0.8` for default, non-specific subresource requests.  Would it be just or if we want to think about alternative feature detection mechanism (e.g. specific headers etc)?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/288",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1571,10 +1902,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/284.patch"
     },
     "body": "We should merge this after #281."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/283",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -2906,7 +3234,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/259.patch"
     },
     "body": "Instead of reading a serialized SignedCertificateTimestampList from a\r\nfile, read all `*.sct` files in a directory given by the `-sctDir` flag\r\nand serialize them into SignedCertificateTimestampList.\r\n\r\nThis matches the way how [nginx-ct](https://github.com/grahamedgecombe/nginx-ct) and Apache's [mod_ssl_ct](https://httpd.apache.org/docs/trunk/mod/mod_ssl_ct.html) module work,\r\nand allows users to use existing SCT generation tools."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/258",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3176,10 +3507,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/254.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/253",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4630,7 +4958,10 @@
     "closed_at": "2018-06-25T01:47:11Z",
     "author_association": "COLLABORATOR",
     "body": "Came up in https://crrev.com/c/1103430/5/net/cert/asn1_util.cc#241:\r\n\r\n@sleevi:\r\n> Gotcha. $.02 (but not critical) is we should rename this to id-ce-canSignHttpExchangesDraft (or id-ce-draftCanSignHttpExchanges), it was the 'test' bit that caught me by surprise.\r\n\r\n@jyasskin What do you think?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/228",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4914,10 +5245,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/224.patch"
     },
     "body": "Feel free to land via rebase if everything looks good."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/223",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6329,7 +6657,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/199.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/198",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6593,10 +6924,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/194.patch"
     },
     "body": "Thanks to @triblondon for noticing in\r\nhttps://github.com/w3ctag/design-reviews/issues/235#issuecomment-379424440.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/fix-http1-samples/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/fix-http1-samples/draft-yasskin-http-origin-signed-responses.txt)\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/193",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6902,9 +7230,9 @@
 
     ],
     "milestone": null,
-    "comments": 3,
+    "comments": 4,
     "created_at": "2018-05-21T02:14:14Z",
-    "updated_at": "2018-08-14T06:11:10Z",
+    "updated_at": "2018-10-16T09:03:05Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Both Signed Exchange and CBOR cert chain have short lifetime (max 7 days). This makes it difficult to use pre-generated signed exchange / cert files in end-to-end testing. To workaround this, Chromium has an [internal testing API](https://chromium-review.googlesource.com/c/chromium/src/+/991833) (available only in test runner) that overrides signature verification time.\r\n\r\nIn order to test Signed Exchange Loading in web-platform-tests, we need an interoperable way to override signature verification time. The preferred way is defining a [WebDriver extension](https://w3c.github.io/webdriver/#dfn-extension-command) in the respective spec (in this case, Signed Exchange) so that the same surface API is used across UAs.\r\n\r\nSee [this doc](https://docs.google.com/document/d/1zlFRcKuTM3RpoYjcOtiVOioRErEkJyCyv8hDs9_mlXo/edit#heading=h.n0pzm6uk5f69) for more details and discussions."
@@ -7994,7 +8322,10 @@
     "closed_at": "2018-04-09T18:19:20Z",
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cross-origin-trust\r\n\r\n> 6.4 Validate that main-certificate has an sct property (Section 3.3) containing valid SCTs from trusted logs. ([RFC6962])\r\n\r\nDoes this mean that SCTs have to be included as a map item of the cert-chain CBOR? Or SCTs can be provided as an X.509v3 extension of `main-certificate` or as an OCSP extension of the `ocsp` property?\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/168",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8297,10 +8628,7 @@
     "closed_at": "2018-04-06T03:00:13Z",
     "author_association": "COLLABORATOR",
     "body": "In the #updating-validity section, the 3rd and subsequent paragraphs should be removed.\r\n\r\nAt present, Chromium requires the Signature to have a valid validityUrl, but doesn't use it except for including it in the signed message. (@nyaxt please correct me if I'm wrong.)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/163",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9778,7 +10106,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/139.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/implementation-draft/draft-yasskin-httpbis-origin-signed-exchanges-impl.txt)\r\n\r\nThis shows the state we expect to synchronize on for May."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/138",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10074,10 +10405,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/134.patch"
     },
     "body": "This builds on #132, so probably review that one first.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/cert-extension/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/cert-extension/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n@davidben @sleevi"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/133",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11392,7 +11720,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/109.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/want-signature/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/want-signature/draft-yasskin-http-origin-signed-responses.txt)\r\n\r\n[RFC3230](https://tools.ietf.org/html/rfc3230#section-4.3.1) uses `Want-Digest` for a similar purpose, but `Accept-*` seems more common.\r\n\r\n@cramforce, does this look sensible? Have I over- or under-complicated it?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/108",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11644,10 +11975,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Some of the suggested uses cases seem to require that sources of non-determinism (such as RNG seeds and the current time) are captured to ensure that, for example, saving and sharing a web page can occur with greater fidelity."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/103",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -12961,7 +13289,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "I kind of wonder why the ZIM format seems not to have been studied properly? Even if the format is not so rigorously documented and still lacks a few tools around it, this is probably the most used web content offline distribution file format.\r\n\r\nGeneral purpose web sites:\r\n* http://www.openzim.org/\r\n* http://www.kiwix.org/\r\n\r\nFor developers:\r\n* https://github.com/openzim/\r\n* https://github.com/kiwix/"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/78",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13213,10 +13544,7 @@
     "closed_at": "2018-01-24T18:36:30Z",
     "author_association": "COLLABORATOR",
     "body": "The link to https://w3ctag.github.io/packaging-on-the-web/ at the beginning of the explainer needs to say clearly that it's been superseded."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/73",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14626,7 +14954,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/49.patch"
     },
     "body": "This doesn't yet support signed manifests, and it's not tested as thoroughly as\r\nI'd like, but it can generate packages for the first couple examples.\r\n\r\nIt assumes that #46 is accepted."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/48",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14878,10 +15209,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/44.patch"
     },
     "body": "COSE is more complex than we need, and exposes us to any bugs in generic COSE\r\ntools.\r\n\r\nWe're not necessarily going to allow certificates that can be used for TLS\r\ntraffic, but using their signing format removes one thing that'd block it.\r\n\r\nThese are requests from @agl."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/43",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16153,7 +16481,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/19.patch"
     },
     "body": "This script can be updated alongside the explainer to give a concrete\r\nanswer to many format-related questions, and to uncover and resolve\r\nambiguities in the proposed spec.\r\n\r\nMany parts of the spec are unimplemented as yet."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/18",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16399,10 +16730,7 @@
     "closed_at": "2017-01-05T02:08:54Z",
     "author_association": "NONE",
     "body": "As asked [here](https://github.com/dimich-g/webpackage#use-case-signed-package-one-origin):\r\n> Should there be '-with-ECDSA' since certificate specifies the key's algorithm?\r\n\r\nNo, not necessary since the certificate specifies the algorithm."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/13",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
