@@ -1,6 +1,168 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/328",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/328/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/328/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/328/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/328",
+    "id": 377234644,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI4MjI5MzI4",
+    "number": 328,
+    "title": "Update loading spec to impl b2 snapshot",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-05T03:08:46Z",
+    "updated_at": "2018-11-05T03:08:46Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/328",
+      "html_url": "https://github.com/WICG/webpackage/pull/328",
+      "diff_url": "https://github.com/WICG/webpackage/pull/328.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/328.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/327",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/327/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/327/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/327/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/327",
+    "id": 376690074,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI3ODQ2OTg3",
+    "number": 327,
+    "title": " Implement mice decoder",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-02T06:52:55Z",
+    "updated_at": "2018-11-05T05:39:43Z",
+    "closed_at": "2018-11-05T05:39:38Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/327",
+      "html_url": "https://github.com/WICG/webpackage/pull/327",
+      "diff_url": "https://github.com/WICG/webpackage/pull/327.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/327.patch"
+    },
+    "body": "This is part of #319."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/326",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/326/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/326/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/326/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/326",
+    "id": 376630547,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI3ODA0OTA4",
+    "number": 326,
+    "title": "Reject uncachable status code",
+    "user": {
+      "login": "nyaxt",
+      "id": 18355,
+      "node_id": "MDQ6VXNlcjE4MzU1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18355?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nyaxt",
+      "html_url": "https://github.com/nyaxt",
+      "followers_url": "https://api.github.com/users/nyaxt/followers",
+      "following_url": "https://api.github.com/users/nyaxt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nyaxt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nyaxt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nyaxt/subscriptions",
+      "organizations_url": "https://api.github.com/users/nyaxt/orgs",
+      "repos_url": "https://api.github.com/users/nyaxt/repos",
+      "events_url": "https://api.github.com/users/nyaxt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nyaxt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-11-02T01:13:16Z",
+    "updated_at": "2018-11-05T01:51:14Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/326",
+      "html_url": "https://github.com/WICG/webpackage/pull/326",
+      "diff_url": "https://github.com/WICG/webpackage/pull/326.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/326.patch"
+    },
+    "body": "Chromium CL: https://chromium-review.googlesource.com/c/chromium/src/+/1313712"
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/325",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/325/labels{/name}",
@@ -214,17 +376,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-11-01T02:27:11Z",
-    "updated_at": "2018-11-02T00:27:16Z",
-    "closed_at": null,
+    "updated_at": "2018-11-03T08:13:09Z",
+    "closed_at": "2018-11-02T04:54:29Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/WICG/webpackage/pulls/323",
@@ -1621,7 +1783,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Just want to make sure this is what is intended: in Step 26 https://wicg.github.io/webpackage/loading.html#parsing-b1 says:\r\n\r\n> If parsedExchange’s response's status is a redirect status or the signed exchange version of parsedExchange’s response is not undefined, return a failure.\r\n\r\nThis means if an inner response's content type is `application/signed-exchange` but without `v=` UA just lets it go (and result in downloading for navigations, or may just return the outer response for other cases). This might be what the spec intends but felt a bit unclear so filing this issue. /cc @irori "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/298",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1777,10 +1942,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/296.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/295",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3208,7 +3370,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/269.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/268",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3364,10 +3529,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/266.patch"
     },
     "body": "Prints warning message when:\r\n- OCSP data cannot be parsed as a DER-encoded OCSP response\r\n- Cert and OCSP do not have embedded SCT, and `-sctDir` is not specified\r\n\r\nDidn't make them error since these are OK if generated cert-chain is used for testing, with the `--ignore-certificate-errors-spki-list` Chromium flag."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/265",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4956,7 +5118,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/239.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/238",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5100,10 +5265,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "@slightlyoff mentioned that we might want to have [third-party security reviewers](https://tools.ietf.org/html/draft-yasskin-webpackage-use-cases-01#section-2.2.3) check more or less stringently depending on which permissions an app uses. To do that, they'll need to be able to sign over the permissions they've checked for."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/235",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6560,7 +6722,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/209.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/208",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6716,10 +6881,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "1, navigate to https://example.com/a.sxg\r\n2, a.sxg is signed by https://example.net so browser display it as https://example.net\r\n3, clicking the link on https://example.net\r\n\r\nin request of 3, which origin should on referrer header example.com (actual) or example.net (display) ?\r\n(spec seems not mention this: https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/205",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8282,7 +8444,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/179.patch"
     },
     "body": "See discussion in\r\nhttps://lists.w3.org/Archives/Public/ietf-http-wg/2018AprJun/0041.html.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.txt)\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/178",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8432,10 +8597,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Various things in the ecosystem use symlinks, the behavior of symlinks in node and how HTTP redirects is not compatible per https://github.com/nodejs/modules/issues/62 . Could repurpose the `Location` header over `file:` but https://fetch.spec.whatwg.org/#scheme-fetch could be changed in a forwards incompatible way if we do that."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/175",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10040,7 +10202,10 @@
     "closed_at": "2018-05-15T16:10:30Z",
     "author_association": "NONE",
     "body": "The use case document has a section on [how webpackages may help users avoid censorship](https://wicg.github.io/webpackage/draft-yasskin-webpackage-use-cases.html#rfc.section.2.2.2) but I'm wondering if they may also help achieve the opposite outcome: to allow authorities to censor content. (In particular, to withhold new content, and present old content as if it were fresh.)\r\n\r\nWith current browsers, when a user clicks on a link, if a page subsequently loads and `https://news.example.com/` is shown in the URL bar, they can be confident that the browser is displaying content retrieved from `news.example.com` and that was retrieved *after* they clicked on the link.  (That is, the content is fresh.) However, this is not necessarily true if the resource in question is a signed webpackage delivered by a CDN: whilst the content was signed by `news.example.com`, it could be up to 7 days old.\r\n\r\nThis may result in unexpected behavior for users in regions where the use of such CDNs/caches is pervasive (for e.g. performance and/or regulatory reasons) and where the cache operator has the ability and desire to selectively censor information (perhaps in reaction to a particular event or crisis). \r\n\r\nIf the cache rewrites links, it may even be possible to arrange for an entire website to appear up to date and completely functional when in fact fresh content is mixed with old at the discretion of the intermediary.\r\n\r\nSome mechanisms that may help reduce these risks:\r\n\r\n- Clients could indicate to users that content was not retrieved from an intermediary, and not the origin, and recommend that the \"reload\" feature be used if users are unsure of its freshness. (This also requires that the reload feature applies to the user-visible URL, and not the network URL; is this a recommendation of the format?)\r\n- Clients could verify the `validityUrl` more frequently than required, or allow users to manually trigger a validity check. (Related to [6.3 Downgrades](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#rfc.section.6.3).)\r\n- Recommend that origins who believe they might be subject to such attacks expire signatures within seconds or minutes. (Perhaps this could vary per cache, depending on the degree of confidence the origin has in the cache.)\r\n- Recommend that origins embed absolute timestamps within their content (e.g. \"Last modified: 2018-03-15 18:45\"), so that users are aware when content is not fresh."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/148",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10196,10 +10361,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/146.patch"
     },
     "body": "PTAL"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/145",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11712,7 +11874,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/119.patch"
     },
     "body": "This PR introduces a generator tool which implements the \"Signed HTTP Exchange\" proposed as in https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html\r\n\r\nThe code is written by @hajimehoshi, @nyaxt, @irori (all Googlers, thus can skip CLA) with adopted code from https://github.com/WICG/webpackage/tree/master/go/webpack.\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/118",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11868,10 +12033,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/116.patch"
     },
     "body": "That draft splits the rsa_pss signature algorithm names to depend on the key's OID. I suspect all RSA keys in the wild use the rsaEncryption OID, so banning that (to avoid Bleichenbacher attacks) would be equivalent to banning RSA keys, but if not, maybe we could allow the RSASSA-PSS ones.\r\n\r\n@sleevi @davidben"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/115",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13269,7 +13431,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/89.patch"
     },
     "body": "Use \"content distributor\" instead, in the hope that it only implies\r\ndistribution without authority.\r\n\r\nHow's this, @yoavweiss?\r\n\r\nPreviews in https://jyasskin.github.io/webpackage/clarify-cdn/."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/88",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13425,10 +13590,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Hello web packaging fans - \r\n\r\nWe're just cleaning up issues in possibly obsolete repos under [our organization](github.com/w3ctag/) (W3CTAG). One of these documents was the original packaging on the web which has since been obsoleted by your work. However there are many open issues on our document and before we summarily closed them we wanted to alert you to these issues in case you wanted to bring any of them over into your issues list. Can you please have a look through [these issues](https://github.com/w3ctag/packaging-on-the-web/issues) and leave a note on each issue to let us know that it's OK to close it? If you do take one of them on as an issue, please leave a note including a link to your new issue.\r\n\r\nThanks,\r\nDan Appelquist\r\nCo-Chair, W3CTAG"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/85",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14940,7 +15102,10 @@
     "closed_at": "2018-01-26T23:53:37Z",
     "author_association": "COLLABORATOR",
     "body": "The sketch, which I've run by @sleevi, is:\r\n1. Check the manifest's signature and that the signing certificate is for the package's claimed origin and that it chains to a trusted root, using intermediate certificates included in the package.\r\n2. Each package also has an accompanying set of OCSP responses and anti-downgrade information.\r\n3. The UA checks that the OCSP responses are signed by the certificate's signer and were generated less than 7 days ago.\r\n4. The UA checks that the anti-downgrade information is signed by a certificate trusted for package's origin (potentially taking advantage of the package's intermediate certs), hasn't expired yet and was signed less than 7 days ago, and says that the package's date is sufficiently recent.\r\n5. If any of this isn't recent enough, the package identifies a URL from which to fetch newer validity information. This validity information is small (<1kb?), so it should be cheap enough to fetch even when full packages are too expensive.\r\n\r\nThere's some evidence that we'll still have a significant number of UAs that are fully offline and won't be able to fetch new validity information every week. Depending on the existing HTTP cache's behavior, maybe we don't need to revalidate once we've opened a package once. Maybe it's ok to trust older validations as long as the package doesn't make any network requests, and have revalidation block the package's first network request when the UA gets back online. We'll need to decide what to do about local storage if that validation fails.\r\n\r\nI need to add this to the main explainer."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/58",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -15090,10 +15255,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/56.patch"
     },
     "body": "I'll try to get some experienced Go programmers to review this and suggest other ways to improve readability, as requested in https://github.com/dimich-g/webpackage/pull/53#pullrequestreview-38510830."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/55",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16461,7 +16623,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Without index, we will have to scan the whole package to find it out."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/28",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16617,10 +16782,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "For some use cases like Source Maps packages may wish to not include the full asset within themselves but have another package containing debugging symbols. Currently fragment URLs are proposed for removal, however I don't see a clear way to have a situation like:\r\n\r\n```\r\nminified.webpackage\r\n\\- index.min.js\r\n```\r\n\r\n```\r\nsource-maps.webpackage\r\n\\- index.min.js.map\r\n```\r\n\r\nAnd have `index.min.js` able to point to `index.min.js.map`."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/25",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
