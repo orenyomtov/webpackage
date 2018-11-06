@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/329",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/329/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/329/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/329/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/329",
+    "id": 377315112,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI4Mjg4MjIw",
+    "number": 329,
+    "title": "Update test keys in signedexchange_test.go to secp256r1",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-05T09:30:17Z",
+    "updated_at": "2018-11-06T01:28:04Z",
+    "closed_at": "2018-11-06T01:28:00Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/329",
+      "html_url": "https://github.com/WICG/webpackage/pull/329",
+      "diff_url": "https://github.com/WICG/webpackage/pull/329.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/329.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/328",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/328/labels{/name}",
@@ -41,9 +95,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-11-05T03:08:46Z",
-    "updated_at": "2018-11-05T03:08:46Z",
+    "updated_at": "2018-11-05T06:06:42Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1735,7 +1789,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Currently the loading spec says the newer HTTP cache contents should override the stashed exchange if the cached one is newer, but discussing this with @sleevi we suspected this may not make a lot sense if the underlying HTTP cache is NOT single-keyed (e.g. is double-keyed / partitioned).  So the question here is how much real benefit would this behavior have, and if we should really implement it.\r\n\r\n(Context: Chromium currently doesn't implement this behavior, and no plan to do so until this issue is clarified or we see a real, clear benefit)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/299",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1783,10 +1840,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Just want to make sure this is what is intended: in Step 26 https://wicg.github.io/webpackage/loading.html#parsing-b1 says:\r\n\r\n> If parsedExchange’s response's status is a redirect status or the signed exchange version of parsedExchange’s response is not undefined, return a failure.\r\n\r\nThis means if an inner response's content type is `application/signed-exchange` but without `v=` UA just lets it go (and result in downloading for navigations, or may just return the outer response for other cases). This might be what the spec intends but felt a bit unclear so filing this issue. /cc @irori "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/298",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1984,9 +2038,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-08-23T12:01:00Z",
-    "updated_at": "2018-08-23T12:01:00Z",
+    "updated_at": "2018-11-05T13:13:52Z",
     "closed_at": null,
     "author_association": "NONE",
     "body": "Recommend that if the user hits the \"reload\" button in their browser, the browser will contact the logical origin (i.e. the URL that is visible in the browser's URL bar) to determine freshness.\r\n\r\n(Currently not specified, but seem to be the expected behaviour, see e.g. [1](https://github.com/WICG/webpackage/issues/149#issuecomment-374011263), [2](https://github.com/WICG/webpackage/issues/293#issuecomment-415102090).) "
@@ -3316,7 +3370,10 @@
     "closed_at": "2018-07-31T07:38:15Z",
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html#manifest-section\r\n"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/269",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3370,10 +3427,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/269.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/268",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5064,7 +5118,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/240.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/239",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5118,10 +5175,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/239.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/238",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6668,7 +6722,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/210.patch"
     },
     "body": "WebBundling format doesn't require the payload to be MI encoded. This PR splits the encoding of the payload, so that it is possible to create an exchange without MI encoding."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/209",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6722,10 +6779,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/209.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/208",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8390,7 +8444,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/180.patch"
     },
     "body": "Per davidben's advice, it's safer to make all similar signature formats\r\nthe same.\r\n\r\nSeparate from #179 since it sounds like you're advising this even if that doesn't go in.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/179",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8444,10 +8501,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/179.patch"
     },
     "body": "See discussion in\r\nhttps://lists.w3.org/Archives/Public/ietf-http-wg/2018AprJun/0041.html.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/remove-rsa/draft-yasskin-http-origin-signed-responses.txt)\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/178",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10154,7 +10208,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/150.patch"
     },
     "body": "Found by @irori"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/149",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10202,10 +10259,7 @@
     "closed_at": "2018-05-15T16:10:30Z",
     "author_association": "NONE",
     "body": "The use case document has a section on [how webpackages may help users avoid censorship](https://wicg.github.io/webpackage/draft-yasskin-webpackage-use-cases.html#rfc.section.2.2.2) but I'm wondering if they may also help achieve the opposite outcome: to allow authorities to censor content. (In particular, to withhold new content, and present old content as if it were fresh.)\r\n\r\nWith current browsers, when a user clicks on a link, if a page subsequently loads and `https://news.example.com/` is shown in the URL bar, they can be confident that the browser is displaying content retrieved from `news.example.com` and that was retrieved *after* they clicked on the link.  (That is, the content is fresh.) However, this is not necessarily true if the resource in question is a signed webpackage delivered by a CDN: whilst the content was signed by `news.example.com`, it could be up to 7 days old.\r\n\r\nThis may result in unexpected behavior for users in regions where the use of such CDNs/caches is pervasive (for e.g. performance and/or regulatory reasons) and where the cache operator has the ability and desire to selectively censor information (perhaps in reaction to a particular event or crisis). \r\n\r\nIf the cache rewrites links, it may even be possible to arrange for an entire website to appear up to date and completely functional when in fact fresh content is mixed with old at the discretion of the intermediary.\r\n\r\nSome mechanisms that may help reduce these risks:\r\n\r\n- Clients could indicate to users that content was not retrieved from an intermediary, and not the origin, and recommend that the \"reload\" feature be used if users are unsure of its freshness. (This also requires that the reload feature applies to the user-visible URL, and not the network URL; is this a recommendation of the format?)\r\n- Clients could verify the `validityUrl` more frequently than required, or allow users to manually trigger a validity check. (Related to [6.3 Downgrades](https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#rfc.section.6.3).)\r\n- Recommend that origins who believe they might be subject to such attacks expire signatures within seconds or minutes. (Perhaps this could vary per cache, depending on the degree of confidence the origin has in the cache.)\r\n- Recommend that origins embed absolute timestamps within their content (e.g. \"Last modified: 2018-03-15 18:45\"), so that users are aware when content is not fresh."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/148",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11820,7 +11874,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/120.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/119",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11874,10 +11931,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/119.patch"
     },
     "body": "This PR introduces a generator tool which implements the \"Signed HTTP Exchange\" proposed as in https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html\r\n\r\nThe code is written by @hajimehoshi, @nyaxt, @irori (all Googlers, thus can skip CLA) with adopted code from https://github.com/WICG/webpackage/tree/master/go/webpack.\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/118",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13377,7 +13431,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/90.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/demote-push-ergonomics/draft-yasskin-webpackage-use-cases.html#push-replacement\r\n\r\n@slightlyoff @dglazkov: I included this as a goal because y'all keep talking about it, but the PUSH experts like @yoavweiss and @igrigorik think we should just stop talking about it and rely on the other benefits instead, so here's a PR to demote it."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/89",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13431,10 +13488,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/89.patch"
     },
     "body": "Use \"content distributor\" instead, in the hope that it only implies\r\ndistribution without authority.\r\n\r\nHow's this, @yoavweiss?\r\n\r\nPreviews in https://jyasskin.github.io/webpackage/clarify-cdn/."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/88",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -15054,7 +15108,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/60.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/59",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -15102,10 +15159,7 @@
     "closed_at": "2018-01-26T23:53:37Z",
     "author_association": "COLLABORATOR",
     "body": "The sketch, which I've run by @sleevi, is:\r\n1. Check the manifest's signature and that the signing certificate is for the package's claimed origin and that it chains to a trusted root, using intermediate certificates included in the package.\r\n2. Each package also has an accompanying set of OCSP responses and anti-downgrade information.\r\n3. The UA checks that the OCSP responses are signed by the certificate's signer and were generated less than 7 days ago.\r\n4. The UA checks that the anti-downgrade information is signed by a certificate trusted for package's origin (potentially taking advantage of the package's intermediate certs), hasn't expired yet and was signed less than 7 days ago, and says that the package's date is sufficiently recent.\r\n5. If any of this isn't recent enough, the package identifies a URL from which to fetch newer validity information. This validity information is small (<1kb?), so it should be cheap enough to fetch even when full packages are too expensive.\r\n\r\nThere's some evidence that we'll still have a significant number of UAs that are fully offline and won't be able to fetch new validity information every week. Depending on the existing HTTP cache's behavior, maybe we don't need to revalidate once we've opened a package once. Maybe it's ok to trust older validations as long as the package doesn't make any network requests, and have revalidation block the package's first network request when the UA gets back online. We'll need to decide what to do about local storage if that validation fails.\r\n\r\nI need to add this to the main explainer."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/58",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16575,7 +16629,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "For subpackage that contains pages and resources downloaded from one domain, but not through pack file offered by that domain, we should not use http://foo.com/something.pack since it does not exist in the server. Probably we should use a generated name."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/29",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16623,10 +16680,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "Without index, we will have to scan the whole package to find it out."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/28",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
