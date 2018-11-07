@@ -1,6 +1,168 @@
 [
 
   {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/332",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/332/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/332/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/332/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/332",
+    "id": 377761484,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI4NjI1Nzgw",
+    "number": 332,
+    "title": "go/signedexchange: Make serializeSignedMessage non-method func",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-06T09:36:03Z",
+    "updated_at": "2018-11-07T00:47:28Z",
+    "closed_at": "2018-11-07T00:47:24Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/332",
+      "html_url": "https://github.com/WICG/webpackage/pull/332",
+      "diff_url": "https://github.com/WICG/webpackage/pull/332.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/332.patch"
+    },
+    "body": "It was a method of Signer, but will be used by verifier too.\r\n\r\nThis is part of #319."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/331",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/331/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/331/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/331/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/331",
+    "id": 377702619,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI4NTgxNjg1",
+    "number": 331,
+    "title": "Add signature verifier to signingalgorithm.go",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-11-06T05:54:57Z",
+    "updated_at": "2018-11-06T08:34:01Z",
+    "closed_at": "2018-11-06T08:33:55Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/331",
+      "html_url": "https://github.com/WICG/webpackage/pull/331",
+      "diff_url": "https://github.com/WICG/webpackage/pull/331.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/331.patch"
+    },
+    "body": "This also moves signer_test.go to signingalgorithm_test.go, as it only uses `signingalgorithm` package."
+  },
+  {
+    "url": "https://api.github.com/repos/WICG/webpackage/issues/330",
+    "repository_url": "https://api.github.com/repos/WICG/webpackage",
+    "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/330/labels{/name}",
+    "comments_url": "https://api.github.com/repos/WICG/webpackage/issues/330/comments",
+    "events_url": "https://api.github.com/repos/WICG/webpackage/issues/330/events",
+    "html_url": "https://github.com/WICG/webpackage/pull/330",
+    "id": 377656780,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI4NTQ4NTEy",
+    "number": 330,
+    "title": "go/signedexchange: Drop RSA keys support",
+    "user": {
+      "login": "irori",
+      "id": 80796,
+      "node_id": "MDQ6VXNlcjgwNzk2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/80796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/irori",
+      "html_url": "https://github.com/irori",
+      "followers_url": "https://api.github.com/users/irori/followers",
+      "following_url": "https://api.github.com/users/irori/following{/other_user}",
+      "gists_url": "https://api.github.com/users/irori/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/irori/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/irori/subscriptions",
+      "organizations_url": "https://api.github.com/users/irori/orgs",
+      "repos_url": "https://api.github.com/users/irori/repos",
+      "events_url": "https://api.github.com/users/irori/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/irori/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-06T01:37:50Z",
+    "updated_at": "2018-11-06T05:47:47Z",
+    "closed_at": "2018-11-06T05:47:43Z",
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/WICG/webpackage/pulls/330",
+      "html_url": "https://github.com/WICG/webpackage/pull/330",
+      "diff_url": "https://github.com/WICG/webpackage/pull/330.diff",
+      "patch_url": "https://github.com/WICG/webpackage/pull/330.patch"
+    },
+    "body": "RSA keys are forbidden since before version b1, so there's no reason to\r\nkeep it."
+  },
+  {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/329",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
     "labels_url": "https://api.github.com/repos/WICG/webpackage/issues/329/labels{/name}",
@@ -97,7 +259,7 @@
     "milestone": null,
     "comments": 1,
     "created_at": "2018-11-05T03:08:46Z",
-    "updated_at": "2018-11-05T06:06:42Z",
+    "updated_at": "2018-11-06T01:51:59Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -106,7 +268,7 @@
       "diff_url": "https://github.com/WICG/webpackage/pull/328.diff",
       "patch_url": "https://github.com/WICG/webpackage/pull/328.patch"
     },
-    "body": ""
+    "body": "\n\n\n<!--\n    This comment and the below content is programatically generated.\n    You may add a comma-separated list of anchors you'd like a\n    direct link to below (e.g. #idl-serializers, #idl-sequence):\n\n    Don't remove this comment or modify anything below this line.\n    If you don't want a preview generated for this pull request,\n    just replace the whole of this comment's content by \"no preview\"\n    and remove what's below.\n-->\n***\n<a href=\"https://pr-preview.s3.amazonaws.com/nyaxt/webpackage/pull/328.html\" title=\"Last updated on Nov 6, 2018, 1:51 AM GMT (31271a0)\">Preview</a> | <a href=\"https://pr-preview.s3.amazonaws.com/WICG/webpackage/328/54c7a94...nyaxt:31271a0.html\" title=\"Last updated on Nov 6, 2018, 1:51 AM GMT (31271a0)\">Diff</a>"
   },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/327",
@@ -1633,7 +1795,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/302",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -1789,10 +1954,7 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Currently the loading spec says the newer HTTP cache contents should override the stashed exchange if the cached one is newer, but discussing this with @sleevi we suspected this may not make a lot sense if the underlying HTTP cache is NOT single-keyed (e.g. is double-keyed / partitioned).  So the question here is how much real benefit would this behavior have, and if we should really implement it.\r\n\r\n(Context: Chromium currently doesn't implement this behavior, and no plan to do so until this issue is clarified or we see a real, clear benefit)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/299",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3214,7 +3376,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/273.patch"
     },
     "body": "@nyaxt Do you think this is worth merging?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/272",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -3370,10 +3535,7 @@
     "closed_at": "2018-07-31T07:38:15Z",
     "author_association": "COLLABORATOR",
     "body": "https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html#manifest-section\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/269",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -4962,7 +5124,10 @@
     "closed_at": "2018-07-09T05:14:39Z",
     "author_association": "COLLABORATOR",
     "body": "> -sct should be optional (if not, we should fix gen-certurl), so we can omit it.\r\nThe `-sct` command-line flag of the `gen-certurl` tool is not currently optional"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/242",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -5118,10 +5283,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/240.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/239",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6552,7 +6714,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/213.patch"
     },
     "body": "To prepare for bundle.Read"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/212",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -6722,10 +6887,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/210.patch"
     },
     "body": "WebBundling format doesn't require the payload to be MI encoded. This PR splits the encoding of the payload, so that it is possible to create an exchange without MI encoding."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/209",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8282,7 +8444,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Google App Engine apparently has a small (undocumented) per-header-line size limit [1]. I imagine other such containers might have similar limits. This will be a problem with Signature (esp. if multiple sigs) and Link, unless a signer is allowed split them by newline.\r\n\r\nhttps://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html#cbor-representation doesn't specify a canonical way to join duplicate response headers; could/should it?\r\n\r\n[1] Was 497, per [stackoverflow](https://stackoverflow.com/questions/15280027/is-there-a-size-limit-for-http-response-headers-on-google-app-engine), but may have increased to 1k or so."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/182",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -8444,10 +8609,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/180.patch"
     },
     "body": "Per davidben's advice, it's safer to make all similar signature formats\r\nthe same.\r\n\r\nSeparate from #179 since it sounds like you're advising this even if that doesn't go in.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/re-add-tls-padding/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/179",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -9960,7 +10122,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/153.patch"
     },
     "body": "This is just an editorial change rather than a behavior change.\r\n\r\n[Preview](https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/publisher-author/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/152",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -10208,10 +10373,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/150.patch"
     },
     "body": "Found by @irori"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/149",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11712,7 +11874,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/123.patch"
     },
     "body": "Closes https://github.com/WICG/webpackage/issues/101"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/122",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -11874,10 +12039,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/120.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/validity-url-lists/draft-yasskin-http-origin-signed-responses.txt)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/119",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13269,7 +13431,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/93.patch"
     },
     "body": "[Preview](https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.html), [Diff](https://tools.ietf.org/rfcdiff?url1=https://jyasskin.github.io/webpackage/draft-yasskin-http-origin-signed-responses.txt&url2=https://jyasskin.github.io/webpackage/ilari-issues/draft-yasskin-http-origin-signed-responses.txt)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/92",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -13431,10 +13596,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/90.patch"
     },
     "body": "Preview at https://jyasskin.github.io/webpackage/demote-push-ergonomics/draft-yasskin-webpackage-use-cases.html#push-replacement\r\n\r\n@slightlyoff @dglazkov: I included this as a goal because y'all keep talking about it, but the PUSH experts like @yoavweiss and @igrigorik think we should just stop talking about it and rely on the other benefits instead, so here's a PR to demote it."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/89",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -14946,7 +15108,10 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/63.patch"
     },
     "body": "Headers are decompressed before being hashed."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/62",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -15108,10 +15273,7 @@
       "patch_url": "https://github.com/WICG/webpackage/pull/60.patch"
     },
     "body": ""
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/59",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16479,7 +16641,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "@bmeck, could you describe the use cases you're interested in for the packaging format, either in this issue or as a PR against the [`README.md`](https://github.com/dimich-g/webpackage/blob/master/README.md)?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/32",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -16629,10 +16794,7 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "For subpackage that contains pages and resources downloaded from one domain, but not through pack file offered by that domain, we should not use http://foo.com/something.pack since it does not exist in the server. Probably we should use a generated name."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/29",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
@@ -17994,7 +18156,10 @@
     "closed_at": "2017-01-13T19:54:47Z",
     "author_association": "NONE",
     "body": "Very happy to see Packaging reconsidered. The Digital Publishing IG considered this as well. Please see http://w3c.github.io/dpub-pwp-ucr/index.html for our use cases and requirements. We are also looking at Web App Manifest (https://w3c.github.io/manifest/) as a potential mechanism. Our goals are very similar, so it would be helpful to discuss and find common ground. "
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/WICG/webpackage/issues/2",
     "repository_url": "https://api.github.com/repos/WICG/webpackage",
