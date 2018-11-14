@@ -55,9 +55,6 @@ var (
 )
 
 func NewExchange(ver version.Version, uri *url.URL, requestHeaders http.Header, status int, responseHeaders http.Header, payload []byte) (*Exchange, error) {
-	if uri.Scheme != "https" {
-		return nil, fmt.Errorf("signedexchange: The request with non-https scheme %q URI can't be captured inside signed exchange.", uri.Scheme)
-	}
 	for name := range requestHeaders {
 		if IsStatefulRequestHeader(name) {
 			return nil, fmt.Errorf("signedexchange: stateful request header %q can't be captured inside signed exchange", name)
